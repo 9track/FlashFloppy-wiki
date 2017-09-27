@@ -1,5 +1,3 @@
-# Hardware Mods
-
 - [Speaker](#speaker)
 - [Eject/Select Button](#ejectselect-button)
 - [LCD Display](#lcd-display)

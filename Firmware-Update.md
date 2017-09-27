@@ -1,5 +1,3 @@
-# Firmware Updates
-
 If you have previously flashed the full firmware, you can make future
 updates via USB stick.
 

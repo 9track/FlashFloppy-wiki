@@ -1,5 +1,3 @@
-# FlashFloppy
-
 A retro floppy emulator for the ubiquitous Gotek hardware.
 - Directly supports HFE, ADF, IMG and ST image formats.
 - Supports usage with no configuration! Just dump images into the root
@@ -17,9 +15,9 @@ terms](Redistribution).
 ## Documentation
 
 ### Initial Setup
-- [**Firmware Programming**](Flash)
-- [**Firmware Update**](Update)
-- [**Hardware Mods**](Hardware)
+- [**Firmware Programming**](Firmware-Programming)
+- [**Firmware Update**](Firmware-Update)
+- [**Hardware Mods**](Hardware-Mods)
 
 ### Usage
 - [**Usage**](Usage)
@@ -28,5 +26,5 @@ terms](Redistribution).
 - [**Redistribution**](Redistribution)
 
 ### Developers
-- [**Building from source**](Build)
+- [**Building From Source**](Building-From-Source)
 - [**Redistribution**](Redistribution)

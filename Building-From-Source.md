@@ -1,5 +1,3 @@
-# Building from source
-
 This project is cross-compiled on an x86 Ubuntu Linux system. However
 other similar Linux-base systems (or a Linux virtual environment on
 another OS) can likely be made to work quite easily.

@@ -1,5 +1,3 @@
-# Firmware Programming
-
 The first installation of this firmware onto Gotek can be done either
 by [serial](#serial-programming) or [USB](#usb-programming) link to
 a host PC.

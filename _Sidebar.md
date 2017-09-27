@@ -1,7 +1,7 @@
 # Initial Setup
-- [Firmware Programming](Flash)
-- [Firmware Update](Update)
-- [Hardware Mods](Hardware)
+- [Firmware Programming](Firmware-Programming)
+- [Firmware Update](Firmware-Update)
+- [Hardware Mods](Hardware-Mods)
 
 # Usage
 - [Usage](Usage)
@@ -10,5 +10,5 @@
 - [Redistribution](Redistribution)
 
 # Developers
-- [Building from source](Build)
+- [Building From Source](Building-From-Source)
 - [Redistribution](Redistribution)

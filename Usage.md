@@ -1,5 +1,3 @@
-# Usage
-
 - [Interface Mode](#interface-mode)
 - [Modes of operation](#modes-of-operation)
 

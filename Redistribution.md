@@ -1,5 +1,3 @@
-# Redistribution
-
 Most code is public domain; the rest is MIT/BSD (see the
 [COPYING] file).
 

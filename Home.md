@@ -15,16 +15,16 @@ terms](Redistribution).
 ## Documentation
 
 ### Initial Setup
-- [**Firmware Programming**](Firmware-Programming)
-- [**Firmware Update**](Firmware-Update)
-- [**Hardware Mods**](Hardware-Mods)
+- [Firmware Programming](Firmware-Programming)
+- [Firmware Update](Firmware-Update)
+- [Hardware Mods](Hardware-Mods)
 
 ### Usage
-- [**Usage**](Usage)
+- [Usage](Usage)
 
 ### Redistributors
-- [**Redistribution**](Redistribution)
+- [Redistribution](Redistribution)
 
 ### Developers
-- [**Building From Source**](Building-From-Source)
-- [**Redistribution**](Redistribution)
+- [Building From Source](Building-From-Source)
+- [Redistribution](Redistribution)

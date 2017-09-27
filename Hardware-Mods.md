@@ -79,17 +79,13 @@ reusing the existing jumper wires, as in the pictires below.
 
 As an alternative to using the up/down buttons you can instead connect
 a rotary encoder. The picture below shows how to connect it, either
-directly (to pins A,B,C) or via a PCB module (eg KY040 pins CLK,DT,GND).
+directly or via a PCB module (eg KY040).
 
-If connecting directly note that by convention pin C is always the
-middle pin in the row of three: A-C-B. If there is a further row of
+If connecting directly note that by convention GND is always the
+middle pin in the row of three. If there is a further row of
 two pins then these are connected to an internal push switch: you can
 wire these pins to jumper JA to use the switch as an
 [eject/select button](#ejectselect-button).
-
-If connecting the KY040 module's internal switch to JA, connect GND as
-shown below and connect SW to the remaining pin of JA. It is important
-that the connections are made the correct way round.
 
 ![Rotary Encoder Connection](assets/rotenc.jpg)
 

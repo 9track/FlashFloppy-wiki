@@ -6,5 +6,9 @@
 # Usage
 - [Usage](Usage)
 
+# Redistributors
+- [Redistribution](Redistribution)
+
 # Developers
 - [Building from source](Build)
+- [Redistribution](Redistribution)

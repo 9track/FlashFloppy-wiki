@@ -1,14 +1,17 @@
-# Initial Setup
+## Download
+- [**Download FlashFloppy**](Downloads)
+
+## Initial Setup
 - [Firmware Programming](Firmware-Programming)
 - [Firmware Update](Firmware-Update)
 - [Hardware Mods](Hardware-Mods)
 
-# Usage
+## Usage
 - [Usage](Usage)
 
-# Redistributors
+## Redistributors
 - [Redistribution](Redistribution)
 
-# Developers
+## Developers
 - [Building From Source](Building-From-Source)
 - [Redistribution](Redistribution)

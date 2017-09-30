@@ -5,14 +5,12 @@ A retro floppy emulator for the ubiquitous Gotek hardware.
 - Compatible with the HxC ecosystem: Autoboot and Indexed
   modes supported, and HFE image files.
 
-Binaries can be downloaded from the
-[Releases page](https://github.com/keirf/FlashFloppy/releases).
-
 FlashFloppy is Free and Open-Source Software. It maybe freely modified
 and redistributed, but please read the [more detailed
 terms](Redistribution).
 
-## Documentation
+### Download
+ - [**Download FlashFloppy**](Downloads)
 
 ### Initial Setup
 - [Firmware Programming](Firmware-Programming)

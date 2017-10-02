@@ -15,3 +15,6 @@
 ## Developers
 - [Building From Source](Building-From-Source)
 - [Redistribution](Redistribution)
+
+## Donations
+- [Donations](Donations)

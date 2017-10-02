@@ -9,6 +9,9 @@ FlashFloppy is Free and Open-Source Software. It maybe freely modified
 and redistributed, but please read the [more detailed
 terms](Redistribution).
 
+Please read [here](Donations) if you wish to donate for FlashFloppy's
+development.
+
 ### Download
  - [**Download FlashFloppy**](Downloads)
 

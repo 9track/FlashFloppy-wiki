@@ -23,9 +23,8 @@ development.
 ### Usage
 - [Usage](Usage)
 
-### Redistributors
+### Support
 - [Redistribution](Redistribution)
-
-### Developers
+- [Donations](Donations)
+- [Project History](Project-History)
 - [Building From Source](Building-From-Source)
-- [Redistribution](Redistribution)

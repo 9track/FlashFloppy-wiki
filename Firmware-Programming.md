@@ -33,7 +33,8 @@ physically set up your serial connection and bootstrap the Gotek, and
 then use stm32flash to do the programming:
 
 ```
- # sudo stm32flash -w flashfloppy_fw/FF_Gotek*.hex /dev/ttyUSB0
+ # sudo stm32flash -k /dev/ttyUSB0
+ # sudo stm32flash -vw flashfloppy_fw/FF_Gotek*.hex /dev/ttyUSB0
 ```
 
 ## USB Programming

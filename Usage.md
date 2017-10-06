@@ -18,20 +18,25 @@ the selection jumper at location S1 at the rear of the Gotek.
 ## Modes of operation
 
 FlashFloppy supports three different modes of operation:
-- Config-less mode. No need for any config files. Cycles between
-  all valid image files in the root of the USB stick.
-- HxC Autoboot mode, configured via HxC host selector software (AUTOBOOT.HFE)
-  into the HXCSDFE.CFG file in the root of the USB stick.
+- Config-less mode. No need for any config files. Allows direct
+  selection of any valid image file on your USB stick.
+- HxC Autoboot mode, configured via HxC file selector and config file.
 - HxC Index mode, switching between image names of the form DSKA0000 and
-  so on. Requires a special HXCSDFE.CFG file. No need for
-  AUTOBOOT.HFE.
+  so on. Requires a special HxC config file.
 
 ### Config-less mode
 
 In this mode you need no configuration files or selector
-software. FlashFloppy will automatically assign all valid images in
+software. Behaviour depends on which display type you have connected:
+- **7-Segment LED:**
+FlashFloppy will automatically assign all valid images in
 the root folder of your USB stick to slots which you can switch
 between using the Gotek buttons.
+- **LCD/OLED:**
+FlashFloppy will allow you to select between any valid image file and
+any folder within the current directory. Selecting a folder will make
+that the new current directory, and list any image files and
+subfolders within.
 
 ### HxC Autoboot mode
 

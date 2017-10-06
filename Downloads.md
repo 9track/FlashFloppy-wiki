@@ -2,7 +2,7 @@
 
 - **v0.8.1a**: [(Download)][v0.8.1a-zip] [(Notes)][v0.8.1a-notes]
 
-1. [**Download**](v0.8.1a-zip) the ZIP file
+1. [**Download**][v0.8.1a-zip] the ZIP file
 2. [**Program**](Firmware-Programming) a brand new Gotek; or
 3. [**Update**](Firmware-Update) an existing install
 

@@ -22,7 +22,7 @@ development.
 
 ### Usage
 - [Configuration](Configuration)
-- [Usage](Usage)
+- [Operating Modes](Operating-Modes)
 
 ### Support
 - [Redistribution](Redistribution)

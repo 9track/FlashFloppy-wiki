@@ -1,8 +1,27 @@
+## Interface Mode
+
+By default FlashFloppy will emulate the Shugart floppy interface. This
+is compatible with a broad range of systems including Amiga, Atari ST,
+Amstrad CPC, and many other devices. Shugart-compatible systems will
+typically expect the Gotek to respond as 'unit 0'. Therefore place the
+selection jumper at location S0 at the rear of the Gotek.
+
+IBM PC compatibles use a slightly modified interface which places the
+disk-changed signal on a different pin. To select this interface mode
+place a jumper at location JC at the rear of the Gotek. The host
+system may expect the Gotek to respond as 'unit 1': in this case place
+the selection jumper at location S1 at the rear of the Gotek.
+
+An alternative method to specify the interface mode (Shugart or PC) is
+via the FF.CFG file, described below.
+
+## FF.CFG Configuration File
+
 FlashFloppy has many configurable settings which can be specified in
 an INI-style configuration file called FF.CFG. An example is
 provided in the examples/ subfolder of the FlashFloppy distribution.
 
-## FF.CFG Options
+### Options
 
 Default values are marked by asterisk.
 

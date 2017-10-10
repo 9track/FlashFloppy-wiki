@@ -30,7 +30,7 @@ and Amstrad CPC from the [HxC project][hxc_web]:
 Within the subfolder find the AUTOBOOT.HFE file for your platform, and
 use the HXCSDFE.CFG file in the same subfolder if present, else use
 the generic file from the Autoboot-mode subfolder. These files must be
-placed in the root (or FF/ folder) of your USB drive.
+placed in the root of your USB drive.
 
 The Gotek buttons cycle between the assigned slots in the config
 file. To reassign slots boot the file selector: this is immediately
@@ -50,8 +50,7 @@ This mode requires only a special HXCSDFE.CFG file, available from the
 - **Subfolder:** Next_WIP_Alpha_Firmware_And_Tools
 
 Within the subfolder find the HXCSDFE.CFG file in the Indexed-mode
-subfolder. This file must be placed into the root (or FF/ folder) of
-your USB drive.
+subfolder. This file must be placed into the root of your USB drive.
 
 FlashFloppy will switch between images with names of the form
 DSKA0000.HFE, DSKA0001.HFE, and so on, which will be automatically

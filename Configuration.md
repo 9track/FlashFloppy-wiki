@@ -34,9 +34,9 @@ Default values are marked by asterisk.
 - **ejected-on-startup** = yes | no*
   - Disk image loaded or ejected at power on
 
-- **da-report-version** = string
+- **da-report-version** = quoted-string
   - Report the specified version number to host software
-  - For example: da-report-version = v3.0.0.0
+  - For example: da-report-version = "v3.0.0.0"
 
 - **autoselect-file-secs** = 0-255 (2*)
   - Auto-select the current file/slot after N seconds

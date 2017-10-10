@@ -27,10 +27,9 @@ Default values are marked by asterisk.
 
 - **interface** = shugart | pc | default*
   - Pin assignments of the floppy interface
-  - **shugart**: Shugart protocol (pin 2 = dskchg, pin 34 = rdy) as
-      used by Amiga, Atari ST and many other systems.
-  - **pc**: IBM/PC protocol (pin 2 = unused, pin 34 = dskchg) as used on PCs.
-  - **default**: As specified by jumper JC (closed = PC, open = Shugart).
+  - **shugart**: Shugart interface (Amiga, Atari ST, many others)
+  - **pc**: IBM/PC interface
+  - **default**: Specified by jumper JC (closed = PC, open = Shugart).
 
 - **ejected-on-startup** = yes | no*
   - Disk image loaded or ejected at power on

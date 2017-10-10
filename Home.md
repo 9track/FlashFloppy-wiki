@@ -21,6 +21,7 @@ development.
 - [Hardware Mods](Hardware-Mods)
 
 ### Usage
+- [Configuration](Configuration)
 - [Usage](Usage)
 
 ### Support

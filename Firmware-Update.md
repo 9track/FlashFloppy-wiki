@@ -1,8 +1,8 @@
 If you have previously flashed the full firmware, you can make future
 updates via USB stick.
 
-- Remove all old *.UPD files from the root of the USB stick.
-- Copy the *.UPD file from the root of the release archive to the root of
+- Remove all old ***.upd** files from the root of the USB stick.
+- Copy the ***.upd** file from the root of the release archive to the root of
   the USB stick.
 - Insert the USB stick into the Gotek and power on with both buttons pressed.
 - You should now be in the bootloader ("UPD"). Release both buttons.
@@ -32,8 +32,8 @@ update the bootloader** and can skip these steps.
 doing.**
 
 - **Program the 'Reloader'**
-  - Remove all old *.UPD and *.RLD files from the USB stick.
-  - Copy the contents of the release's reloader/ folder to the root of
+  - Remove all old ***.upd** and ***.rld** files from the USB stick.
+  - Copy the contents of the release's **reloader/** folder to the root of
   the USB stick.
   - Insert the USB stick into the Gotek and power on with both buttons
   pressed.
@@ -44,8 +44,8 @@ doing.**
   - The latest bootloader will be programmed. The Gotek will then reboot.
 - **Program the latest Main Firmware**
   - You are now in the reloader again. Power off.
-  - Remove the *.UPD and *.RLD files from the USB stick.
-  - Copy the *.UPD file from the root of the release archive to the USB
+  - Remove the ***.upd** and ***.rld** files from the USB stick.
+  - Copy the ***.upd** file from the root of the release archive to the USB
   stick.
   - Insert the USB stick into the Gotek and power on with both
   buttons pressed.

@@ -33,8 +33,8 @@ ordering on your own.
 The programming process is described, along with suitable
 Windows software, on the
 [Cortex firmware webpage](https://cortexamigafloppydrive.wordpress.com).
-Of course, rather than using the Cortex HEX file, use the HEX file
-contained in the FlashFloppy release archive.
+Of course, rather than using the Cortex HEX file, use the ***.hex** file
+contained in the FlashFloppy distribution.
 
 If programming on Linux, you can follow the Cortex instructions to
 physically set up your serial connection and bootstrap the Gotek, and
@@ -61,7 +61,7 @@ then use stm32flash to do the programming:
 ## Method 2: USB Programming
 
 This method requires a USB-A to USB-A cable, and you should program
-the HEX file contained in the FlashFloppy release archive. See this
+the ***.hex** file contained in the FlashFloppy distribution. See this
 Youtube video for more details:
 
 [![Flash Gotek without Serial Adapter](http://img.youtube.com/vi/yUOyZB9cro4/0.jpg)](http://www.youtube.com/watch?v=yUOyZB9cro4 "Flash Gotek without Serial Adapter")

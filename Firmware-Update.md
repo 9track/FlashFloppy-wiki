@@ -31,18 +31,24 @@ update the bootloader** and can skip these steps.
 **I repeat: do not follow these steps unless you are sure of what you are
 doing.**
 
-- Remove all old *.UPD and *.RLD files from the USB stick.
-- Copy the contents of the release's reloader/ folder to the root of
+- **Program the 'Reloader'**
+  - Remove all old *.UPD and *.RLD files from the USB stick.
+  - Copy the contents of the release's reloader/ folder to the root of
   the USB stick.
-- Insert the USB stick into the Gotek and power on with both buttons pressed.
-- You should now be in the bootloader ("UPD"). Release both buttons.
-- The 'reloader' will be programmed and the Gotek will reboot into it.
-- You should now be in the reloader ("RLD"). Press and release both buttons.
-- The latest bootloader will be programmed. The Gotek will then reboot.
-- You are now in the reloader again. Power off.
-- Remove the *.UPD and *.RLD files from the USB stick.
-- Copy the *.UPD file from the root of the release archive to the USB stick.
-- Insert the USB stick into the Gotek and power on with both buttons pressed.
-- You should now be in the bootloader ("UPD"). Release both buttons.
-- The latest firmware will be programmed and the Gotek will reboot into it.
-- Success!
+  - Insert the USB stick into the Gotek and power on with both buttons
+  pressed.
+  - You should now be in the bootloader ("UPD"). Release both buttons.
+  - The 'reloader' will be programmed and the Gotek will reboot into it.
+- **Program the latest Bootloader**
+  - You should now be in the reloader ("RLD"). Press and release both buttons.
+  - The latest bootloader will be programmed. The Gotek will then reboot.
+- **Program the latest Main Firmware**
+  - You are now in the reloader again. Power off.
+  - Remove the *.UPD and *.RLD files from the USB stick.
+  - Copy the *.UPD file from the root of the release archive to the USB
+  stick.
+  - Insert the USB stick into the Gotek and power on with both
+  buttons pressed.
+  - You should now be in the bootloader ("UPD"). Release both buttons.
+  - The latest firmware will be programmed and the Gotek will reboot into it.
+- **Success!**

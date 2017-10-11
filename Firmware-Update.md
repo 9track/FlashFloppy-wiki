@@ -52,3 +52,21 @@ doing.**
   - You should now be in the bootloader ("UPD"). Release both buttons.
   - The latest firmware will be programmed and the Gotek will reboot into it.
 - **Success!**
+
+### Aside: What these steps do
+
+Some people get confused by the above sequence of steps and it might
+help to give them a mental model of what's going on. First, realise
+that the Flash memory contains two programs: the **Bootloader** and
+the **Main Firmware**. The Bootloader's sole purpose is to allow
+update of the Main Firmware. The Main Firmware of course runs the
+floppy-drive emulation, and doesn't know how to update anything. The
+trick in updating the Bootloader is to replace the Main Firmware with
+an alternative program (the **Reloader**) whose sole purpose is to
+update the Bootloader.
+
+The main sequence of steps in updating the Bootloader is then:
+
+- **Old Bootloader** overwrites **Old Main Firmware** with **Reloader**
+- **Reloader** overwrites **Old Bootloader** with **New Bootloader**
+- **New Bootloader** overwrites **Reloader** with **New Main Firmware**

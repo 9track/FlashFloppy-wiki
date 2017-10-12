@@ -21,6 +21,19 @@ FlashFloppy has many configurable settings which can be specified in
 an INI-style configuration file called FF.CFG. An example is
 provided in the examples/ subfolder of the FlashFloppy distribution.
 
+### Defaults
+
+Out of the box, FlashFloppy loads the default values described in the
+Options list, below. When these are modified by values in FF.CFG they
+are recorded into the Gotek's Flash memory and become the new default
+values when the drive is next powered on.
+
+If you wish to return to 'factory defaults', press the Prev and Next
+buttons on the Gotek for three seconds with no USB stick inserted. The
+display will change ("RST", or "Reset Flash Configuration") and
+FlashFloppy will return to factory defaults when the buttons are
+released.
+
 ### Options
 
 Default values are marked by asterisk.

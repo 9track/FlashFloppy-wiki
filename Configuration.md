@@ -36,6 +36,7 @@ Default values are marked by asterisk.
 
 - **da-report-version** = quoted-string
   - Report the specified version number to host software
+  - Empty string ("") means report the firmware version number
   - For example: da-report-version = "v3.0.0.0"
 
 - **autoselect-file-secs** = 0-255 (2*)

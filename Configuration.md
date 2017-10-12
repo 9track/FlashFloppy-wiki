@@ -64,3 +64,7 @@ Default values are marked by asterisk.
 
 - **step-volume** = 0-20 (10*)
   - Speaker volume (connected at jumper JB) when drive heads are moved
+
+- **side-select-glitch-filter** = 0-255 (0*)
+  - Filter glitches in the SIDE-select signal shorter than N microseconds
+  - Useful on some old hardware (eg. CP/M systems)

@@ -38,11 +38,11 @@ released.
 
 Default values are marked by asterisk.
 
-- **interface** = shugart | pc | default*
+- **interface** = shugart | ibmpc | jc*
   - Pin assignments of the floppy interface
   - **shugart**: Shugart interface (Amiga, Atari ST, many others)
-  - **pc**: IBM/PC interface
-  - **default**: Specified by jumper JC (closed = PC, open = Shugart).
+  - **ibmpc**: IBM PC interface
+  - **jc**: Specified by jumper JC (closed = IBM PC, open = Shugart).
 
 - **ejected-on-startup** = yes | no*
   - Disk image loaded or ejected at power on

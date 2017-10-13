@@ -21,8 +21,8 @@ development.
 - [Hardware Mods](Hardware-Mods)
 
 ### Usage
-- [Configuration](Configuration)
 - [Operating Modes](Operating-Modes)
+- [Configuration](Configuration)
 
 ### Support
 - [Redistribution](Redistribution)

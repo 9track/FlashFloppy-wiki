@@ -1,11 +1,11 @@
 FlashFloppy supports three different operating modes:
-- Config-less mode. No need for any config files. Allows direct
+- Native mode. No need for any configuration files. Allows direct
   selection of any valid image file on your USB stick.
 - HxC Autoboot mode, configured via HxC file selector and config file.
 - HxC Index mode, switching between image names of the form DSKA0000 and
   so on. Requires a special HxC config file.
 
-## Config-less mode
+## Native mode
 
 In this mode you need no configuration files or selector
 software. Behaviour depends on which display type you have connected:

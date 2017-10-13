@@ -44,9 +44,6 @@ Default values are marked by asterisk.
   - **ibmpc**: IBM PC interface
   - **jc**: Specified by jumper JC (closed = IBM PC, open = Shugart).
 
-- **ejected-on-startup** = yes | no*
-  - Disk image loaded or ejected at power on
-
 - **da-report-version** = quoted-string
   - Report the specified version number to host software
   - Empty string ("") means report the firmware version number
@@ -81,3 +78,12 @@ Default values are marked by asterisk.
 - **side-select-glitch-filter** = 0-255 (0*)
   - Filter glitches in the SIDE-select signal shorter than N microseconds
   - Useful on some old hardware (eg. CP/M systems)
+
+- **ejected-on-startup** = yes | no*
+  - Disk image loaded or ejected at power on
+
+- **image-on-startup** = last* | static | init
+  - Which image (or folder) is selected at startup
+  - **last**: Last-selected item at power off (recorded in IMAGE_A.CFG)
+  - **static**: Static pathname specified in IMAGE_A.CFG
+  - **init**: First item in root folder

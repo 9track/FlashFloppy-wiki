@@ -72,6 +72,10 @@ Default values are marked by asterisk.
   - LCD/OLED long filename scroll rate in milliseconds per update
   - Larger value means slower scroll
 
+- **oled-font** = 7x16 | 8x16*
+  - Select normal-width or narrow-width OLED display font
+  - Narrow font compatible with unwidened Gotek display cutout
+
 - **step-volume** = 0-20 (10*)
   - Speaker volume (connected at jumper JB) when drive heads are moved
 

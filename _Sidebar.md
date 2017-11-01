@@ -15,3 +15,6 @@
 - [Donations](Donations)
 - [Project History](Project-History)
 - [Building From Source](Building-From-Source)
+- [Facebook][facebook]
+
+[facebook]: https://www.facebook.com/groups/820618618098373/

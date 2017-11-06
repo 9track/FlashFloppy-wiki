@@ -1,6 +1,9 @@
 If you have previously flashed the full firmware, you can make future
 updates via USB stick.
 
+When instructed to press both buttons, press Prev and Next.  You may
+alternatively press Select, or the rotary encoder, if you have them.
+
 - Remove all old ***.upd** files from the root of the USB stick.
 - Copy the ***.upd** file from the root of the release archive to the root of
   the USB stick.
@@ -30,6 +33,9 @@ update the bootloader** and can skip these steps.
 
 **I repeat: do not follow these steps unless you are sure of what you are
 doing.**
+
+When instructed to press both buttons, press Prev and Next.  You may
+alternatively press Select, or the rotary encoder, if you have them.
 
 - **Program the 'Reloader'**
   - Remove all old ***.upd** and ***.rld** files from the USB stick.

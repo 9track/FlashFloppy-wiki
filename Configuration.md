@@ -29,10 +29,10 @@ are recorded into the Gotek's Flash memory and become the new default
 values when the drive is next powered on.
 
 If you wish to return to 'factory defaults', press the Prev and Next
-buttons on the Gotek for three seconds with no USB stick inserted. The
-display will change ("RST", or "Reset Flash Configuration") and
-FlashFloppy will return to factory defaults when the buttons are
-released.
+buttons (or Select, or the rotary encoder, if you have them) for three
+seconds with no USB stick inserted. The display will show "RST" or
+"Reset Flash Configuration", and FlashFloppy will return to factory
+defaults when the buttons are released.
 
 ### Options
 

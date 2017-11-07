@@ -23,6 +23,7 @@ development.
 ### Usage
 - [Operating Modes](Operating-Modes)
 - [Configuration](Configuration)
+- [Error Messages](Error-Messages)
 
 ### Support
 - [Redistribution](Redistribution)

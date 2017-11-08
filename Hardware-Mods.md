@@ -112,29 +112,29 @@ Gotek users should therefore skip this section.
 
 - **PC12-15:** Board Identifier
 - **PA3:** Second Drive Select
-- **PA15:** Motor Signal
+- **PA15:** Motor-On Signal
 - **PA4-5:** USB Power Switch
 
 ### Board Identifier
 
 Pins PC12-15 are used to identify an enhanced Gotek. On a standard
 Gotek board these pins are disconnected and floating. On an enhanced
-Gotek they **must** all be connected to VSS (GND).
+Gotek they should all be connected to VSS (GND).
 
 ### Second Drive Select
 
 FlashFloppy may in future emulate two drives in a single Gotek. To
-support this pin PA3 (SELB) **should** be connected to a second
-drive-select line and pulled up by 1K to VCC (5v). If second-drive
-select is not supported then PA3 **must** instead be connected
-directly to VDD (3.3v).
+support this pin PA3 may be connected to a second drive-select line
+and pulled up by 1K to VCC (5v). If second-drive select is not
+supported then the pull-up is still required, to avoid PA3 floating.
 
-### Motor Signal
+### Motor-On Signal
 
-FlashFloppy may in future use the motor signal (floppy pin 16) to
-improve emulation accuracy. Enhanced Goteks **must** connect PA15
-(MOTOR) to pin 16 of the floppy interface, pulled up by 1K to VCC
-(5v). This connection is not optional.
+FlashFloppy may in future use the motor-on signal to improve emulation
+accuracy. To support this pin PA15 may be connected to the motor-on
+line (eg floppy pin 16) and pulled up by 1K to VCC (5v). If the
+motor-on signal is not supported then the pull-up is still required,
+to avoid PA15 floating.
 
 ### USB Power Switch
 
@@ -144,6 +144,7 @@ be connected as follows:
 - PA5: open-drain active-low fault signal (input from USB power switch)
 
 These connections are optional and either pin may instead be left
-disconnected and floating.
+disconnected and floating (the STM32 will pull them to a defined
+level).
 
 A suitable power switch is STMicroelectronics STMPS2141.

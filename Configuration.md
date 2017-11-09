@@ -91,3 +91,7 @@ Default values are marked by asterisk.
   - **last**: Last-selected item at power off (recorded in IMAGE_A.CFG)
   - **static**: Static pathname specified in IMAGE_A.CFG
   - **init**: First item in root folder
+
+- **startup-delay** = 0-65535 (0*)
+  - Delay in milliseconds before initialising external peripherals
+    such as display

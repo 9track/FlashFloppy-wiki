@@ -14,6 +14,13 @@ A 2-digit error code defined by the FlashFloppy firmware:
   larger USB drive.
 - **31** Bad Image File: The selected image is invalid or
   unsupported.
+- **32** Bad HXCSDFE.CFG: The config file is invalid or unsupported.
+  Copy a fresh version to the USB drive.
+- **33** Bad IMAGE_A.CFG: The last-image file has become corrupted.
+  Delete it from the USB drive and it will be automatically recreated.
+- **34** No entries to navigate: Direct Navigation mode found no valid
+  directories or image files to display. Add some valid image files to
+  the USB drive.
 
 ### `USB` / `USB Power Fault`
 

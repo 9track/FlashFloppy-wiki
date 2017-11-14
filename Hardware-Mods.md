@@ -7,12 +7,11 @@
 
 ## Speaker
 
-A speaker can be attached to the Gotek to sound whenever the floppy
-drive heads are stepped. A piezo sounder can be connected directly
-between jumper JB and Ground, marked respectively as SPEAKER and GND
-in the picture below.
+A speaker can be attached to the Gotek to sound whenever the drive
+heads move. This simplest method is to connect a piezo sounder
+directly to the JB header pins, as shown in this video:
 
-![Piezo speaker](assets/jumpers.jpg)
+[![FlashFloppy speaker install](http://img.youtube.com/vi/UevBaQvG_4Y/0.jpg)](http://www.youtube.com/watch?v=UevBaQvG_4Y "FlashFloppy speaker install")
 
 If you want to connect a magnetic speaker instead, you must buffer via
 an NPN transistor. If you don't know what this means just be sure to

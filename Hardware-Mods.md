@@ -69,11 +69,9 @@ require a display with I2C interface: you should see it has a 4-pin
 header marked GND, VCC, SCL, SDA.
 
 These displays can simply connect to the 7-segment display's header,
-reusing the existing jumper wires, as in the pictires below.
+reusing the existing jumper wires, as in the picture below.
 
 ![OLED Display Front](assets/oled1.jpg)
-
-![OLED Display Rear](assets/oled2.jpg)
 
 Beware of OLED displays marked **DIYMORE OLED-091**:
 

@@ -42,7 +42,7 @@ Default values are marked by asterisk.
   - Pin assignments of the floppy interface
   - **shugart**: Shugart interface (Amiga, Atari ST, many others)
   - **ibmpc**: IBM PC interface
-  - **jc**: Specified by jumper JC (closed = IBM PC, open = Shugart).
+  - **jc**: Specified by jumper JC (closed = IBM PC, open = Shugart)
 
 - **da-report-version** = quoted-string
   - Report the specified version number to host software
@@ -93,6 +93,11 @@ Default values are marked by asterisk.
   - **init**: First item in root folder
 
 - **display-probe-ms** = 0-65535 (2000*)
-  - Time in milliseconds to attempt to probe an attached display.
+  - Time in milliseconds to attempt to probe an attached display
   - If you have a 2-digit LED display, or no display:
-    Set to 0 for faster startup.
+    Set to 0 for faster startup
+
+- **twobutton-action** = zero* | eject
+  - Action when both buttons are pressed during image/slot selection
+  - **zero**: Select image/slot zero
+  - **eject**: Eject (or re-insert) currently-selected image/slot

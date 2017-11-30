@@ -92,6 +92,7 @@ Default values are marked by asterisk.
   - **static**: Static pathname specified in IMAGE_A.CFG
   - **init**: First item in root folder
 
-- **startup-delay** = 0-65535 (0*)
-  - Delay in milliseconds before initialising external peripherals
-    such as display
+- **display-probe-ms** = 0-65535 (2000*)
+  - Time in milliseconds to attempt to probe an attached display.
+  - If you have a 2-digit LED display, or no display:
+    Set to 0 for faster startup.

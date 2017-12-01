@@ -2,8 +2,8 @@ FlashFloppy supports three different operating modes:
 - Native mode. No need for any configuration files. Allows direct
   selection of any valid image file on your USB stick.
 - HxC Autoboot mode, configured via HxC file selector and config file.
-- HxC Index mode, switching between image names of the form DSKA0000 and
-  so on. Requires a special HxC config file.
+- HxC Indexed mode, switching between image names of the form DSKA0000
+  and so on. Requires a special HxC config file.
 
 ## Native mode
 
@@ -42,7 +42,7 @@ buttons on the front of the Gotek. Holding a button will cycle faster
 through the populated slots. Pressing both buttons will take you
 immediately to the file selector.
 
-## HxC Index mode
+## HxC Indexed mode
 
 This mode requires only a special HXCSDFE.CFG file, available from the
 [HxC project][hxc_web]:

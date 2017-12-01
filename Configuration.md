@@ -57,6 +57,12 @@ Default values are marked by asterisk.
   - Auto-select the current folder after N seconds
   - N=0: disable auto-select
 
+- **nav-mode** = native | indexed | default*
+  - Navigation mode for selecting images or slots
+  - **native**: Navigate through all valid images and folders
+  - **indexed**: Navigate through DSKA0000, DSKA0001, ...
+  - **default**: As native unless overridden by HxC-compat-mode config
+
 - **nav-loop** = yes* | no
   - When navigating slots or a folder, loop at start/end of the list
 
@@ -97,7 +103,9 @@ Default values are marked by asterisk.
   - If you have a 2-digit LED display, or no display:
     Set to 0 for faster startup
 
-- **twobutton-action** = zero* | eject
-  - Action when both buttons are pressed during image/slot selection
-  - **zero**: Select image/slot zero
-  - **eject**: Eject (or re-insert) currently-selected image/slot
+- **twobutton-action** = zero* | eject | rotary
+  - Actions of first two buttons
+  - **zero**: 1: Prev, 2: Next, Both: Slot 0
+  - **eject**: 1: Prev, 2: Next, Both: Eject/Insert
+  - **rotary**: 1: Up-dir, 2: Select, Both: -
+  

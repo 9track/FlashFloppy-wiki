@@ -73,17 +73,6 @@ reusing the existing jumper wires, as in the picture below.
 
 ![OLED Display Front](assets/oled1.jpg)
 
-Beware of OLED displays marked **DIYMORE OLED-091**:
-
-![DIYMORE Display](assets/diymore_oled.jpg)
-
-Many users have found that these displays fail to initialise unless
-given a longer startup time by adding the following line to FF.CFG
-(in some cases a delay up to 3000 is required):
-```
-startup-delay = 2000
-```
-
 ## Rotary Encoder
 
 As an alternative to using the up/down buttons you can instead connect

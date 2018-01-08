@@ -1,3 +1,4 @@
+- [Board Layout](#board-layout)
 - [Speaker](#speaker)
 - [Eject/Select Button](#ejectselect-button)
 - [LCD Display](#lcd-display)
@@ -5,11 +6,23 @@
 - [Rotary Encoder](#rotary-encoder)
 - [Enhanced Gotek](#enhanced-gotek)
 
+## Board Layout
+
+Most modifications simply involve plugging new hardware add-ons into
+pin headers on the Gotek PCB. The PCB layout is summarised below. We
+will refer to this diagram for each hardware mod.
+
+![Board Layout](assets/pinout.png)
+
 ## Speaker
 
 A speaker can be attached to the Gotek to sound whenever the drive
-heads move. This simplest method is to connect a piezo sounder
-directly to the JB header pins, as shown in this video:
+heads move. The simplest method is to connect a piezo sounder
+directly to the JB header pins.
+
+![Piezo speaker](assets/piezo.png)
+
+There is also a step-by-step video describing this mod:
 
 [![FlashFloppy speaker install](http://img.youtube.com/vi/UevBaQvG_4Y/0.jpg)](http://www.youtube.com/watch?v=UevBaQvG_4Y "FlashFloppy speaker install")
 
@@ -33,19 +46,13 @@ The button's effect depends on the current state of operation:
 
 As an alternative to the Gotek 7-segment display, FlashFloppy supports
 the ubiquitous 1602 LCD with I2C backpack board. These are available
-from many Ebay sellers. The connections should be made just as for HxC
-Gotek firmware, including pullup resistors (if required - see below).
+from many Ebay sellers.
 
-You can locate SCL, SDA, and GND on your Gotek PCB as below. These
-connect to the corresponding header pins on your LCD I2C backpack
-module.
+You can locate the required connections on your Gotek PCB as
+below. These connect to the corresponding header pins on your LCD I2C
+backpack module.
 
-![LCD data/clock interface](assets/header_closeup.jpg)
-
-VCC (aka 5V) can be found in various places, including just behind the
-floppy power connector.
-
-![LCD VCC](assets/jumpers.jpg)
+![LCD data/clock interface](assets/lcd-backpack.png)
 
 The SCL and SDA lines must be connected to VCC ("pulled up" to VCC)
 via 4.7k resistors.  Note that many I2C boards have the pullup
@@ -56,8 +63,8 @@ pullups.
 
 If you do require the pullup resistors, these can be soldered to the
 backside of the Gotek PCB between VCC and each of SDA and
-SCL. Alternatively can be soldered to the back of the I2C module
-header as below.
+SCL. Alternatively the resistors can be soldered to the back of the
+I2C module header.
 
 ![LCD Pullup Resistors](assets/pullups.jpg)
 
@@ -68,16 +75,23 @@ display, as sold for Arduino projects by many Ebay sellers. You will
 require a display with I2C interface: you should see it has a 4-pin
 header marked GND, VCC, SCL, SDA.
 
+![OLED Display Front](assets/OLED.png)
+
 These displays can simply connect to the 7-segment display's header,
-reusing the existing jumper wires, as in the picture below.
+reusing the existing jumper wires.
 
 ![OLED Display Front](assets/oled1.jpg)
 
 ## Rotary Encoder
 
 As an alternative to using the up/down buttons you can instead connect
-a rotary encoder. The picture below shows how to connect it, either
+a rotary encoder. The pictures below show how to connect it, either
 directly or via a PCB module (eg KY040).
+
+When connecting via a PCB module, you may need to connect to 3.3v if
+the board has pull-up resistors mounted.
+
+![Rotary Encoder Connection](assets/rotsel-pcb.png)
 
 If connecting directly note that by convention GND is always the
 middle pin in the row of three. If there is a further row of
@@ -85,7 +99,7 @@ two pins then these are connected to an internal push switch: you can
 wire these pins to jumper JA to use the switch as an
 [eject/select button](#ejectselect-button).
 
-![Rotary Encoder Connection](assets/rotenc.jpg)
+![Rotary Encoder Connection](assets/rotsel-direct.png)
 
 Rotating the dial should now have the same effect as pushing the
 buttons: anti-clockwise for down, and clockwise for up.

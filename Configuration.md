@@ -38,16 +38,35 @@ defaults when the buttons are released.
 
 Default values are marked by asterisk.
 
+#### Drive Emulation:
+
 - **interface** = shugart | ibmpc | jc*
-  - Pin assignments of the floppy interface
+  - Pin assignments of the floppy-drive interface
   - **shugart**: Shugart interface (Amiga, Atari ST, many others)
   - **ibmpc**: IBM PC interface
   - **jc**: Specified by jumper JC (closed = IBM PC, open = Shugart)
 
-- **da-report-version** = quoted-string
-  - Report the specified version number to host software
-  - Empty string ("") means report the firmware version number
-  - For example: da-report-version = "v3.0.0.0"
+- **side-select-glitch-filter** = 0-255 (0*)
+  - Filter glitches in the SIDE-select signal shorter than N microseconds
+  - Useful on some old hardware (eg. CP/M systems)
+
+#### Startup & Initialisation:
+
+- **ejected-on-startup** = yes | no*
+  - Disk image loaded or ejected at power on
+
+- **image-on-startup** = last* | static | init
+  - Which image (or folder) is selected at startup
+  - **last**: Last-selected item at power off (recorded in IMAGE_A.CFG)
+  - **static**: Static pathname specified in IMAGE_A.CFG
+  - **init**: First item in root folder
+
+- **display-probe-ms** = 0-65535 (2000*)
+  - Time in milliseconds to attempt to probe an attached display
+  - If you have a 2-digit LED display, or no display:
+    Set to 0 for faster startup
+
+#### Image Navigation:
 
 - **autoselect-file-secs** = 0-255 (2*)
   - Auto-select the current file/slot after N seconds
@@ -66,6 +85,14 @@ Default values are marked by asterisk.
 - **nav-loop** = yes* | no
   - When navigating slots or a folder, loop at start/end of the list
 
+- **twobutton-action** = zero* | eject | rotary
+  - Actions of first two buttons
+  - **zero**: 1: Prev, 2: Next, Both: Slot 0
+  - **eject**: 1: Prev, 2: Next, Both: Eject/Insert
+  - **rotary**: 1: Up-dir, 2: Select, Both: -
+
+#### Display:
+
 - **display-off-secs** = 0-255 (60*)
   - Turn LCD/OLED display off after N seconds of inactivity
   - N=0: always off
@@ -82,30 +109,12 @@ Default values are marked by asterisk.
   - Select normal-width or narrow-width OLED display font
   - Narrow font compatible with unwidened Gotek display cutout
 
+#### Miscellaneous:
+
 - **step-volume** = 0-20 (10*)
   - Speaker volume (connected at jumper JB) when drive heads are moved
 
-- **side-select-glitch-filter** = 0-255 (0*)
-  - Filter glitches in the SIDE-select signal shorter than N microseconds
-  - Useful on some old hardware (eg. CP/M systems)
-
-- **ejected-on-startup** = yes | no*
-  - Disk image loaded or ejected at power on
-
-- **image-on-startup** = last* | static | init
-  - Which image (or folder) is selected at startup
-  - **last**: Last-selected item at power off (recorded in IMAGE_A.CFG)
-  - **static**: Static pathname specified in IMAGE_A.CFG
-  - **init**: First item in root folder
-
-- **display-probe-ms** = 0-65535 (2000*)
-  - Time in milliseconds to attempt to probe an attached display
-  - If you have a 2-digit LED display, or no display:
-    Set to 0 for faster startup
-
-- **twobutton-action** = zero* | eject | rotary
-  - Actions of first two buttons
-  - **zero**: 1: Prev, 2: Next, Both: Slot 0
-  - **eject**: 1: Prev, 2: Next, Both: Eject/Insert
-  - **rotary**: 1: Up-dir, 2: Select, Both: -
-  
+- **da-report-version** = quoted-string
+  - Report the specified version number to host software
+  - Empty string ("") means report the firmware version number
+  - For example: da-report-version = "v3.0.0.0"

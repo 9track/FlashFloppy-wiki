@@ -47,9 +47,20 @@ Default values are marked by asterisk.
   - **ibmpc**: IBM PC interface
   - **jc**: Specified by jumper JC (closed = IBM PC, open = Shugart)
 
+- **host** = unspecified* | akai
+  - Host platform: Improves image-format detection for generic types
+    such as IMG
+  - **akai**: Akai synths (eg. Akai S01)
+  - **unspecified**: Detection based on image-name suffix only
+
 - **side-select-glitch-filter** = 0-255 (0*)
   - Filter glitches in the SIDE-select signal shorter than N microseconds
   - Useful on some old hardware (eg. CP/M systems)
+
+- **track-change** = instant* | realtime
+  - Rotational offset of data after a track change
+  - **instant**: No rotation during track change
+  - **realtime**: Emulate rotation of disk while track is changing
 
 #### Startup & Initialisation:
 

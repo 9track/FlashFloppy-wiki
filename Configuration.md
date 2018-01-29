@@ -18,8 +18,9 @@ via the FF.CFG file, described below.
 ## FF.CFG Configuration File
 
 FlashFloppy has many configurable settings which can be specified in
-an INI-style configuration file called FF.CFG. An example is
-provided in the examples/ subfolder of the FlashFloppy distribution.
+an INI-style configuration file called FF.CFG, placed in the root
+folder or FF/ subfolder of your USB drive. An example is provided in
+the examples/ subfolder of the FlashFloppy distribution.
 
 ### Defaults
 

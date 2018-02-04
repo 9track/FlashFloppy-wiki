@@ -14,8 +14,8 @@ A retro floppy emulator for the ubiquitous Gotek hardware.
 - Compatible with the HxC ecosystem: Autoboot and Indexed
   modes supported, and HFE image files.
 
-FlashFloppy is Free and Open-Source Software. It maybe freely modified
-and redistributed, but please read the [more detailed
+FlashFloppy is Free and Open-Source Software. It may be freely
+modified and redistributed, but please read the [more detailed
 terms](Redistribution).
 
 Please read [here](Donations) if you wish to donate for FlashFloppy's

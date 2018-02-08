@@ -9,6 +9,7 @@
 ## Usage
 - [Operating Modes](Operating-Modes)
 - [Configuration](Configuration)
+- [Host Platforms](Host-Platforms)
 - [Error Messages](Error-Messages)
 
 ## Support

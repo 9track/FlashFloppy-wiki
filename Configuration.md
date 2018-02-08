@@ -110,6 +110,12 @@ Default values are marked by asterisk.
   - **eject**: 1: Prev, 2: Next, Both: Eject/Insert
   - **rotary**: 1: Up-dir, 2: Select, Both: -
 
+- **rotary** = none | simple* | gray
+  - Type of rotary encoder connected to pins PC10 and PC11
+  - **none**: No rotary encoder is connected
+  - **simple**: Cheap rotary encoder, both outputs HIGH at each detent
+  - **gray**: Higher quality encoder with proper Gray code quadrature output
+
 #### Display:
 
 - **display-off-secs** = 0-255 (60*)

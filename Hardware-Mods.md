@@ -106,6 +106,8 @@ buttons: anti-clockwise for down, and clockwise for up.
 
 Troubleshooting:
 - Directional controls are inverted: swap the A and B (aka CLK, DT) wires.
+- Four clicks are required to move a single step: specify
+  `rotary=gray` in FF.CFG
 - PCB modules only: Both directions move up (or down):
   - Connect + to 3.3V (marked in picture above); or
   - Remove pull-up resistors from the back of the PCB; or

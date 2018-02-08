@@ -18,8 +18,11 @@ host = akai
 
 BBC Micro systems using the original single-density 8271 controller
 require regular index pulses to avoid disk-not-ready errors
-([described here][bbc-problem]). This can be solved by updating DFS
-to the unofficial version 1.21, or the following FF.CFG options:
+([described here][bbc-problem]). These errors are reported on the
+video screen as `Drive fault 10 at xx/xx`.
+
+This issue is solved by updating DFS to the unofficial version 1.21,
+or by specifying the following FF.CFG options:
 ```
 track-change = realtime
 index-during-seek = yes

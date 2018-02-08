@@ -62,6 +62,13 @@ Default values are marked by asterisk.
   - **instant**: No rotation during track change
   - **realtime**: Emulate rotation of disk while track is changing
 
+- **index-during-seek** = yes | no*
+  - Are index pulses generated during seek operations?
+  - Modern drives suppress the index signal during seek
+  - Older systems may depend on constant index pulses (eg. BBC Micro)
+    - Use in tandem with *track-change = realtime* to avoid delayed
+      index pulses
+
 #### Startup & Initialisation:
 
 - **ejected-on-startup** = yes | no*
@@ -120,6 +127,12 @@ Default values are marked by asterisk.
 - **oled-font** = 7x16 | 8x16*
   - Select normal-width or narrow-width OLED display font
   - Narrow font compatible with unwidened Gotek display cutout
+
+- **display-type** = auto* | lcd-16x02 | oled-128x32 | oled-128x32-rotate
+  - **auto**: Auto-detect (7-seg LED, LCD, OLED)
+  - **lcd-16x02**: 16x2 backlit LCD with I2C backpack
+  - **oled-128x32**: 128x32 I2C OLED
+  - **oled-128x32-rotate**: As above but rotated 180 degrees
 
 #### Miscellaneous:
 

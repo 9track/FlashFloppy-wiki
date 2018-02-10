@@ -50,7 +50,7 @@ Default values are marked by asterisk.
 - **host** = unspecified* | akai
   - Host platform: Improves image-format detection for generic types
     such as IMG
-  - **akai**: Akai synths (eg. Akai S01)
+  - **akai**: Akai synths (eg. S01, S20, S950)
   - **unspecified**: Detection based on image-name suffix only
 
 - **side-select-glitch-filter** = 0-255 (0*)

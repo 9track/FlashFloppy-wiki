@@ -1,6 +1,8 @@
 ## Latest Release
 
 - **v0.9.8a**: [(Download)][v0.9.8a-zip] [(Notes)][v0.9.8a-notes]
+- **Reports of write errors on this release!** Consider installing
+  [v0.9.7a][v0.9.7a-zip] instead.
 
 1. [**Download**][v0.9.8a-zip] the ZIP file
 2. [**Program**](Firmware-Programming) a brand new Gotek; or

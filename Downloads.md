@@ -1,10 +1,8 @@
 ## Latest Release
 
-- **v0.9.8a**: [(Download)][v0.9.8a-zip] [(Notes)][v0.9.8a-notes]
-- **Reports of write errors on this release!** Consider installing
-  [v0.9.7a][v0.9.7a-zip] instead.
+- **v0.9.9a**: [(Download)][v0.9.9a-zip] [(Notes)][v0.9.9a-notes]
 
-1. [**Download**][v0.9.8a-zip] the ZIP file
+1. [**Download**][v0.9.9a-zip] the ZIP file
 2. [**Program**](Firmware-Programming) a brand new Gotek; or
 3. [**Update**](Firmware-Update) an existing install
 
@@ -17,8 +15,8 @@
 
 You can also browse through all available releases [here][all].
 
-[v0.9.8a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v0.9.8a/flashfloppy_v0.9.8a.zip
-[v0.9.8a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v0.9.8a
+[v0.9.9a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v0.9.9a/flashfloppy_v0.9.9a.zip
+[v0.9.9a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v0.9.9a
 
 [v0.9.7a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v0.9.7a/flashfloppy_v0.9.7a.zip
 [v0.9.7a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v0.9.7a

@@ -53,6 +53,12 @@ Default values are marked by asterisk.
   - **akai**: Akai synths (eg. S01, S20, S950)
   - **unspecified**: Detection based on image-name suffix only
 
+- **write-protect** = yes | no*
+  - Are images write protected when initially mounted?
+    - Protection can be toggled by holding eject for 2 seconds
+  - **yes**: Forcibly write-protect images
+  - **no**: Respect the FAT read-only attribute
+
 - **side-select-glitch-filter** = 0-255 (0*)
   - Filter glitches in the SIDE-select signal shorter than N microseconds
   - Useful on some old hardware (eg. CP/M systems)

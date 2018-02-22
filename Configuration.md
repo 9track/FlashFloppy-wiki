@@ -130,17 +130,18 @@ Default values are marked by asterisk.
   - LCD/OLED long filename scroll rate in milliseconds per update
   - Larger value means slower scroll
 
+- **display-type** = auto* | lcd-16x02 | oled-128x32[-rotate][-narrow]
+  - **auto**: Auto-detect (7-seg LED, LCD, OLED)
+  - **lcd-16x02**: 16x2 backlit LCD with I2C backpack
+  - **oled-128x32**: 128x32 I2C OLED
+    - **-rotate**: OLED view is rotated 180 degrees
+    - **-narrow**: OLED view is restricted to Gotek display cutout
+
 - **oled-font** = 6x13* | 8x16
   - Select 6px- or 8px-wide OLED display font
   - 6x13 font permits:
     - More characters per row
-    - Compatibility with unwidened Gotek display cutout
-
-- **display-type** = auto* | lcd-16x02 | oled-128x32 | oled-128x32-rotate
-  - **auto**: Auto-detect (7-seg LED, LCD, OLED)
-  - **lcd-16x02**: 16x2 backlit LCD with I2C backpack
-  - **oled-128x32**: 128x32 I2C OLED
-  - **oled-128x32-rotate**: As above but rotated 180 degrees
+    - Use of Gotek display cutout (with *display-type=oled-128x32-narrow*)
 
 #### Miscellaneous:
 

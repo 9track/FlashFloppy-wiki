@@ -130,9 +130,11 @@ Default values are marked by asterisk.
   - LCD/OLED long filename scroll rate in milliseconds per update
   - Larger value means slower scroll
 
-- **oled-font** = 7x16 | 8x16*
-  - Select normal-width or narrow-width OLED display font
-  - Narrow font compatible with unwidened Gotek display cutout
+- **oled-font** = 6x13* | 8x16
+  - Select 6px- or 8px-wide OLED display font
+  - 6x13 font permits:
+    - More characters per row
+    - Compatibility with unwidened Gotek display cutout
 
 - **display-type** = auto* | lcd-16x02 | oled-128x32 | oled-128x32-rotate
   - **auto**: Auto-detect (7-seg LED, LCD, OLED)

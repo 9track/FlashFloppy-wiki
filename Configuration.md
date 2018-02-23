@@ -132,9 +132,19 @@ Default values are marked by asterisk.
 - **display-on-activity** = yes* | no
   - Automatically switch LCD/OLED display on when there is drive activity
 
-- **display-scroll-rate** = 100-65535 (400*)
-  - LCD/OLED long filename scroll rate in milliseconds per update
+- **display-scroll-rate** = 100-65535 (200*)
+  - LCD/OLED long filename scroll rate (ms per update)
   - Larger value means slower scroll
+
+- **display-scroll-pause** = 0-65535 (2000*)
+  - LCD/OLED long filename scroll start/end pause (ms)
+  - N=0: Endless looping scroll
+
+- **nav-scroll-rate** = 0-65535 (80*)
+  - LCD/OLED long filename scroll rate during navigation (ms per update)
+
+- **nav-scroll-pause** = 0-65535 (300*)
+  - LCD/OLED long filename pause before scroll starts during navigation
 
 - **display-type** = auto* | lcd-16x02 | oled-128x32[-rotate][-narrow]
   - **auto**: Auto-detect (7-seg LED, LCD, OLED)

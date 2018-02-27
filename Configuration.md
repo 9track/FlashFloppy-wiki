@@ -157,7 +157,7 @@ Default values are marked by asterisk.
   - LCD/OLED long filename scroll rate during navigation (ms per update)
 
 - **nav-scroll-pause** = 0-65535 (300*)
-  - LCD/OLED long filename pause before scroll starts during navigation
+  - LCD/OLED long filename pause before scroll starts during navigation (ms)
 
 #### Miscellaneous:
 

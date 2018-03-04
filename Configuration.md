@@ -47,10 +47,11 @@ Default values are marked by asterisk.
   - **ibmpc**: IBM PC interface
   - **jc**: Specified by jumper JC (closed = IBM PC, open = Shugart)
 
-- **host** = unspecified* | akai
+- **host** = unspecified* | akai | gem
   - Host platform: Improves image-format detection for generic types
     such as IMG
-  - **akai**: Akai synths (eg. S01, S20, S950)
+  - **akai**: Akai synths (S01, S20, S950)
+  - **gem**: General Music (S2, S3, S2R)
   - **unspecified**: Detection based on image-name suffix only
 
 - **write-protect** = yes | no*
@@ -68,12 +69,9 @@ Default values are marked by asterisk.
   - **instant**: No rotation during track change
   - **realtime**: Emulate rotation of disk while track is changing
 
-- **index-during-seek** = yes | no*
-  - Are index pulses generated during seek operations?
-  - Modern drives suppress the index signal during seek
+- **index-suppression** = yes* | no
+  - Are index pulses suppressed when RDATA and WDATA inactive?
   - Older systems may depend on constant index pulses (eg. BBC Micro)
-    - Use in tandem with *track-change = realtime* to avoid delayed
-      index pulses
 
 #### Startup & Initialisation:
 

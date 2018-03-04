@@ -21,11 +21,17 @@ require regular index pulses to avoid disk-not-ready errors
 ([described here][bbc-problem]). These errors are reported on the
 video screen as `Drive fault 10 at xx/xx`.
 
-This issue is solved by updating DFS to the unofficial version 1.21,
-or by specifying the following FF.CFG options:
+This issue is solved by specifying the following FF.CFG option:
 ```
-track-change = realtime
-index-during-seek = yes
+index-suppression = no
+```
+
+## General Music (GEM) Synthesisers
+
+GEM systems using the 1.6MB high-density disk format require explicit
+configuration in FF.CFG to recognise IMG files correctly:
+```
+host = gem
 ```
 
 ## IBM PC

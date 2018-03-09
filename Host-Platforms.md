@@ -26,6 +26,10 @@ This issue is solved by specifying the following FF.CFG option:
 index-suppression = no
 ```
 
+## E-mu ESI-32
+
+Requires jumpers at S0 and JC. Works with 1.44MB (HD) IMG files.
+
 ## Ensoniq
 
 Ensoniq systems use custom 800kB and 1600kB disk formats which are

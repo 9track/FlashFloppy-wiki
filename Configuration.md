@@ -44,13 +44,15 @@ Default values are marked by asterisk.
 - **interface** = shugart | ibmpc | jc*
   - Pin assignments of the floppy-drive interface
   - **shugart**: Shugart interface (Amiga, Atari ST, many others)
-  - **ibmpc**: IBM PC interface
+  - **ibmpc**: IBM PC interface, no output on pin 2
+  - **ibmpc-hdout**: IBM PC, high-density-select output on pin 2
   - **jc**: Specified by jumper JC (closed = IBM PC, open = Shugart)
 
-- **host** = unspecified* | akai | gem
+- **host** = unspecified* | akai | ensoniq | gem
   - Host platform: Improves image-format detection for generic types
     such as IMG
   - **akai**: Akai synths (S01, S20, S950)
+  - **ensoniq**: Ensoniq synths (ASR/TS series, and others)
   - **gem**: General Music (S2, S3, S2R)
   - **unspecified**: Detection based on image-name suffix only
 

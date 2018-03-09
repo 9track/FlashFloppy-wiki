@@ -26,6 +26,21 @@ This issue is solved by specifying the following FF.CFG option:
 index-suppression = no
 ```
 
+## Ensoniq
+
+Ensoniq systems use custom 800kB and 1600kB disk formats which are
+supported as IMG files if the host-type is configured in FF.CFG:
+```
+host = ensoniq
+```
+
+Some Ensoniq series (notably the ASR and TS series) require an IBM-PC
+interface with density-select output. These require a jumper on S0
+**only**, and the following additional line in FF.CFG:
+```
+interface = ibmpc-hdout
+```
+
 ## General Music (GEM) Synthesisers
 
 GEM systems using the 1.6MB high-density disk format require explicit

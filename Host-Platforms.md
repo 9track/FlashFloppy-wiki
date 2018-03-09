@@ -6,6 +6,19 @@ Most systems require Shugart interface (the default) and select line 0
 factory-fresh Gotek programmed with FlashFloppy firmware, requiring
 only a physical jumper at the rear to be moved from S1 to S0.
 
+If this does not work then also try the following:
+- Jumper at S1 only
+- Jumpers at JC and S0
+- Jumpers at JC and S1
+
+If the system still does not work and the Gotek green LED is
+permanently lit then you may need to try connecting the ribbon cable
+'upside down'.
+
+This gives a total of eight possible jumper/ribbon configurations to
+try, and there are further instructions for certain specific systems
+listed below.
+
 ## Akai Synthesisers
 
 Akai systems using the 1.6MB high-density disk format require explicit

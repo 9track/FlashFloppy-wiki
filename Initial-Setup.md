@@ -19,6 +19,9 @@ the selection jumper at location S1 at the rear of the Gotek.
 An alternative method to specify the interface mode (Shugart or PC) is
 via the [FF.CFG file][ffcfg].
 
+See [Host Platforms](Host-Platforms) for detailed instructions and
+troubleshooting for specific host systems.
+
 ## Image Navigation Modes
 
 FlashFloppy supports three different operating modes. For the best

@@ -35,7 +35,7 @@ development.
 
 ### Usage
 - [Initial Setup](Initial-Setup)
-- [Configuration](Configuration)
+- [FF.CFG Configuration File](FF.CFG-Configuration-File)
 - [Host Platforms](Host-Platforms)
 - [Error Messages](Error-Messages)
 

@@ -84,7 +84,7 @@ buttons on the front of the Gotek. Holding a button will cycle faster
 through the populated slots. Pressing both buttons will take you
 immediately to the file selector.
 
-[ffcfg]: Configuration#ffcfg-configuration-file
+[ffcfg]: FF.CFG-Configuration-File
 [lcd]: https://github.com/keirf/FlashFloppy/wiki/Hardware-Mods#lcd-display
 [oled]: https://github.com/keirf/FlashFloppy/wiki/Hardware-Mods#oled-display
 [hxc_web]: http://hxc2001.com/

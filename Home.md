@@ -28,7 +28,7 @@ development.
 ### Download
  - [**Download FlashFloppy**](Downloads)
 
-### Initial Setup
+### Installation
 - [Firmware Programming](Firmware-Programming)
 - [Firmware Update](Firmware-Update)
 - [Hardware Mods](Hardware-Mods)

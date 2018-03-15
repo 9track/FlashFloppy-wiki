@@ -19,15 +19,16 @@ This gives a total of eight possible jumper/ribbon configurations to
 try, and there are further instructions for certain specific systems
 listed below.
 
-## Akai Synthesisers
+## Acorn Archimedes
 
-Akai systems using the 1.6MB high-density disk format require explicit
-configuration in FF.CFG to recognise IMG files correctly:
+Some or all models may use regular index pulses to determine whether
+a disk is inserted in the drive. If you are seeing spurious "drive
+empty" messages then you need to add the following to FF.CFG:
 ```
-host = akai
+index-suppression = no
 ```
 
-## BBC Micro
+## Acorn BBC Micro
 
 BBC Micro systems using the original single-density 8271 controller
 require regular index pulses to avoid disk-not-ready errors
@@ -37,6 +38,14 @@ video screen as `Drive fault 10 at xx/xx`.
 This issue is solved by specifying the following FF.CFG option:
 ```
 index-suppression = no
+```
+
+## Akai Synthesisers
+
+Akai systems using the 1.6MB high-density disk format require explicit
+configuration in FF.CFG to recognise IMG files correctly:
+```
+host = akai
 ```
 
 ## E-mu ESI-32

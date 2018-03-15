@@ -7,7 +7,7 @@
 - [Hardware Mods](Hardware-Mods)
 
 ## Usage
-- [Operating Modes](Operating-Modes)
+- [Initial Setup](Initial-Setup)
 - [Configuration](Configuration)
 - [Host Platforms](Host-Platforms)
 - [Error Messages](Error-Messages)

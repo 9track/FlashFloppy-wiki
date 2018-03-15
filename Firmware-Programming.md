@@ -7,8 +7,7 @@ by [serial](#method-1-serial-programming) or
 A nice video summary of this method using programming software on
 Windows is available on Youtube courtesy of Kris Cochrane. It also
 includes the [OLED Display](Hardware-Mods#oled-display) and
-[Piezo Sounder](Hardware-Mods#speaker) mods, and shows how to set up
-in Autoboot mode with the HxC file selector:
+[Piezo Sounder](Hardware-Mods#speaker) mods:
 
 [![FlashFloppy custom firmware install](http://img.youtube.com/vi/-K31S2xqZIk/0.jpg)](http://www.youtube.com/watch?v=-K31S2xqZIk "FlashFloppy custom firmware install")
 

@@ -22,10 +22,10 @@ hardware based on a cheaper STM32 chip and with an SD card interface
 **April 2015**: HxC project releases a
 [commercial firmware for Gotek][hxc_readme]. 
 
-**May 2015**: I capitulated and imported the FatFS library for
-filesystem handling, which is distributed under a generous MIT
-license. I had it glued to the SD block layer, and was starting to
-implement the floppy-interface logic itself.
+**May 2015**: I import the FatFS library for filesystem handling,
+which is distributed under a generous MIT license. I glue it to
+the SD block layer, and start to implement the floppy-interface
+logic itself.
 
 **August 2015**: The floppy interface supports reading ADF, HFE
 and Supercard Pro image files.
@@ -35,10 +35,9 @@ mess with hardware designs, using cheaper STM32F103 boards, such
 as the $2 "blue pill".
 
 **April 2017**: Manuel Teira reignites my interest in the Gotek
-hardware when he contacts me to ask about integrating a USB
-stack. Of course I have already capitulated on implementing
-everything myself, and there is a convenient vendor-supplied USB
-Host library which could be deployed.
+hardware when he contacts me to ask about integrating a USB stack. A
+little research discovers a convenient vendor-supplied USB Host
+library which could be deployed.
 
 **June 2017**: Integrating USB into the FlashFloppy codebase
 is a tough job for a third party. So I decide to take the task

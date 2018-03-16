@@ -28,6 +28,13 @@ empty" messages then you need to add the following to FF.CFG:
 index-suppression = no
 ```
 
+To use ADFS D/E/F sector images, which usually have suffix ADF, you
+must explicitly configure the host type in FF.CFG as Amiga sector
+images share the same suffix:
+```
+host = acorn
+```
+
 ## Acorn BBC Micro
 
 BBC Micro systems using the original single-density 8271 controller

@@ -3,9 +3,15 @@ LED, LCD, or OLED screen.
 
 ### `Fnn` / `*FAT*nn*` / `*FATFS* nn`
 
-A 2-digit error code defined by the FatFS library. Usually indicates
-bad physical media or a bad filesystem. Try formatting or replacing
-your USB drive.
+A 2-digit error code defined by the FatFS library.
+
+In HxC Compatibility mode this probably means you have stale slot
+assignments in HXCSDFE.CFG. You should copy a fresh version of
+HXCSDFE.CFG to your USB stick and reassign slots using the Autoboot
+file selector.
+
+In other cases this error usually indicates bad physical media or a bad
+filesystem. Try formatting or replacing your USB drive.
 
 ### `Enn` / `*ERR*nn*` / `*ERROR* nn`
 

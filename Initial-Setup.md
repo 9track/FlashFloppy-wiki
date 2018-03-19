@@ -87,8 +87,17 @@ buttons on the front of the Gotek. Holding a button will cycle faster
 through the populated slots. Pressing both buttons will take you
 immediately to the file selector.
 
+**Important Note**: HxC assigns images to slots by physical location
+on the USB stick, rather than by full path name. This means that if
+you move files around within the filesystem, the slot assignments will
+break with unpredictable results (FlashFloppy [error messages][error],
+garbage disk images, etc). You **must not** copy a new image over an
+old, or file-by-file copy one USB stick to another, unless you
+subsequently refresh the slot assignments in HXCSDFE.CFG.
+
 [ffcfg]: FF.CFG-Configuration-File
-[lcd]: https://github.com/keirf/FlashFloppy/wiki/Hardware-Mods#lcd-display
-[oled]: https://github.com/keirf/FlashFloppy/wiki/Hardware-Mods#oled-display
+[lcd]: Hardware-Mods#lcd-display
+[oled]: Hardware-Mods#oled-display
+[error]: Error-Messages
 [hxc_web]: http://hxc2001.com/
 [hxc_dl]: http://hxc2001.com/download/floppy_drive_emulator/HXCFEUSB_HFE_beta_firmware.zip

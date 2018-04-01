@@ -21,9 +21,9 @@ listed below.
 
 ## Acorn Archimedes
 
-Some or all models may use regular index pulses to determine whether
-a disk is inserted in the drive. If you are seeing spurious "drive
-empty" messages then you need to add the following to FF.CFG:
+Some later models, A5000 onward, use index pulses to determine
+whether a disk is inserted in the drive. If you are seeing spurious
+"drive empty" messages then add the following to FF.CFG:
 ```
 index-suppression = no
 ```

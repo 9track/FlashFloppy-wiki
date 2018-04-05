@@ -19,6 +19,12 @@ This gives a total of eight possible jumper/ribbon configurations to
 try, and there are further instructions for certain specific systems
 listed below.
 
+A final note: In most cases FlashFloppy requires a straight floppy
+cable with no 'twist' between the connectors. If you do use a twisted
+cable, you should jumper MO instead of S0. The exception is the one
+case that the twist was designed for: connecting FlashFloppy as Drive
+B to a PC-compatible floppy header.
+
 ## Acorn Archimedes
 
 Some later models, A5000 onward, use index pulses to determine

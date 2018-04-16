@@ -107,6 +107,10 @@ configured in FlashFloppy:
 
 [bbc-problem]: http://www.sprow.co.uk/bbc/floppydrives.htm
 
+## Memotech
+
+Requires `host = memotech` in FF.CFG to correctly identify IMG files.
+
 ## TI-99/4A
 
 Requires `host = ti99` in FF.CFG to identify DSK images as V9T9 format.

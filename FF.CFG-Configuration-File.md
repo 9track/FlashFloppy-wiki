@@ -31,13 +31,15 @@ Default values are marked by asterisk.
   - **akai-s950**: Akai S950
   - **jc**: Specified by jumper JC (closed = IBM PC, open = Shugart)
 
-- **host** = unspecified* | akai | ensoniq | gem | memotech
+- **host** = unspecified* | acorn | akai | ensoniq | gem | memotech | ti99
   - Host platform: Improves image-format detection for generic types
     such as IMG
+  - **acorn**: Acorn ADFS
   - **akai**: Akai synths (S01, S20, S950)
   - **ensoniq**: Ensoniq synths (ASR/TS series, and others)
   - **gem**: General Music (S2, S3, S2R)
   - **memotech**: Memotech
+  - **ti99**: TI-99/4A
   - **unspecified**: Detection based on image-name suffix only
 
 - **write-protect** = yes | no*

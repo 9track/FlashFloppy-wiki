@@ -55,10 +55,17 @@ index-suppression = no
 
 ## Akai Synthesisers
 
-Akai systems using the 1.6MB high-density disk format require explicit
-configuration in FF.CFG to recognise IMG files correctly:
+Akai systems require explicit configuration in FF.CFG to recognise IMG
+files correctly:
 ```
 host = akai
+```
+
+The correct jumper selection is usually S0, with the following
+interface selections in FF.CFG, depending on model:
+```
+interface = ibmpc-hdout # S3000
+interface = akai-s950   # S950
 ```
 
 ## E-mu ESI-32
@@ -98,5 +105,8 @@ configured in FlashFloppy:
 * Strap select-line jumper S1 at the rear of the Gotek
   * S0, S2, MO should all be left open
 
-
 [bbc-problem]: http://www.sprow.co.uk/bbc/floppydrives.htm
+
+## TI-99/4A
+
+Requires `host = ti99` in FF.CFG to identify DSK images as V9T9 format.

@@ -23,11 +23,12 @@ Default values are marked by asterisk.
 
 ### Drive Emulation:
 
-- **interface** = shugart | ibmpc | jc*
+- **interface** = shugart | ibmpc | ibmpc-hdout | akai-s950 | jc*
   - Pin assignments of the floppy-drive interface
   - **shugart**: Shugart interface (Amiga, Atari ST, many others)
   - **ibmpc**: IBM PC interface, no output on pin 2
   - **ibmpc-hdout**: IBM PC, high-density-select output on pin 2
+  - **akai-s950**: Akai S950
   - **jc**: Specified by jumper JC (closed = IBM PC, open = Shugart)
 
 - **host** = unspecified* | akai | ensoniq | gem

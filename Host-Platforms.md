@@ -68,6 +68,23 @@ interface = ibmpc-hdout # S3000
 interface = akai-s950   # S950
 ```
 
+## Commodore Amiga
+
+To replace an existing Amiga internal drive usually requires a jumper
+on S0 only. One exception are Escom A1200 boards, which are modded to
+use PC drives: if you have one of these then you require a jumper on
+JC (or `interface = ibmpc` in FF.CFG). For improved compatibility you
+can undo the Escom mod as [described by RetroGameModz][a1200_mod].
+
+Replacing an external drive depends on the enclosure or cable being
+used. Amiga external drive enclosures usually include the circuitry to
+allow the Amiga to identify the presence of the drive. In this case
+the Gotek with S0 jumper is usually a straight swap for the old floppy
+drive. If using a passive cable such as this [Ebay item][amiga_cable]
+then be aware that this identification circuitry is missing, but for
+arcane reasons identification will typically happen to work as long as
+the Gotek has an image mounted when the Amiga boots.
+
 ## E-mu ESI-32
 
 Requires jumpers at S0 and JC. Works with 1.44MB (HD) IMG files.
@@ -114,3 +131,6 @@ Requires `host = memotech` in FF.CFG to correctly identify IMG files.
 ## TI-99/4A
 
 Requires `host = ti99` in FF.CFG to identify DSK images as V9T9 format.
+
+[a1200_mod]: https://www.youtube.com/watch?v=G6fYOjTYvXM
+[amiga_cable]: https://www.ebay.co.uk/itm/272363110859

@@ -70,11 +70,15 @@ interface = akai-s950   # S950
 
 ## Commodore Amiga
 
+### Internal Drive (DF0)
+
 To replace an existing Amiga internal drive usually requires a jumper
 on S0 only. One exception are Escom A1200 boards, which are modded to
 use PC drives: if you have one of these then you require a jumper on
 JC (or `interface = ibmpc` in FF.CFG). For improved compatibility you
 can undo the Escom mod as [described by RetroGameModz][a1200_mod].
+
+### External Drive (DF1-DF3)
 
 Replacing an external drive depends on the enclosure or cable being
 used. Amiga external drive enclosures usually include the circuitry to
@@ -83,7 +87,55 @@ the Gotek with S0 jumper is usually a straight swap for the old floppy
 drive. If using a passive cable such as this [Ebay item][amiga_cable]
 then be aware that this identification circuitry is missing, but for
 arcane reasons identification will typically happen to work as long as
-the Gotek has an image mounted when the Amiga boots.
+the Gotek has an image mounted when the Amiga boots. If you are having
+problems with your drive being identified, see
+[Forcing Drive Identification](#forcing-drive-identification) below.
+
+### High-Density Disks
+
+Amiga Kickstart versions 2.05 and later support high-density disks
+with 1760kB formatted capacity. This enhancement required a customised
+(and nowadays expensive!) HD drive modified to rotate at half speed
+and emit a special ID sequence to the Amiga when an HD disk is inserted.
+
+FlashFloppy supports this enhancement for 1760kB ADF images, but the
+high-density ID sequence must be [explicitly enabled in
+FF.CFG](#forcing-drive-identification).
+
+### Forcing Drive Identification
+
+Amiga hosts expect a drive ID sequence from external and
+Amiga-high-density drives on pin 34 of the floppy interface when the
+drive motor is disabled (pin 34 carries the Ready/RDY signal
+when the drive motor is enabled). In contrast, FlashFloppy's default
+interface mode (`interface = shugart`) permanently attaches RDY
+to pin 34, regardless of motor.
+
+This default behaviour usually works fine:
+* Drive ID signalling is not a strict requirement for DF0
+* External drive enclosures often implement the drive-ID circuitry
+* A mounted disk image asserts RDY which happens to
+  match the Amiga ID sequence for a DD drive anyway
+
+However, there are a couple of cases where this default behaviour may
+*not* suffice:
+* Using high-density disk images (1760kB formatted capacity)
+* Using as an external drive with a passive interface cable, if
+  FlashFloppy does not assert RDY during boot (eg. eject-at-power-on,
+  no USB stick, or too slow to initialise)
+  
+In these cases FlashFloppy can be forced to emit the drive ID on pin
+34 at all times, replacing RDY, by adding `interface = amiga` to
+FF.CFG.
+
+When HD images are not being used, and when FlashFloppy is being used
+as DF0 or without problems as DF1-DF3, then it is best to use the
+default interface type (`interface = shugart`) as this gives more
+accurate behaviour on pin 34 in normal use while the drive motor is
+enabled. Exact emulation of pin 34 behaviour is not possible on
+unmodified Gotek hardware as the motor signal is not connected to
+Gotek's microcontroller. More accurate support, for modified or
+enhanced Gotek setups, may be implemented in future.
 
 ## E-mu ESI-32
 

@@ -1,3 +1,14 @@
+- [General Notes](#general-notes)
+- [Acorn Archimedes](#acorn-archimedes)
+- [Acorn BBC Micro](#acorn-bbc-micro)
+- [Akai Synthesisers](#akai-synthesisers)
+- [Commodore Amiga](#commodore-amiga)
+- [E-mu ESI-32](#e-mu-esi-32)
+- [Ensoniq](#ensoniq)
+- [General Music (GEM) Synthesisers](#general-music-gem-synthesisers)
+- [IBM PC](#ibm-pc)
+- [Memotech](#memotech)
+- [TI-99/4A](#ti-994a)
 
 ## General Notes
 

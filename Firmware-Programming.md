@@ -60,9 +60,11 @@ then use stm32flash to do the programming:
 ## Method 2: USB Programming
 
 This method requires a USB-A to USB-A cable, and you should program
-the ***.hex** file contained in the FlashFloppy distribution. For more
+the ***.dfu** file contained in the FlashFloppy distribution. For more
 details read [Nick Lines' how-to guide](http://www.binarydevotion.com/?p=228),
-or watch the following Youtube video:
+or watch the following Youtube video. **Note:** The ***.dfu** file is now
+included in the FlashFloppy distribution; there is no need to create it from
+the ***.hex** file and those steps can be skipped.
 
 [![Flash Gotek without Serial Adapter](http://img.youtube.com/vi/yUOyZB9cro4/0.jpg)](http://www.youtube.com/watch?v=yUOyZB9cro4 "Flash Gotek without Serial Adapter")
 

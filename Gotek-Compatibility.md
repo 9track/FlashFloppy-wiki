@@ -4,8 +4,9 @@ SFRM72-U100; though not all sellers mention the model name
 explicitly). These 34-pin models all share the same basic design,
 varying only in preinstalled firmware and user interface (display and
 buttons). Since the fixed-format (720kB vs 1.44MB) stock firmware is
-replaced by FlashFloppy, this particular distinction between Gotek
-models is irrelevant.
+being replaced, this particular distinction between Gotek models is
+irrelevant: all of them can handle an almost infinite range of disk
+formats with FlashFloppy installed.
 
 ![34-pin Gotek](assets/gotek-34pin.jpg)
 

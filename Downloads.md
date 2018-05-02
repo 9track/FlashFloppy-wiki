@@ -3,7 +3,8 @@
 - **v0.9.19a**: [(Download)][v0.9.19a-zip] [(Notes)][v0.9.19a-notes]
 
 1. [**Download**][v0.9.19a-zip] the ZIP file
-2. [**Program**](Firmware-Programming) a brand new Gotek; or
+2. [**Program**](Firmware-Programming) a brand new
+   [Gotek](Gotek-Compatibility); or
 3. [**Update**](Firmware-Update) an existing install
 
 ## Old Releases

@@ -2,6 +2,7 @@
 - [**Download FlashFloppy**](Downloads)
 
 ## Installation
+- [Gotek Compatibility](Gotek-Compatibility)
 - [Firmware Programming](Firmware-Programming)
 - [Firmware Update](Firmware-Update)
 - [Hardware Mods](Hardware-Mods)

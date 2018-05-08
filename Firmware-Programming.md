@@ -60,12 +60,25 @@ then use stm32flash to do the programming:
 ## Method 2: USB Programming
 
 This method requires a USB-A to USB-A cable, and you should program
-the ***.dfu** file contained in the FlashFloppy distribution. For more
+the ***.dfu** file contained in the FlashFloppy distribution.
+
+### Windows
+
+For more
 details read [Nick Lines' how-to guide](http://www.binarydevotion.com/?p=228),
 or watch the following Youtube video. **Note:** The ***.dfu** file is now
 included in the FlashFloppy distribution; there is no need to create it from
 the ***.hex** file and those steps can be skipped.
 
 [![Flash Gotek without Serial Adapter](http://img.youtube.com/vi/yUOyZB9cro4/0.jpg)](http://www.youtube.com/watch?v=yUOyZB9cro4 "Flash Gotek without Serial Adapter")
+
+### Linux / Mac
+
+Requires the `dfu-util` command-line tool which can be downloaded via your
+package manager (Linux), or Homebrew (on MacOS). Programming is then as simple
+as (for v0.9.19a in this example):
+```
+sudo dfu-util -a 0 -D flashfloppy_v0.9.19a/FF_Gotek-v0.9.19a.dfu
+```
 
 [an2606]: http://www.st.com/resource/en/application_note/cd00167594.pdf

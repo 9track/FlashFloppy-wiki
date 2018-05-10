@@ -78,7 +78,17 @@ Requires the `dfu-util` command-line tool which can be downloaded via your
 package manager (Linux), or Homebrew (on MacOS). Programming is then as simple
 as (for v0.9.19a in this example):
 ```
+sudo sfu-util -a 0 -s :unprotect:force -D flashfloppy_v0.9.19a/FF_Gotek-v0.9.19a.dfu
 sudo dfu-util -a 0 -D flashfloppy_v0.9.19a/FF_Gotek-v0.9.19a.dfu
 ```
+
+The first line is only needed if the Gotek Flash is read-protected (this
+is the case for factory-fresh Goteks). Since the `unprotect` command resets
+the Gotek, you may need to wait some seconds before issuing the second
+command, while the DFU device is re-enumerated.
+
+There are reports of some issues connecting as a DFU device to
+MacOS. In some cases this can be solved by connecting via an external
+USB hub.
 
 [an2606]: http://www.st.com/resource/en/application_note/cd00167594.pdf

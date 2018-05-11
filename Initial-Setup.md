@@ -67,15 +67,11 @@ image type can be used.
 ## HxC Compatibility mode
 
 This mode requires HXCSDFE.CFG and an AUTOBOOT.HFE image compatible
-with your system. These files are available for Amiga, Atari ST
-and Amstrad CPC from the [HxC project][hxc_web]:
-- **Download:** [ZIP File][hxc_dl]
-- **Subfolder:** Next_WIP_Alpha_Firmware_And_Tools
-
-Within the subfolder find the AUTOBOOT.HFE file for your platform, and
-use the HXCSDFE.CFG file in the same subfolder if present, else use
-the generic file from the Autoboot-mode subfolder. These files must be
-placed in the root of your USB drive.
+with your system, copied to the root of your USB drive. Supported
+systems include [Amiga](#amiga), [Atari ST](#atari-st), and [Amstrad
+CPC](#amstrad-cpc). Note that for enhanced compatibility, the correct
+files for Amiga and Atari ST are included in the FlashFloppy release
+distribution.
 
 The Gotek buttons cycle between the assigned slots in the config
 file. To reassign slots boot the file selector: this is immediately
@@ -95,9 +91,24 @@ garbage disk images, etc). You **must not** copy a new image over an
 old, or file-by-file copy one USB stick to another, unless you
 subsequently refresh the slot assignments in HXCSDFE.CFG.
 
+#### Amiga
+
+Copy the following files to the root of your USB drive:
+- HxC_Compat_Mode/Amiga/AUTOBOOT.HFE
+- HxC_Compat_Mode/HXCSDFE.CFG
+
+#### Atari ST
+
+Copy the following files to the root of your USB drive:
+- HxC_Compat_Mode/Atari_ST/AUTOBOOT.HFE
+- HxC_Compat_Mode/HXCSDFE.CFG
+
+#### Amstrad CPC
+
+The latest files can be found on the [CPC scene website][cpc_hxc].
+
 [ffcfg]: FF.CFG-Configuration-File
 [lcd]: Hardware-Mods#lcd-display
 [oled]: Hardware-Mods#oled-display
 [error]: Error-Messages
-[hxc_web]: http://hxc2001.com/
-[hxc_dl]: http://hxc2001.com/download/floppy_drive_emulator/HXCFEUSB_HFE_beta_firmware.zip
+[cpc_hxc]: http://norecess.cpcscene.net/news/hxc-floppy-emulator-manager-v35-released

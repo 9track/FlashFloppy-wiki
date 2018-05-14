@@ -9,6 +9,7 @@
 - [IBM PC](#ibm-pc)
 - [Memotech](#memotech)
 - [TI-99/4A](#ti-994a)
+- [UKNC, DVK](#uknc-dvk)
 
 ## General Notes
 
@@ -197,3 +198,8 @@ Requires `host = ti99` in FF.CFG to identify DSK images as V9T9 format.
 
 [a1200_mod]: https://www.youtube.com/watch?v=G6fYOjTYvXM
 [amiga_cable]: https://www.ebay.co.uk/itm/272363110859
+
+## UKNC, DVK
+
+These Soviet PDP-11 clones have a modified IBM track format which must
+be explicitly configured via `host = uknc` in FF.CFG.

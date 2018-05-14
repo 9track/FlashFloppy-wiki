@@ -43,6 +43,7 @@ Default values are marked by asterisk.
   - **gem**: General Music (S2, S3, S2R)
   - **memotech**: Memotech
   - **ti99**: TI-99/4A
+  - **uknc**: UKNC, DVK (Soviet PDP-11)
   - **unspecified**: Detection based on image-name suffix only
 
 - **write-protect** = yes | no*

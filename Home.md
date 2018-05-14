@@ -16,6 +16,7 @@ A retro floppy emulator for the ubiquitous Gotek hardware.
   - Ensoniq (ASR, TS, etc)
   - General Music (S2, S3, S2R)
   - Memotech
+  - UKNC, DVK (Soviet PDP-11)
   - IBM PC and many others
 
 FlashFloppy is Free and Open-Source Software. It may be freely

@@ -26,7 +26,8 @@ A 2-digit error code defined by the FlashFloppy firmware:
   Delete it from the USB drive and it will be automatically recreated.
 - **34** No entries to navigate: Direct Navigation mode found no valid
   directories or image files to display. Add some valid image files to
-  the USB drive.
+  the USB drive. Subfolders are accessible only when using an LCD/OLED
+  display.
 - **35** Path too deep: Folders are nested too deeply to navigate.
 
 ### `USB` / `USB Power Fault`

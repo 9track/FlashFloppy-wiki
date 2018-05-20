@@ -190,7 +190,11 @@ configured in FlashFloppy:
 
 ## Memotech
 
-Requires `host = memotech` in FF.CFG to correctly identify IMG files.
+Memotech systems require the following options in FF.CFG:
+```
+host = memotech         # auto-detect IMG layout
+index-suppression = no  # SDX/FDX require regular index pulses 
+```
 
 ## TI-99/4A
 

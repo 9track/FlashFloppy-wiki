@@ -8,6 +8,7 @@
 - [General Music (GEM) Synthesisers](#general-music-gem-synthesisers)
 - [IBM PC](#ibm-pc)
 - [Memotech](#memotech)
+- [NEC PC-98](#nec-pc-98)
 - [TI-99/4A](#ti-994a)
 - [UKNC, DVK](#uknc-dvk)
 
@@ -194,6 +195,36 @@ Memotech systems require the following options in FF.CFG:
 ```
 host = memotech         # auto-detect IMG layout
 index-suppression = no  # SDX/FDX require regular index pulses 
+```
+
+## NEC PC-98
+
+PC-98 FDI disk images are supported directly. For raw IMG files
+(rare), `host = pc98` needs to be set in FF.CFG.
+
+For most machines the default Shugart interface is correct (jumper
+only at position S0 at rear of Gotek). Internal pinout varies between
+PC-98 machines but many use a 26-pin laptop floppy drive
+connector. Appropriate adapters can be sourced from eBay or wired
+directly as follows:
+```
+(26-pin) -> (34-pin + power)
+1 -> 5V
+2 -> 8
+4 -> 10
+6 -> 2
+7 -> 12
+8 -> 34
+10 -> 16
+12 -> 18
+14 -> 20
+15 -> GND
+16 -> 22
+18 -> 24
+20 -> 26
+22 -> 28
+24 -> 30
+26 -> 32
 ```
 
 ## TI-99/4A

@@ -43,6 +43,7 @@ Default values are marked by asterisk.
   - **gem**: General Music (S2, S3, S2R)
   - **memotech**: Memotech
   - **pc98**: NEC PC-98
+  - **pc-dos**: PC DOS Format (geometry determined from Bios Parameter Block)
   - **ti99**: TI-99/4A
   - **uknc**: UKNC, DVK (Soviet PDP-11)
   - **unspecified**: Detection based on image-name suffix only

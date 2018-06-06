@@ -42,6 +42,7 @@ Default values are marked by asterisk.
   - **ensoniq**: Ensoniq synths (ASR/TS series, and others)
   - **gem**: General Music (S2, S3, S2R)
   - **memotech**: Memotech
+  - **pc98**: NEC PC-98
   - **ti99**: TI-99/4A
   - **uknc**: UKNC, DVK (Soviet PDP-11)
   - **unspecified**: Detection based on image-name suffix only
@@ -158,3 +159,7 @@ Default values are marked by asterisk.
   - Report the specified version number to host software
   - Empty string ("") means report the firmware version number
   - For example: da-report-version = "v3.0.0.0"
+
+- **extend-image** = yes* | no
+  - Automatically extend a truncated image file at mount/insert time
+    - Applies to SSD, DSD, TRD images only

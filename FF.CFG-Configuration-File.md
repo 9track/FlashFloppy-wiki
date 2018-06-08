@@ -34,7 +34,7 @@ Default values are marked by asterisk.
       on this setting.
   - **jc**: Specified by jumper JC (closed = IBM PC, open = Shugart)
 
-- **host** = unspecified* | acorn | akai | ensoniq | gem | memotech | ti99
+- **host** = unspecified* | acorn | akai | ...
   - Host platform: Improves image-format detection for generic types
     such as IMG
   - **acorn**: Acorn ADFS
@@ -42,6 +42,7 @@ Default values are marked by asterisk.
   - **ensoniq**: Ensoniq synths (ASR/TS series, and others)
   - **gem**: General Music (S2, S3, S2R)
   - **memotech**: Memotech
+  - **msx**: MSX
   - **pc98**: NEC PC-98
   - **pc-dos**: PC DOS Format (geometry determined from Bios Parameter Block)
   - **ti99**: TI-99/4A

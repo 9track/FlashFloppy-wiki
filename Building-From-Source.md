@@ -5,9 +5,11 @@ another OS) can likely be made to work quite easily.
 The Ubuntu package prerequisites include:
 - git
 - gcc-arm-none-eabi
+- python-pip
 - srecord
 - stm32flash
-- python-pip
+- zip, unzip
+- wget
 
 If the stm32flash package is unavailable on your system then it must
 be downloaded from Sourceforge and built locally.
@@ -18,7 +20,7 @@ The Python library prerequisites include:
 
 To install the prerequisites on Ubuntu:
 ```
- # sudo apt-get install git gcc-arm-none-eabi srecord stm32flash python-pip
+ # sudo apt install git gcc-arm-none-eabi python-pip srecord stm32flash zip unzip wget
  # pip install --user crcmod intelhex
 ```
 

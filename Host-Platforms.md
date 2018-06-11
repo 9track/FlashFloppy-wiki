@@ -8,6 +8,7 @@
 - [General Music (GEM) Synthesisers](#general-music-gem-synthesisers)
 - [IBM PC](#ibm-pc)
 - [Memotech](#memotech)
+- [MSX](#msx)
 - [NEC PC-98](#nec-pc-98)
 - [TI-99/4A](#ti-994a)
 - [UKNC, DVK](#uknc-dvk)
@@ -196,6 +197,10 @@ Memotech systems require the following options in FF.CFG:
 host = memotech         # auto-detect IMG layout
 index-suppression = no  # SDX/FDX require regular index pulses 
 ```
+
+## MSX
+
+MSX systems require `host = msx` in FF.CFG for correct IMG layout detection.
 
 ## NEC PC-98
 

@@ -1,14 +1,15 @@
 ## Latest Release
 
-- **v0.9.20a**: [(Download)][v0.9.20a-zip] [(Notes)][v0.9.20a-notes]
+- **v0.9.21a**: [(Download)][v0.9.21a-zip] [(Notes)][v0.9.21a-notes]
 
-1. [**Download**][v0.9.20a-zip] the ZIP file
+1. [**Download**][v0.9.21a-zip] the ZIP file
 2. [**Program**](Firmware-Programming) a brand new
    [Gotek](Gotek-Compatibility); or
 3. [**Update**](Firmware-Update) an existing install
 
 ## Old Releases
 
+- **v0.9.20a**: [(Download)][v0.9.20a-zip] [(Notes)][v0.9.20a-notes]
 - **v0.9.19a**: [(Download)][v0.9.19a-zip] [(Notes)][v0.9.19a-notes]
 - **v0.9.18a**: [(Download)][v0.9.18a-zip] [(Notes)][v0.9.18a-notes]
 - **v0.9.16a**: [(Download)][v0.9.16a-zip] [(Notes)][v0.9.16a-notes]
@@ -21,6 +22,9 @@
 - **v0.7.4a**: [(Download)][v0.7.4a-zip]
 
 You can also browse through all available releases [here][all].
+
+[v0.9.21a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v0.9.21a/flashfloppy_v0.9.21a.zip
+[v0.9.21a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v0.9.21a
 
 [v0.9.20a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v0.9.20a/flashfloppy_v0.9.20a.zip
 [v0.9.20a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v0.9.20a

@@ -108,6 +108,7 @@ Default values are marked by asterisk.
   - **zero**: 1: Prev, 2: Next, Both: Slot 0
   - **eject**: 1: Prev, 2: Next, Both: Eject/Insert
   - **rotary**: 1: Up-dir, 2: Select, Both: -
+  - **rotary-fast**: 1: Prev (accelerated), 2: Next (accelerated), Both: Up-dir
 
 - **rotary** = none | simple* | gray
   - Type of rotary encoder connected to pins PC10 and PC11

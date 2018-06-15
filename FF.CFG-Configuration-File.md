@@ -110,11 +110,12 @@ Default values are marked by asterisk.
   - **rotary**: 1: Up-dir, 2: Select, Both: -
   - **rotary-fast**: 1: Prev (accelerated), 2: Next (accelerated), Both: Up-dir
 
-- **rotary** = none | simple* | gray
+- **rotary** = none | quarter | half | full*
   - Type of rotary encoder connected to pins PC10 and PC11
   - **none**: No rotary encoder is connected
-  - **simple**: Cheap rotary encoder, both outputs HIGH at each detent
-  - **gray**: Higher quality encoder with proper Gray code quadrature output
+  - **quarter**, **half**, **full**: Fraction of a Gray-code cycle performed per detent/click
+    - Select **half** if default value (**full**) requires 2 clicks per move
+    - Select **quarter** if default value (**full**) requires 4 clicks per move
 
 ### Display:
 

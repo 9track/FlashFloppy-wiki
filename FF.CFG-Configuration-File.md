@@ -39,6 +39,7 @@ Default values are marked by asterisk.
     such as IMG
   - **acorn**: Acorn ADFS
   - **akai**: Akai synths (S01, S20, S950)
+  - **dec**: DEC (RX33, RX50)
   - **ensoniq**: Ensoniq synths (ASR/TS series, and others)
   - **gem**: General Music (S2, S3, S2R)
   - **memotech**: Memotech

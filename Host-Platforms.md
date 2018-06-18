@@ -3,6 +3,7 @@
 - [Acorn BBC Micro](#acorn-bbc-micro)
 - [Akai Synthesisers](#akai-synthesisers)
 - [Commodore Amiga](#commodore-amiga)
+- [DEC](#dec)
 - [E-mu ESI-32](#e-mu-esi-32)
 - [Ensoniq](#ensoniq)
 - [General Music (GEM) Synthesisers](#general-music-gem-synthesisers)
@@ -150,6 +151,11 @@ enabled. Exact emulation of pin 34 behaviour is not possible on
 unmodified Gotek hardware as the motor signal is not connected to
 Gotek's microcontroller. More accurate support, for modified or
 enhanced Gotek setups, may be implemented in future.
+
+## DEC
+
+DEC systems require `host = dec` in FF.CFG for correct IMG layout detection.
+The RX33 and RX50 formats are supported.
 
 ## E-mu ESI-32
 

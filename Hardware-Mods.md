@@ -82,6 +82,10 @@ reusing the existing jumper wires.
 
 ![OLED Display Front](assets/oled1.jpg)
 
+I2C 128x64 monochrome displays are also compatible. The usual sizes
+are 0.96" and 1.3". The 1.3" size needs a line in FF.CFG:
+`display-type = oled-128x64-sh1106`.
+
 ## Rotary Encoder
 
 As an alternative to using the up/down buttons you can instead connect

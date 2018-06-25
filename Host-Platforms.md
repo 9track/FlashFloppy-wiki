@@ -117,6 +117,15 @@ FlashFloppy supports this enhancement for 1760kB ADF images, but the
 high-density ID sequence must be [explicitly enabled in
 FF.CFG](#forcing-drive-identification).
 
+If using an Amiga external drive enclosure, please bear
+in mind that the enclosure's interface board usually emits a fixed
+double-density ID sequence which will make HD images unreadable. In
+this case you must disconnect the enclosure's ID circuitry on its
+interface PCB:
+* Cut the PCB connection to external connector, pin 1.
+* Connect a jumper wire between internal connector pin 34 and external
+  connector, pin 1.
+
 ### Forcing Drive Identification
 
 Amiga hosts expect a drive ID sequence from external and

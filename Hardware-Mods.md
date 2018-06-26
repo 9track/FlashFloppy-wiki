@@ -45,8 +45,9 @@ The button's effect depends on the current state of operation:
 ## LCD Display
 
 As an alternative to the Gotek 7-segment display, FlashFloppy supports
-the ubiquitous 1602 LCD with I2C backpack board. These are available
-from many Ebay sellers.
+the ubiquitous two-row LCD with I2C backpack board. These are available
+from many Ebay sellers in compatible sizes from 16x2 up to 40x2
+characters.
 
 You can locate the required connections on your Gotek PCB as
 below. These connect to the corresponding header pins on your LCD I2C

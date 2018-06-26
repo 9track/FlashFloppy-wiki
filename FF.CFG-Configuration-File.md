@@ -120,10 +120,10 @@ Default values are marked by asterisk.
 
 ### Display:
 
-- **display-type** = auto* | lcd-16x02 | oled[-128x32][-128x64][-rotate][-narrow][-sh1106]
+- **display-type** = auto* | lcd-NNx02 | oled[-128xNN][-rotate][-narrow][-sh1106]
   - **auto**: Auto-detect (7-seg LED, LCD, OLED)
-  - **lcd-16x02**: 16x2 backlit LCD with I2C backpack
-  - **oled-128x32**, **oled-128x64**: I2C OLED
+  - **lcd-NNx02**: NNx2 backlit LCD with I2C backpack (16 <= NN <= 40)
+  - **oled-128xNN**: 128xNN I2C OLED (NN = 32 | 64)
     - **-rotate**: OLED view is rotated 180 degrees
     - **-narrow**: OLED view is restricted to Gotek display cutout
     - **-sh1106**: SH1106 controller (default is SSD1306)

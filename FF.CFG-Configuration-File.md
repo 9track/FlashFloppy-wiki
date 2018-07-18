@@ -50,6 +50,18 @@ Default values are marked by asterisk.
   - **uknc**: UKNC, DVK (Soviet PDP-11)
   - **unspecified**: Detection based on image-name suffix only
 
+- **pin02** = auto* | nc | low | high | rdy | nrdy | dens | ndens | chg | nchg
+  - Manually assign a signal to floppy interface pin 2
+  - **auto**: Automatically determined from *interface =* setting
+  - **nc**: Unused / No Connection
+  - **low**, **high**: Constant low (0v) or high (5v) voltage
+  - **rdy**, **nrdy**: Drive ready, or logical complement
+  - **dens**, **ndens**: Density mode (HD = 0v), or logical complement
+  - **chg**, **nchg**: Disk changed, or logical complement
+
+- **pin34** = auto* | nc | low | high | rdy | nrdy | dens | ndens | chg | nchg
+  - Manually assign a signal to floppy interface pin 34
+
 - **write-protect** = yes | no*
   - Are images write protected when initially mounted?
     - Protection can be toggled by holding eject for 2 seconds

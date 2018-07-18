@@ -185,6 +185,12 @@ interface with density-select output. These require a jumper on S0
 interface = ibmpc-hdout
 ```
 
+Ensoniq EPS requires jumper on S0 only, and the following in FF.CFG:
+```
+interface = shugart
+pin02 = nchg
+```
+
 ## General Music (GEM) Synthesisers
 
 GEM systems using the 1.6MB high-density disk format require explicit

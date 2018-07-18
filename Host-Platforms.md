@@ -11,6 +11,7 @@
 - [Memotech](#memotech)
 - [MSX](#msx)
 - [NEC PC-98](#nec-pc-98)
+- [Spectrum](#spectrum)
 - [TI-99/4A](#ti-994a)
 - [UKNC, DVK](#uknc-dvk)
 
@@ -209,8 +210,6 @@ configured in FlashFloppy:
 * Strap select-line jumper S1 at the rear of the Gotek
   * S0, S2, MO should all be left open
 
-[bbc-problem]: http://www.sprow.co.uk/bbc/floppydrives.htm
-
 ## Memotech
 
 Memotech systems require the following options in FF.CFG:
@@ -253,6 +252,24 @@ directly as follows:
 26 -> 32
 ```
 
+## Spectrum
+
+FlashFloppy boasts 100% compatibility with the TOSEC collection of DSK
+images, however some are missing 'weak sector' information and must be fixed
+up before use. If you find a game title fails to boot then you can fix
+the image in two ways.
+
+1. Using Simon Owen's [SAMdisk][samdisk]
+```
+# SAMdisk robocop.dsk robocop_fixed.dsk --fix
+```
+
+2. Using the Python script included in the FlashFloppy source repository
+```
+# git clone https://github.com/keirf/FlashFloppy
+# python FlashFloppy/scripts/edsk_fix_speedlock.py robocop.dsk robocop_fixed.dsk
+```
+
 ## TI-99/4A
 
 Requires `host = ti99` in FF.CFG to identify DSK images as V9T9 format.
@@ -264,3 +281,6 @@ Requires `host = ti99` in FF.CFG to identify DSK images as V9T9 format.
 
 These Soviet PDP-11 clones have a modified IBM track format which must
 be explicitly configured via `host = uknc` in FF.CFG.
+
+[bbc-problem]: http://www.sprow.co.uk/bbc/floppydrives.htm
+[samdisk]: http://simonowen.com/samdisk/

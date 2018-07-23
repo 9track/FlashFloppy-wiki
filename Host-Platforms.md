@@ -4,6 +4,7 @@
 - [Akai Synthesisers](#akai-synthesisers)
 - [Commodore Amiga](#commodore-amiga)
 - [DEC](#dec)
+- [Dragon](#dragon)
 - [E-mu ESI-32](#e-mu-esi-32)
 - [Ensoniq](#ensoniq)
 - [General Music (GEM) Synthesisers](#general-music-gem-synthesisers)
@@ -12,6 +13,7 @@
 - [MSX](#msx)
 - [NEC PC-98](#nec-pc-98)
 - [Spectrum](#spectrum)
+- [Tandy Color Computer](#tandy-color-computer)
 - [TI-99/4A](#ti-994a)
 - [UKNC, DVK](#uknc-dvk)
 
@@ -167,6 +169,14 @@ enhanced Gotek setups, may be implemented in future.
 DEC systems require `host = dec` in FF.CFG for correct IMG layout detection.
 The RX33 and RX50 formats are supported.
 
+## Dragon
+
+No special configuration is required in order to use Dragon VDK disk
+images.
+
+If you wish to use DSK images for Tandy Coco, with appropriate ROM and
+disk controller, then you will need `host = tandy-coco` in FF.CFG.
+
 ## E-mu ESI-32
 
 Requires jumpers at S0 and JC. Works with 1.44MB (HD) IMG files.
@@ -270,17 +280,20 @@ the image in two ways.
 # python FlashFloppy/scripts/edsk_fix_speedlock.py robocop.dsk robocop_fixed.dsk
 ```
 
+## Tandy Color Computer
+
+Requires `host = tandy-coco` in FF.CFG to indentify DSK images as JVC format.
+
 ## TI-99/4A
 
 Requires `host = ti99` in FF.CFG to identify DSK images as V9T9 format.
-
-[a1200_mod]: https://www.youtube.com/watch?v=G6fYOjTYvXM
-[amiga_cable]: https://www.ebay.co.uk/itm/272363110859
 
 ## UKNC, DVK
 
 These Soviet PDP-11 clones have a modified IBM track format which must
 be explicitly configured via `host = uknc` in FF.CFG.
 
+[a1200_mod]: https://www.youtube.com/watch?v=G6fYOjTYvXM
+[amiga_cable]: https://www.ebay.co.uk/itm/272363110859
 [bbc-problem]: http://www.sprow.co.uk/bbc/floppydrives.htm
 [samdisk]: http://simonowen.com/samdisk/

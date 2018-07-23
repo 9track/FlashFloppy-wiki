@@ -36,7 +36,7 @@ Default values are marked by asterisk.
 
 - **host** = unspecified* | acorn | akai | ...
   - Host platform: Improves image-format detection for generic types
-    such as IMG
+    such as IMG and DSK
   - **acorn**: Acorn ADFS
   - **akai**: Akai synths (S01, S20, S950)
   - **dec**: DEC (RX33, RX50)
@@ -46,6 +46,7 @@ Default values are marked by asterisk.
   - **msx**: MSX
   - **pc98**: NEC PC-98
   - **pc-dos**: PC DOS Format (geometry determined from Bios Parameter Block)
+  - **tandy-coco**: Tandy Color Computer (CoCo)
   - **ti99**: TI-99/4A
   - **uknc**: UKNC, DVK (Soviet PDP-11)
   - **unspecified**: Detection based on image-name suffix only

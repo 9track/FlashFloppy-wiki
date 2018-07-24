@@ -60,6 +60,15 @@ images share the same suffix:
 host = acorn
 ```
 
+Some ADF images may not be exactly the correct size (usually 800kB or
+1.6MB) and thus not be detected as valid by FlashFloppy. These can be
+modified to the exact correct size using the `dd` utility on Mac or
+Linux. For example, for an 800kB image:
+```
+# dd if=/dev/zero of=fixed.adf bs=5120 count=160
+# dd if=bad.adf of=fixed.adf bs=5120 count=160 conv=notrunc
+```
+
 ## Acorn BBC Micro
 
 BBC Micro systems using the original single-density 8271 controller

@@ -2,6 +2,7 @@
 - [Acorn Archimedes](#acorn-archimedes)
 - [Acorn BBC Micro](#acorn-bbc-micro)
 - [Akai Synthesisers](#akai-synthesisers)
+- [Amstrad CPC](#amstrad-cpc)
 - [Commodore Amiga](#commodore-amiga)
 - [DEC](#dec)
 - [Dragon](#dragon)
@@ -84,6 +85,20 @@ interface selections in FF.CFG, depending on model:
 ```
 interface = ibmpc-hdout # S3000
 interface = akai-s950   # S950
+```
+
+## Amstrad CPC
+
+FlashFloppy works with a wide range of CPC DSK images, however
+compatibility is not perfact with copy-protected images. If you have
+an original image which does not work, this is often due to 'GAPS
+protection' where extra data is stored in the gaps between
+sectors. These images can sometimes be fixed to work with
+FlashFloppy by running a script included in the source
+distribution, for example:
+```
+# git clone https://github.com/keirf/FlashFloppy
+# python FlashFloppy/scripts/edsk_fix_gaps.py crazy_cars.dsk crazy_cars_fixed.dsk
 ```
 
 ## Commodore Amiga

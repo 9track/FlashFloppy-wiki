@@ -37,6 +37,21 @@ To build the FlashFloppy firmware:
  # make dist
 ```
 
+## Making a Debug Build
+
+FlashFloppy can be configured to emit debug logging via the same
+serial interface used for
+[serial programming](Firmware-Programming#method-1-serial-programming).
+Follow the above instructions but replace the final `make` line as
+follows:
+```
+ # debug=y make dist
+```
+
+The default baud rate is 3Mbps. If this is too fast for your
+host you can reduce it (for example, to 115200) by modifying the
+definition of `BAUD` at the top of `src/console.c`.
+
 ## Docker
 
 Urban Jonnson has uploaded a Docker image which will create the

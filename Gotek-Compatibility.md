@@ -24,6 +24,8 @@ two-digit LED display: although compatible, try to avoid these.
 - **UFA prefix** (eg UFA1M44): Emulates a USB floppy drive and hence
   lacks the 34-pin header, which is replaced by a mini-USB socket.
 - **DU26, TU26 suffix** (eg SFR1M44-DU26): Emulates a slimline laptop
-  drive, and hence has 26-pin header with integrated power, rather than
-  the required 34-pin header.
+  drive, and hence has 26-pin header with integrated power, rather
+  than the required 34-pin header. However, see [#155][issue-155] for
+  one user's successful modifications to run FlashFloppy on a DU26.
 
+[issue-155]: https://www.github.com/keirf/FlashFloppy/issues/155

@@ -41,6 +41,7 @@ Default values are marked by asterisk.
   - **akai**: Akai synths (S01, S20, S950)
   - **dec**: DEC (RX33, RX50)
   - **ensoniq**: Ensoniq synths (ASR/TS series, and others)
+  - **fluke**: Fluke (9100)
   - **gem**: General Music (S2, S3, S2R)
   - **memotech**: Memotech
   - **msx**: MSX

@@ -22,6 +22,13 @@ via the [FF.CFG file][ffcfg].
 See [Host Platforms](Host-Platforms) for detailed instructions and
 troubleshooting for specific host systems.
 
+## USB Storage
+
+FlashFloppy requires a USB drive formatted with FAT32 (note that ExFAT
+and NTFS are *not* supported). Most USB sticks are factory-formatted
+appropriately. If erasing the entire drive on a Mac, be sure to select
+the legacy "Master Boot Record" partitioning scheme.
+
 ## Image Navigation Modes
 
 FlashFloppy supports three different operating modes. For the best

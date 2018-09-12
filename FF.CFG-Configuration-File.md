@@ -43,6 +43,7 @@ Default values are marked by asterisk.
   - **ensoniq**: Ensoniq synths (ASR/TS series, and others)
   - **fluke**: Fluke (9100)
   - **gem**: General Music (S2, S3, S2R)
+  - **kaypro**: Kaypro
   - **memotech**: Memotech
   - **msx**: MSX
   - **pc98**: NEC PC-98

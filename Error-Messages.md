@@ -24,10 +24,12 @@ A 2-digit error code defined by the FlashFloppy firmware:
   Copy a fresh version to the USB drive.
 - **33** Bad IMAGE_A.CFG: The last-image file has become corrupted.
   Delete it from the USB drive and it will be automatically recreated.
-- **34** No entries to navigate: Direct Navigation mode found no valid
-  directories or image files to display. Add some valid image files to
-  the USB drive. Subfolders are accessible only when using an LCD/OLED
-  display.
+- **34** No entries to navigate:
+  - Direct Navigation mode found no valid directories or image files
+  to display. Add some valid image files to the USB drive. Subfolders
+  are accessible only when using an LCD/OLED display.
+  - Indexed mode found no valid DSKA\*.\* image names. Add some valid
+  image files to the USB drive.
 - **35** Path too deep: Folders are nested too deeply to navigate.
 
 ### `USB` / `USB Power Fault`

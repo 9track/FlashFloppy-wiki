@@ -57,6 +57,8 @@ then use stm32flash to do the programming:
   mode")][an2606], Section 3.3, Figure 1. A suitable resistor value
   (R) is 10K; these can safely be connected to VCC/+V of 3.3V or 5V.
 
+![Programming pullups](assets/programming_pullups.jpg)
+
 ## Method 2: USB Programming
 
 This method requires a USB-A to USB-A cable, and you should program

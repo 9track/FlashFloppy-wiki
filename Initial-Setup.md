@@ -41,9 +41,9 @@ mode](#native-mode) is recommended in combination with an [LCD][lcd] or
 - [**Indexed mode**](#indexed-mode): Switches between image names of the
   form DSKA0000 and so on.
 - [**HxC Compatibility mode**](#hxc-compatibility-mode): A legacy mode
-  requiring a file selector ("Autoboot") program to run on the host
-  system.
-  
+  requiring an image-selector program to run on the host
+  system to pre-assign disk images to numbered slots.
+
 ## Native mode
 
 In this mode you need no configuration files or selector
@@ -73,12 +73,14 @@ image type can be used.
 
 ## HxC Compatibility mode
 
-This mode requires HXCSDFE.CFG and an AUTOBOOT.HFE image compatible
-with your system, copied to the root of your USB drive. Supported
-systems include [Amiga](#amiga), [Atari ST](#atari-st), and [Amstrad
-CPC](#amstrad-cpc). Note that for enhanced compatibility, the correct
-files for Amiga and Atari ST are included in the FlashFloppy release
-distribution.
+This mode selects between pre-assigned slots in an HXCSDFE.CFG file.
+These slots are configured by an image-selector program running on the
+host system, either in ROM or (more typically) an AUTOBOOT.HFE image
+compatible with your system, copied to the root of your USB
+drive. Supported systems include [Amiga](#amiga), [Atari
+ST](#atari-st), and [Amstrad CPC](#amstrad-cpc). Note that for
+enhanced compatibility, the correct files for Amiga and Atari ST are
+included in the FlashFloppy release distribution.
 
 The Gotek buttons cycle between the assigned slots in the config
 file. To reassign slots boot the file selector: this is immediately
@@ -113,6 +115,11 @@ Copy the following files to the root of your USB drive:
 #### Amstrad CPC
 
 The latest files can be found on the [CPC scene website][cpc_hxc].
+
+#### File Selector in Host ROM
+
+Copy the following file to the root of your USB drive:
+- HxC_Compat_Mode/HXCSDFE.CFG
 
 [ffcfg]: FF.CFG-Configuration-File
 [lcd]: Hardware-Mods#lcd-display

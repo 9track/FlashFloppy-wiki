@@ -220,11 +220,16 @@ interface with density-select output. These require a jumper on S0
 interface = ibmpc-hdout
 ```
 
-Ensoniq EPS requires jumper on S0 only, and the following in FF.CFG:
+Ensoniq EPS series typically requires a jumper on S0 **only**, and
+the following additional lines in FF.CFG:
 ```
 interface = shugart
-pin02 = nchg
+pin02 = auto
 ```
+However there is one isolated user report of pin 2 being inverted, so
+if there are disk-change problems then you might try changing the
+second line to `pin02 = nchg`. Revert back to `auto` if this doesn't
+help.
 
 ## General Music (GEM) Synthesisers
 

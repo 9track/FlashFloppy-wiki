@@ -26,8 +26,10 @@ Default values are marked by asterisk.
 - **interface** = shugart | ibmpc | ibmpc-hdout | akai-s950 | amiga | jc*
   - Pin assignments of the floppy-drive interface
   - **shugart**: Shugart interface (Amiga, Atari ST, many others)
-  - **ibmpc**: IBM PC interface, no output on pin 2
-  - **ibmpc-hdout**: IBM PC, high-density-select output on pin 2
+  - **ibmpc**: IBM PC interface, no connection on pin 2
+  - **ibmpc-hdout**: IBM PC, high-density-select output (Gotek->host) on pin 2
+    - Do not select this option unless explicitly required for your system!
+    - It is not required for IBM PC compatibles. Use **ibmpc** instead.
   - **akai-s950**: Akai S950
   - **amiga**: Drive ID hack on pin 34. Use **shugart** instead when possible.
     - See [Amiga-specific hints](Host-Platforms#commodore-amiga) for advice
@@ -54,7 +56,7 @@ Default values are marked by asterisk.
   - **unspecified**: Detection based on image-name suffix only
 
 - **pin02** = auto* | nc | low | high | rdy | nrdy | dens | ndens | chg | nchg
-  - Manually assign a signal to floppy interface pin 2
+  - Manually assign an output signal (Gotek->host) to floppy interface pin 2
   - **auto**: Automatically determined from *interface =* setting
   - **nc**: Unused / No Connection
   - **low**, **high**: Constant low (0v) or high (5v) voltage
@@ -63,7 +65,7 @@ Default values are marked by asterisk.
   - **chg**, **nchg**: Disk changed, or logical complement
 
 - **pin34** = auto* | nc | low | high | rdy | nrdy | dens | ndens | chg | nchg
-  - Manually assign a signal to floppy interface pin 34
+  - Manually assign an output signal (Gotek->host) to floppy interface pin 34
 
 - **write-protect** = yes | no*
   - Are images write protected when initially mounted?

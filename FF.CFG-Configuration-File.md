@@ -121,19 +121,23 @@ Default values are marked by asterisk.
 - **nav-loop** = yes* | no
   - When navigating slots or a folder, loop at start/end of the list
 
-- **twobutton-action** = zero* | eject | rotary
+- **twobutton-action** = zero* | eject | rotary | rotary-fast | reverse
   - Actions of first two buttons
+  - Multiple values can be specified, separated by commas (eg. *rotary,reverse*)
   - **zero**: 1: Prev, 2: Next, Both: Slot 0
   - **eject**: 1: Prev, 2: Next, Both: Eject/Insert
   - **rotary**: 1: Up-dir, 2: Select, Both: -
   - **rotary-fast**: 1: Prev (accelerated), 2: Next (accelerated), Both: Up-dir
+  - **reverse**: Reverse operation of the buttons (useful if installed upside down)
 
-- **rotary** = none | quarter | half | full*
+- **rotary** = none | quarter | half | full* | reverse
   - Type of rotary encoder connected to pins PC10 and PC11
+  - Multiple values can be specified, separated by commas (eg. *half,reverse*)
   - **none**: No rotary encoder is connected
   - **quarter**, **half**, **full**: Fraction of a Gray-code cycle performed per detent/click
     - Select **half** if default value (**full**) requires 2 clicks per move
     - Select **quarter** if default value (**full**) requires 4 clicks per move
+  - **reverse**: Reverse direction of the knob (useful if wired backwards!)
 
 ### Display:
 

@@ -37,11 +37,11 @@ contained in the FlashFloppy distribution.
 
 If programming on Linux, you can follow the Cortex instructions to
 physically set up your serial connection and bootstrap the Gotek, and
-then use stm32flash to do the programming (for v0.9.31a in this example):
+then use stm32flash to do the programming (for v0.10 in this example):
 
 ```
  # sudo stm32flash -k /dev/ttyUSB0
- # sudo stm32flash -vw FF_Gotek-v0.9.31a.hex /dev/ttyUSB0
+ # sudo stm32flash -vw FF_Gotek-v0.10.hex /dev/ttyUSB0
 ```
 
 ### Troubleshooting
@@ -78,10 +78,10 @@ the ***.hex** file and those steps can be skipped.
 
 Requires the `dfu-util` command-line tool which can be downloaded via your
 package manager (Linux), or Homebrew (on MacOS). Programming is then as simple
-as (for v0.9.31a in this example):
+as (for v0.10 in this example):
 ```
-sudo sfu-util -a 0 -s :unprotect:force -D FF_Gotek-v0.9.31a.dfu
-sudo dfu-util -a 0 -D FF_Gotek-v0.9.31a.dfu
+sudo sfu-util -a 0 -s :unprotect:force -D FF_Gotek-v0.10.dfu
+sudo dfu-util -a 0 -D FF_Gotek-v0.10.dfu
 ```
 
 The first line is only needed if the Gotek Flash is read-protected (this

@@ -1,6 +1,6 @@
 - [Board Layout](#board-layout)
 - [Speaker](#speaker)
-- [Eject/Select Button](#ejectselect-button)
+- [Select/Eject/Insert Button](#selectejectinsert-button)
 - [LCD Display](#lcd-display)
 - [OLED Display](#oled-display)
 - [Rotary Encoder](#rotary-encoder)
@@ -31,16 +31,17 @@ an NPN transistor. If you don't know what this means just be sure to
 use a piezo sounder, easily found on Ebay, and connect it directly as
 shown above.
 
-## Eject/Select Button
+## Select/Eject/Insert Button
 
-FlashFloppy supports a third button in addition to the basic up/down
-controls. This should be a standard momentary microswitch, connected
-to the header pins JA.
+Also known simply as the Select button, FlashFloppy supports a third
+button in addition to the basic up/down controls. This should be a
+standard momentary microswitch, connected to the header pins JA.
 
 The button's effect depends on the current state of operation:
-- When an image is loaded, the button will immediately eject it
-- When selecting an image, the button will immediately confirm the
+- When selecting an image, the button will immediately select the
   currently-selected image
+- When an image is inserted, the button will immediately eject it
+- When an image is ejected, the button will immediately insert it
 
 ## LCD Display
 
@@ -101,8 +102,8 @@ the board has pull-up resistors mounted.
 If connecting directly note that by convention GND is always the
 middle pin in the row of three. If there is a further row of
 two pins then these are connected to an internal push switch: you can
-wire these pins to jumper JA to use the switch as an
-[eject/select button](#ejectselect-button).
+wire these pins to jumper JA to use the switch as a
+[Select/Eject/Insert button](#selectejectinsert-button).
 
 ![Rotary Encoder Connection](assets/rotsel-direct.png)
 

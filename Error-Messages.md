@@ -32,6 +32,11 @@ A 2-digit error code defined by the FlashFloppy firmware:
   image files to the USB drive.
 - **35** Path too deep: Folders are nested too deeply to navigate.
 
+### `RIB` / `Ribbon Cable Is Upside Down`
+
+Floppy ribbon cable is inserted upside down. Power off and re-insert
+the ribbon connector the other way up.
+
 ### `USB` / `USB Power Fault`
 
 Over-current condition on the USB port. The port is powered down until

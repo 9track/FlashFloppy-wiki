@@ -86,6 +86,9 @@ Default values are marked by asterisk.
   - Are index pulses suppressed when RDATA and WDATA inactive?
   - Older systems may depend on constant index pulses (eg. BBC Micro)
 
+- **head-settle-ms** = 0-255 (12*)
+  - Milliseconds from head-step start to RDATA active.  
+
 ### Startup & Initialisation:
 
 - **ejected-on-startup** = yes | no*

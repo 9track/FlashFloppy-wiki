@@ -87,7 +87,7 @@ Default values are marked by asterisk.
   - Older systems may depend on constant index pulses (eg. BBC Micro)
 
 - **head-settle-ms** = 0-255 (12*)
-  - Milliseconds from head-step start to RDATA active.  
+  - Milliseconds from head-step start to RDATA active
 
 ### Startup & Initialisation:
 
@@ -157,6 +157,9 @@ Default values are marked by asterisk.
   - 6x13 font permits:
     - More characters per row
     - Use of Gotek display cutout (with *display-type=oled-128x32-narrow*)
+
+- **oled-contrast** = 0-255 (143*)
+  - OLED contrast/brightness
 
 - **display-off-secs** = 0-255 (60*)
   - Turn LCD/OLED display off after N seconds of inactivity

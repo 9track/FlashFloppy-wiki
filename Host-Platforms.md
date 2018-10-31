@@ -3,6 +3,7 @@
 - [Acorn BBC Micro](#acorn-bbc-micro)
 - [Akai Synthesisers](#akai-synthesisers)
 - [Amstrad CPC](#amstrad-cpc)
+- [Atari ST](#atari-st)
 - [Commodore Amiga](#commodore-amiga)
 - [DEC](#dec)
 - [Dragon](#dragon)
@@ -93,7 +94,15 @@ The correct jumper selection is usually S0, with the following
 interface selections in FF.CFG, depending on model:
 ```
 interface = ibmpc-hdout # S3000
-interface = akai-s950   # S950
+interface = akai-s950   # S950, S2800
+interface = shugart     # SO1
+```
+
+Akai S1100 sends a signal to the floppy drive on pin 2, hence this pin
+must be configured `nc`:
+```
+pin02 = nc              # S1100
+pin34 = rdy             # S1100
 ```
 
 ## Amstrad CPC
@@ -109,6 +118,11 @@ distribution, for example:
 # git clone https://github.com/keirf/FlashFloppy
 # python FlashFloppy/scripts/edsk_fix_gaps.py crazy_cars.dsk crazy_cars_fixed.dsk
 ```
+
+## Atari ST
+
+No special configuration is required. Interface is Shugart (the default) and
+drive-select jumper should typically be at position S0.
 
 ## Commodore Amiga
 

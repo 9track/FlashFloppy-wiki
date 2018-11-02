@@ -263,6 +263,11 @@ configured in FlashFloppy:
 * Strap select-line jumper S1 at the rear of the Gotek
   * S0, S2, MO should all be left open
 
+Please note that some IBM PC clones, although software compatible, use
+the Shugart interface for their floppy drives. These typically require
+a jumper at S0 only. Known models this affects include:
+* Amstrad PPC512, PPC640
+
 ## Memotech
 
 Memotech systems require the following options in FF.CFG:

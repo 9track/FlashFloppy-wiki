@@ -50,6 +50,7 @@ development.
 - [FF.CFG Configuration File](FF.CFG-Configuration-File)
 - [Host Platforms](Host-Platforms)
 - [Error Messages](Error-Messages)
+- [Troubleshooting FAQ](Troubleshooting-FAQ)
 
 ### Support
 - [Redistribution](Redistribution)

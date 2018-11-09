@@ -48,6 +48,7 @@ Default values are marked by asterisk.
   - **kaypro**: Kaypro
   - **memotech**: Memotech
   - **msx**: MSX
+  - **nascom**: Nascom (1, 2)
   - **pc98**: NEC PC-98
   - **pc-dos**: PC DOS Format (geometry determined from Bios Parameter Block)
   - **tandy-coco**: Tandy Color Computer (CoCo)

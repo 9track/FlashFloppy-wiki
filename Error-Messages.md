@@ -32,10 +32,15 @@ A 2-digit error code defined by the FlashFloppy firmware:
   image files to the USB drive.
 - **35** Path too deep: Folders are nested too deeply to navigate.
 
-### `RIB` / `Ribbon Cable Is Upside Down`
+### `RIB` / `Ribbon Cable May Be Upside Down?`
 
 Floppy ribbon cable is inserted upside down. Power off and re-insert
 the ribbon connector the other way up.
+
+More rarely, this can occur when the Gotek is powered separately from,
+and earlier than, the host machine. In this case the error will clear
+automatically when the host machine is powered on. It is recommended
+to avoid powering on the Gotek after the host machine.
 
 ### `USB` / `USB Power Fault`
 

@@ -80,7 +80,7 @@ Requires the `dfu-util` command-line tool which can be downloaded via your
 package manager (Linux), or Homebrew (on MacOS). Programming is then as simple
 as (for v0.10 in this example):
 ```
-sudo sfu-util -a 0 -s :unprotect:force -D FF_Gotek-v0.10.dfu
+sudo dfu-util -a 0 -s :unprotect:force -D FF_Gotek-v0.10.dfu
 sudo dfu-util -a 0 -D FF_Gotek-v0.10.dfu
 ```
 

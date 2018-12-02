@@ -11,9 +11,11 @@
 - [Ensoniq](#ensoniq)
 - [General Music (GEM) Synthesisers](#general-music-gem-synthesisers)
 - [IBM PC](#ibm-pc)
+- [Korg](#korg)
 - [Memotech](#memotech)
 - [MSX](#msx)
 - [NEC PC-98](#nec-pc-98)
+- [Roland](#roland)
 - [Sequential Circuits Prophet 3000](#sequential-circuits-prophet-3000)
 - [Spectrum](#spectrum)
 - [Tandy Color Computer](#tandy-color-computer)
@@ -269,6 +271,10 @@ the Shugart interface for their floppy drives. These typically require
 a jumper at S0 only. Known models this affects include:
 * Amstrad PPC512, PPC640
 
+## Korg
+
+Korg synths require `host = akai` in FF.CFG for correct IMG layout detection.
+
 ## Memotech
 
 Memotech systems require the following options in FF.CFG:
@@ -310,6 +316,11 @@ directly as follows:
 24 -> 30
 26 -> 32
 ```
+
+## Roland
+
+Roland synths typically work out of the box with no special configuration
+required in FF.CFG.
 
 ## Sequential Circuits Prophet 3000
 

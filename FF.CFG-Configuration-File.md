@@ -40,7 +40,8 @@ Default values are marked by asterisk.
   - Host platform: Improves image-format detection for generic types
     such as IMG and DSK
   - **acorn**: Acorn ADFS
-  - **akai**: Akai synths (S01, S20, S950)
+  - **akai**: Akai synths (S01, S20, S950), SC Prophet 3000
+  - **casio**: Casio synths (FZ-1)
   - **dec**: DEC (RX33, RX50)
   - **ensoniq**: Ensoniq synths (ASR/TS series, and others)
   - **fluke**: Fluke (9100)

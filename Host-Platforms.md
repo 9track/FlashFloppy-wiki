@@ -14,6 +14,7 @@
 - [Memotech](#memotech)
 - [MSX](#msx)
 - [NEC PC-98](#nec-pc-98)
+- [Sequential Circuits Prophet 3000](#sequential-circuits-prophet-3000)
 - [Spectrum](#spectrum)
 - [Tandy Color Computer](#tandy-color-computer)
 - [TI-99/4A](#ti-994a)
@@ -309,6 +310,10 @@ directly as follows:
 24 -> 30
 26 -> 32
 ```
+
+## Sequential Circuits Prophet 3000
+
+Requires `host = akai` in FF.CFG for correct IMG layout detection.
 
 ## Spectrum
 

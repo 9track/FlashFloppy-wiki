@@ -61,8 +61,9 @@ then use stm32flash to do the programming (for v0.10 in this example):
 
 ## Method 2: USB Programming
 
-This method requires a USB-A to USB-A cable, and you should program
-the ***.dfu** file contained in the FlashFloppy distribution.
+This method requires a USB-A to USB-A cable, a pair of jumper wires to
+configure the programming header of the Gotek, and the ***.dfu**
+programming file contained in the FlashFloppy distribution.
 
 ### Windows
 
@@ -76,9 +77,15 @@ the ***.hex** file and those steps can be skipped.
 
 ### Linux / Mac
 
-Requires the `dfu-util` command-line tool which can be downloaded via your
-package manager (Linux), or Homebrew (on MacOS). Programming is then as simple
-as (for v0.10 in this example):
+Firstly, set the programming jumpers as described in
+[Nick Lines' how-to guide](http://www.binarydevotion.com/?p=228). Ignore the
+rest of the guide, which is Windows-specific.
+
+Connect the Gotek to your host using a USB-A to USB-A cable. 
+
+Programming requires the `dfu-util` command-line tool which can be
+downloaded via your package manager (Linux), or Homebrew (on
+MacOS). Programming is then as simple as (for v0.10 in this example):
 ```
 sudo dfu-util -a 0 -s :unprotect:force -D FF_Gotek-v0.10.dfu
 sudo dfu-util -a 0 -D FF_Gotek-v0.10.dfu

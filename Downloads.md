@@ -1,14 +1,15 @@
 ## Latest Release
 
-- **v0.14**: [(Download)][v0.14-zip] [(Notes)][v0.14-notes]
+- **v0.15**: [(Download)][v0.15-zip] [(Notes)][v0.15-notes]
 
-1. [**Download**][v0.14-zip] the ZIP file
+1. [**Download**][v0.15-zip] the ZIP file
 2. [**Program**](Firmware-Programming) a brand new
    [Gotek](Gotek-Compatibility); or
 3. [**Update**](Firmware-Update) an existing install
 
 ## Old Releases
 
+- **v0.14**: [(Download)][v0.14-zip] [(Notes)][v0.14-notes]
 - **v0.11**: [(Download)][v0.11-zip] [(Notes)][v0.11-notes]
 - **v0.10**: [(Download)][v0.10-zip] [(Notes)][v0.10-notes]
 - **v0.9.31a**: [(Download)][v0.9.31a-zip] [(Notes)][v0.9.31a-notes]
@@ -34,6 +35,9 @@
 - **v0.7.4a**: [(Download)][v0.7.4a-zip]
 
 You can also browse through all available releases [here][all].
+
+[v0.15-zip]: https://github.com/keirf/FlashFloppy/releases/download/v0.15/flashfloppy-v0.15.zip
+[v0.15-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v0.15
 
 [v0.14-zip]: https://github.com/keirf/FlashFloppy/releases/download/v0.14/flashfloppy-v0.14.zip
 [v0.14-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v0.14

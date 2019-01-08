@@ -133,12 +133,19 @@ Gotek users should therefore skip this section.
 - **PA3:** Second Drive Select
 - **PA15:** Motor-On Signal
 - **PA4-5:** USB Power Switch
+- **PB12-15,PC9** SD Card Connector (optional)
 
 ### Board Identifier
 
 Pins PC12-15 are used to identify an enhanced Gotek. On a standard
-Gotek board these pins are disconnected and floating. On an enhanced
-Gotek they should all be connected to VSS (GND).
+Gotek board these pins are disconnected and floating; FlashFloppy
+internally pulls them high to identify an unenhanced board.
+
+On an enhanced Gotek PC12-15 are selectively connected to VSS (GND).
+The four inputs PC[15:12] form a four-bit board identifier:
+- **0000**: Enhanced Gotek, no SD card connector
+- **0001**: Enhanced Gotek, with SD card connector
+- **1111**: Standard Gotek (no enhancements)
 
 ### Second Drive Select
 
@@ -167,3 +174,19 @@ disconnected and floating (the STM32 will pull them to a defined
 level).
 
 A suitable power switch is STMicroelectronics STMPS2141.
+
+### SD Card Connector
+
+An SD card connector may be connected as follows:
+- PB12: SPI_CS (Chip Select)
+- PB13: SPI_CK (Clock)
+- PB14: SPI_MISO
+- PB15: SPI_MOSI
+- PC9: Card Detect
+
+Card Detect should float when a card is inserted, and be driven low
+when no card is present. For simplest connection, this will require
+a card-detection switch which is open when a card is inserted, and
+closed when ejected. A switch with the opposite sense will require
+extra circuitry (eg. pull-up resistor and an open-drain MOSFET to
+invert the switch signal).

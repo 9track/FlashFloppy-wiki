@@ -230,6 +230,13 @@ supported as IMG files if the host-type is configured in FF.CFG:
 host = ensoniq
 ```
 
+The common EDE/EDA/EDS/EDT/EDV image formats are not directly supported
+by FlashFloppy. These can be converted to HFE or IMG format using HxC
+software. Notes:
+* `host = ensoniq` is required in FF.CFG for IMG-format support
+* IMG format is not supported for Mirage or SQ-80 (ie. 880kB) formats
+* IMG format is especially preferred for 1600kB HD disks
+
 Some Ensoniq series (notably the ASR and TS series) require an IBM-PC
 interface with density-select output. These require a jumper on S0
 **only**, and the following additional line in FF.CFG:

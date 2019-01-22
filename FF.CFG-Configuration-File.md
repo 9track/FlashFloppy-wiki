@@ -146,19 +146,21 @@ Default values are marked by asterisk.
 
 ### Display:
 
-- **display-type** = auto* | lcd-NNx02 | oled[-128xNN][-rotate][-narrow][-sh1106]
+- **display-type** = auto* | lcd-NNx02 | oled[-128xNN][-rotate][-narrow[er]][-sh1106]
   - **auto**: Auto-detect (7-seg LED, LCD, OLED)
   - **lcd-NNx02**: NNx2 backlit LCD with I2C backpack (16 <= NN <= 40)
   - **oled-128xNN**: 128xNN I2C OLED (NN = 32 | 64)
     - **-rotate**: OLED view is rotated 180 degrees
-    - **-narrow**: OLED view is restricted to Gotek display cutout
+    - **-narrow[er]**: OLED view is restricted to Gotek display cutout
+      - **-narrow**: 18 characters of 6x13 font
+      - **-narrower**: 16 characters of 6x13 font
     - **-sh1106**: SH1106 controller (default is SSD1306)
 
 - **oled-font** = 6x13* | 8x16
   - Select 6px- or 8px-wide OLED display font
   - 6x13 font permits:
     - More characters per row
-    - Use of Gotek display cutout (with *display-type=oled-128x32-narrow*)
+    - Use of Gotek display cutout (eg. *display-type=oled-128x32-narrow*)
 
 - **oled-contrast** = 0-255 (143*)
   - OLED contrast/brightness

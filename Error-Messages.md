@@ -1,6 +1,12 @@
 When an unrecoverable error occurs a message will be displayed on the
 LED, LCD, or OLED screen.
 
+### `F-F` / `FlashFloppy vx.y`
+
+This is not explicitly an error code or condition, but the default display
+if a valid USB stick is not inserted. Make sure your USB stick is properly
+inserted, legacy partitioned (MBR rather than GPT) and FAT32 formatted.
+
 ### `Fnn` / `*FAT*nn*` / `*FATFS* nn`
 
 A 2-digit error code defined by the FatFS library.

@@ -3,6 +3,17 @@
 
 ## General
 
+- **My Gotek will only display 'F-F'**
+  - This is the default display if a valid USB stick is not inserted.
+  If you have inserted a stick then either FlashFloppy does not
+  recognise it (try another stick) or the stick is not suitably
+  formatted -- be sure that the stick is legacy partitioned (MBR
+  rather than GPT), and FAT32 formatted.
+
+- **My Gotek will only display 'FlashFloppy' and version number**
+  - This is equivalent to the above problem, but with an LCD/OLED display.
+  See answer above.
+  
 - **My Gotek does not recognise any USB stick that I insert, and then
 afterwards they all fail to work even in a PC**
   - You are feeding more than 5 volts power to the Gotek, and frying

@@ -296,7 +296,7 @@ MSX systems require `host = msx` in FF.CFG for correct IMG layout detection.
 
 ## NEC PC-98
 
-PC-98 FDI disk images are supported directly. For raw IMG files
+PC-98 FDI and HDM disk images are supported directly. For raw IMG files
 (rare), `host = pc98` needs to be set in FF.CFG.
 
 For most machines the default Shugart interface is correct (jumper

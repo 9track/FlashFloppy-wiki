@@ -1,5 +1,6 @@
 - [General](#general)
 - [Commodore Amiga](#commodore-amiga)
+- [Image Formats](#image-formats)
 
 ## General
 
@@ -42,3 +43,12 @@ in [this Youtube video][a1200_mod]).
 
 [a1200_mod]: https://www.youtube.com/watch?v=G6fYOjTYvXM
 [systest]: https://github.com/keirf/Amiga-Stuff/blob/master/README.md
+
+## Image Formats
+
+- **Can you support IMD images?**
+  - Unfortunately IMD is an archive format which is not convenient for
+directly accessing specific tracks or sectors, as required by FlashFloppy
+(IMD files are expected to be read sequentially, from start to finish).
+Hence support is unlikely to ever materialise. Straightforward images can
+be converted to IMG format. Trickier images should be converted to HFE.

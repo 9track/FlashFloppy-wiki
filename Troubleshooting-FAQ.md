@@ -52,3 +52,10 @@ directly accessing specific tracks or sectors, as required by FlashFloppy
 (IMD files are expected to be read sequentially, from start to finish).
 Hence support is unlikely to ever materialise. Straightforward images can
 be converted to IMG format. Trickier images should be converted to HFE.
+
+- **Can you support compressed images?**
+  - Compressed files are not convenient for fast random access, nor for
+writes. Generally they are intended for archiving rather than emulation.
+
+- **Can you support DMS/ADZ/...?**
+  - No. See above.

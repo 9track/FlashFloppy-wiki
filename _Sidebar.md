@@ -1,5 +1,6 @@
 ## Download
 - [**Download FlashFloppy**](Downloads)
+- [AutoSwap](https://github.com/keirf/FF_AutoSwap/wiki/Downloads)
 
 ## Installation
 - [Gotek Compatibility](Gotek-Compatibility)

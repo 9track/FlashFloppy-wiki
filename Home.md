@@ -39,7 +39,8 @@ Please read [here](Donations) if you wish to donate for FlashFloppy's
 development.
 
 ### Download
- - [**Download FlashFloppy**](Downloads)
+- [**Download FlashFloppy**](Downloads)
+- [AutoSwap](https://github.com/keirf/FF_AutoSwap/wiki/Downloads)
 
 ### Installation
 - [Gotek Compatibility](Gotek-Compatibility)

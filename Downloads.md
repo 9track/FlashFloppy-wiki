@@ -1,11 +1,22 @@
-## Latest Release
+## Latest Releases
 
-- **v1.0**: [(Download)][v1.0-zip] [(Notes)][v1.0-notes]
+- **v1.0 (Stable)**: [(Download)][v1.0-zip] [(Notes)][v1.0-notes]
+- **v2.0a (Experimental)**: [(Download)][v2.0a-zip] [(Notes)][v2.0a-notes]
 
 1. [**Download**][v1.0-zip] the ZIP file
 2. [**Program**](Firmware-Programming) a brand new
    [Gotek](Gotek-Compatibility); or
 3. [**Update**](Firmware-Update) an existing install
+
+## Stable vs Experimental
+
+- v1.x release series is well tested and has sufficient features for the
+majority of users.
+- v2.x is the development series containing major new
+features and design changes.
+
+Use v2.x if you need or love the latest features, or you would like to
+provide test feedback!
 
 ## Old Releases
 
@@ -36,6 +47,9 @@
 - **v0.7.4a**: [(Download)][v0.7.4a-zip]
 
 You can also browse through all available releases [here][all].
+
+[v2.0a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v2.0a/flashfloppy-v2.0a.zip
+[v2.0a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v2.0a
 
 [v1.0-zip]: https://github.com/keirf/FlashFloppy/releases/download/v1.0/flashfloppy-v1.0.zip
 [v1.0-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v1.0

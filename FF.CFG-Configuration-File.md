@@ -144,6 +144,10 @@ Default values are marked by asterisk.
     - Select **quarter** if default value (**full**) requires 4 clicks per move
   - **reverse**: Reverse direction of the knob (useful if wired backwards!)
 
+- **indexed-prefix** = quoted-string ("DSKA"*) **[v2.x]**
+  - Prefix for image names in indexed navigation mode
+  - Empty string ("") means no prefix
+ 
 ### Display:
 
 - **display-type** = auto* | lcd-NNx02 | oled[-128xNN][-rotate][-narrow[er]][-sh1106]

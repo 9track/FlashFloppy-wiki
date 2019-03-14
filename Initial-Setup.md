@@ -71,6 +71,10 @@ DSKA0000.\*, DSKA0001.\*, and so on. Each image which will be automatically
 assigned to the corresponding numbered slot. Note that any supported
 image type can be used.
 
+**[v2.x]** Image naming is more flexible, allowing an
+arbitrary filename after the DSKAnnnn prefix (eg. DSKA0000_myimage.img).
+Additionally, the DSKA prefix can be changed in FF.CFG (*indexed-prefix=*).
+
 ## HxC Compatibility mode
 
 This mode selects between pre-assigned slots in an HXCSDFE.CFG file.

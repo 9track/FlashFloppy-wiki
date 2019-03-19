@@ -17,8 +17,8 @@
 - [Troubleshooting FAQ](Troubleshooting-FAQ)
 
 ## Support
+- [**Donations**](Donations)
 - [Redistribution](Redistribution)
-- [Donations](Donations)
 - [Project History](Project-History)
 - [Building From Source](Building-From-Source)
 - [Facebook][facebook]

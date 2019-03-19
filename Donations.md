@@ -1,11 +1,20 @@
-Although FlashFloppy is Free Software, some people have expressed a
-wish to make a donation for using and distributing it. If this
-includes you please feel free to make that donation to a charity of your
-choice. Money sent directly to me is donated to
-[Macmillan Cancer Support](https://www.macmillan.org.uk/donate)
-in the UK.
+FlashFloppy is a labour of love: working on it takes a **lot** of time
+and effort. The development of new features, plus maintenance, bug
+fixing, testing, release preparations and so on is a huge undertaking;
+and that ignores non-development tasks such as writing documentation
+and community management.
 
-A couple of redistributors have chosen to donate 1GBP/1EUR to charity
-for each unit they sell. I appreciate this lovely gesture but as with
-end-user donations it is entirely at their discretion. FlashFloppy
-will always be Free.
+[![paypal](https://img.shields.io/badge/Donate-PayPal-green.svg)][paypal]
+to say thank you with a [**one-time contribution**][paypal]; or
+encourage future development, refinement and community support with
+a [**recurring monthly donation**][paypal] (be sure to tick the
+box!).
+
+No one should feel forced to donate -- FlashFloppy is and always will be
+[Free Software](Redistribution) -- but if you would like to send me some
+beer/coffee tokens and encourage ongoing development and support, they will
+be gratefully received and give me a push to continue onwards and upwards!
+
+Cheers!
+
+[paypal]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RBESHFWEGJYP4

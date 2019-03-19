@@ -8,6 +8,17 @@
    [Gotek](Gotek-Compatibility); or
 3. [**Update**](Firmware-Update) an existing install
 
+## Donations
+
+FlashFloppy is a labour of love: working on it takes a **lot** of time
+and effort. The development of new features, plus maintenance, bug
+fixing, testing, release preparations and so on is a huge undertaking;
+and that ignores non-development tasks such as writing documentation
+and community management.
+
+If you would like to **support FlashFloppy's development**, please see
+the [**Donations page**](Donations).
+
 ## Stable vs Experimental
 
 - v1.x release series is well tested and has sufficient features for the

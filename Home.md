@@ -7,8 +7,16 @@ FlashFloppy is Free and Open-Source Software. It may be freely
 modified and redistributed, but please read the [more detailed
 terms](Redistribution).
 
-Please read [here](Donations) if you wish to donate for FlashFloppy's
-development.
+### Donations
+
+FlashFloppy is a labour of love: working on it takes a **lot** of time
+and effort. The development of new features, plus maintenance, bug
+fixing, testing, release preparations and so on is a huge undertaking;
+and that ignores non-development tasks such as writing documentation
+and community management.
+
+If you would like to **support FlashFloppy's development**, please see
+the [**Donations page**](Donations).
 
 ### Download
 - [**Download FlashFloppy**](Downloads)
@@ -29,8 +37,8 @@ development.
 - [Troubleshooting FAQ](Troubleshooting-FAQ)
 
 ### Support
+- [**Donations**](Donations)
 - [Redistribution](Redistribution)
-- [Donations](Donations)
 - [Project History](Project-History)
 - [Building From Source](Building-From-Source)
 - [Facebook][facebook]

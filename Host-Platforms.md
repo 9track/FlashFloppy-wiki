@@ -3,6 +3,7 @@
 - [Acorn BBC Micro](#acorn-bbc-micro)
 - [Akai Synthesisers](#akai-synthesisers)
 - [Amstrad CPC](#amstrad-cpc)
+- [Amstrad PCW](#amstrad-pcw)
 - [Atari ST](#atari-st)
 - [Commodore Amiga](#commodore-amiga)
 - [DEC](#dec)
@@ -111,7 +112,7 @@ pin34 = rdy             # S1100
 ## Amstrad CPC
 
 FlashFloppy works with a wide range of CPC DSK images, however
-compatibility is not perfact with copy-protected images. If you have
+compatibility is not perfect with copy-protected images. If you have
 an original image which does not work, this is often due to 'GAPS
 protection' where extra data is stored in the gaps between
 sectors. These images can sometimes be fixed to work with
@@ -121,6 +122,34 @@ distribution, for example:
 # git clone https://github.com/keirf/FlashFloppy
 # python FlashFloppy/scripts/edsk_fix_gaps.py crazy_cars.dsk crazy_cars_fixed.dsk
 ```
+
+#### Physical Connection of a Standard Gotek
+
+See [here][cpc-pins] for guidance on connecting the CPC's 26-pin cable
+to the Gotek 34-pin header. Also note that the CPC's power cable has
++5v and +12v reversed: you must use an adapter or otherwise somehow insert
+the power connector backwards. If you do not, you will damage your Gotek
+and destroy any USB stick that you insert!
+
+Note that Gotek clones designed specifically for CPC (or Spectrum +3)
+will use the data and power connectors as-is, and the above should be
+ignored.
+
+## Amstrad PCW
+
+PCW uses a standard Shugart 26-pin header as described [here][shugart-26],
+requiring an adapter to connect to the Gotek 34-pin header.
+
+#### Fixing Boot-Time Hangs
+
+Later versions of LocoScript and CP/M require Drive A to correctly
+respond to the Motor signal (Gotek pin 16), by deasserting Ready
+(Gotek pin 34) when the motor is off. Unfortunately the Gotek usually
+ignores Motor, and the PCW will hang during boot waiting for the drive
+to respond correctly. [This page][pcw-hack] (in Italian, so use Google
+Translate) explains how to modify the Gotek to fix this
+problem. Section 8.3 of [this document][pcw-hw] gives more technical
+information on the floppy-drive probe logic which causes this issue.
 
 ## Atari ST
 
@@ -351,6 +380,18 @@ the image in two ways.
 # python FlashFloppy/scripts/edsk_fix_speedlock.py robocop.dsk robocop_fixed.dsk
 ```
 
+#### Spectrum +3: Physical Connection of a Standard Gotek
+
+See [here][cpc-pins] for guidance on connecting the Spectrum +3's 26-pin cable
+to the Gotek 34-pin header. Also note that the +3's power cable has
++5v and +12v reversed: you must use an adapter or otherwise somehow insert
+the power connector backwards. If you do not, you will damage your Gotek
+and destroy any USB stick that you insert!
+
+Note that Gotek clones designed specifically for CPC and Spectrum +3
+will use the data and power connectors as-is, and the above should be
+ignored.
+
 ## Tandy Color Computer
 
 Requires `host = tandy-coco` in FF.CFG to indentify DSK images as JVC format.
@@ -367,4 +408,8 @@ be explicitly configured via `host = uknc` in FF.CFG.
 [a1200_mod]: https://www.youtube.com/watch?v=G6fYOjTYvXM
 [amiga_cable]: https://www.ebay.co.uk/itm/272363110859
 [bbc-problem]: http://www.sprow.co.uk/bbc/floppydrives.htm
+[cpc-pins]: http://www.cpcwiki.eu/index.php/DIY:Floppy_Drives
 [samdisk]: http://simonowen.com/samdisk/
+[shugart-26]: http://old.pinouts.ru/HD/26pin_microfloppy_pinout.shtml
+[pcw-hack]: https://fabriziodivittorio.blogspot.com/2018/05/installazione-gotek-su-amstrad-pcw-9512.html
+[pcw-hw]: https://www.seasip.info/Unix/Joyce/hardware.pdf

@@ -127,9 +127,9 @@ distribution, for example:
 
 See [here][cpc-pins] for guidance on connecting the CPC's 26-pin cable
 to the Gotek 34-pin header. Also note that the CPC's power cable has
-+5v and +12v reversed: you must use an adapter or otherwise somehow insert
-the power connector backwards. If you do not, you will damage your Gotek
-and destroy any USB stick that you insert!
++5v and +12v reversed: you **must** use an adapter or otherwise
+somehow insert the power connector backwards. If you do not, you will
+**damage your Gotek** and **destroy any USB stick** that you insert!
 
 Note that Gotek clones designed specifically for CPC (or Spectrum +3)
 will use the data and power connectors as-is, and the above should be
@@ -384,9 +384,9 @@ the image in two ways.
 
 See [here][cpc-pins] for guidance on connecting the Spectrum +3's 26-pin cable
 to the Gotek 34-pin header. Also note that the +3's power cable has
-+5v and +12v reversed: you must use an adapter or otherwise somehow insert
-the power connector backwards. If you do not, you will damage your Gotek
-and destroy any USB stick that you insert!
++5v and +12v reversed: you **must** use an adapter or otherwise somehow insert
+the power connector backwards. If you do not, you will **damage your Gotek**
+and **destroy any USB stick** that you insert!
 
 Note that Gotek clones designed specifically for CPC and Spectrum +3
 will use the data and power connectors as-is, and the above should be

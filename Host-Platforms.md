@@ -137,8 +137,11 @@ ignored.
 
 ## Amstrad PCW
 
-PCW uses a standard Shugart 26-pin header as described [here][shugart-26],
-requiring an adapter to connect to the Gotek 34-pin header.
+PCW uses a non-standard 26-pin header as described [here
+(CPCWiki)][shugart-26], requiring an adapter to connect to the Gotek
+34-pin header. Please note that this is **NOT** the same as the CPC
+26-pin header, and if you use a CPC-compatible adapter or cable you
+may damage your Gotek or your PCW!
 
 #### Fixing Boot-Time Hangs
 
@@ -410,6 +413,6 @@ be explicitly configured via `host = uknc` in FF.CFG.
 [bbc-problem]: http://www.sprow.co.uk/bbc/floppydrives.htm
 [cpc-pins]: http://www.cpcwiki.eu/index.php/DIY:Floppy_Drives
 [samdisk]: http://simonowen.com/samdisk/
-[shugart-26]: http://old.pinouts.ru/HD/26pin_microfloppy_pinout.shtml
+[shugart-26]: http://www.cpcwiki.eu/forum/amstrad-cpc-hardware/gotek-(flashfloppy)-wiring-for-a-pcw9512
 [pcw-hack]: https://fabriziodivittorio.blogspot.com/2018/05/installazione-gotek-su-amstrad-pcw-9512.html
 [pcw-hw]: https://www.seasip.info/Unix/Joyce/hardware.pdf

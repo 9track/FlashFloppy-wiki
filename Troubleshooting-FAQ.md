@@ -31,6 +31,17 @@ any floppy images**
 usually because you have an Escom motherboard. Please check out
 [this informative Youtube video][a1200_mod].
 
+- **I installed a Gotek as external drive, but I cannot read from it**
+  - If you have Kickstart v2 or later, try booting Workbench from the
+Gotek. Or if you have a DF0/DF1 switch, select the Gotek as DF0 and
+try booting any bootable disk. If the Gotek fails to boot, but
+succeeds if you unplug the internal drive, then it's probably a
+PC drive that has been hacked to work with Amiga: Check the drive's
+circuit board around the 34-pin header to see if it has been modified
+(in particular, whether pins 30 and 34 are wired together). If so,
+this modification does not support multiple drives and you must remove
+the hack or replace it with a germanium diode (cathode to pin 30).
+
 - **The AUTOBOOT file selector does not recognise my Gotek drive**
   - First please make sure you are running latest firmware and
 AUTOBOOT (both are included in the [latest release](Downloads)).

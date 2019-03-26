@@ -83,10 +83,10 @@ For optional parameters, the default values are marked by asterisk.
     - eg. 250 is MFM DD, 500 is MFM HD, 125 is FM SD.
   - N=0: Auto-select based on recording mode and size of track
 
-- **file-layout** = interleaved* | sequential | sides-swapped | side1-reversed
+- **file-layout** = interleaved* | sequential | reverse-sideN | sides-swapped
   - Image file track layout
-  - Multiple values can be specified, separated by commas (eg. *sequential,side1-reversed*)
+  - Multiple values can be specified, separated by commas (eg. *sequential,reverse-side1*)
   - **sequential**: Sequential cylinder ordering: all side 0, then side 1
   - **interleaved**: Interleaved cylinder ordering: c0s0, c0s1, c1s0, c1s1, ...
-  - **side1-reversed**: Second-side cylinders are in reverse order (high to low)
+  - **reverse-sideN**: Side-N cylinders are in reverse order (high to low) (N=0,1)
   - **sides-swapped**: Sides 0 and 1 ordering is swapped in the image file

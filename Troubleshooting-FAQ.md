@@ -1,5 +1,6 @@
 - [General](#general)
 - [Commodore Amiga](#commodore-amiga)
+- [Raw Images (IMG/IMA)](#raw-images-imgima)
 - [Image Formats](#image-formats)
 
 ## General
@@ -54,6 +55,25 @@ in [this Youtube video][a1200_mod]).
 
 [a1200_mod]: https://www.youtube.com/watch?v=G6fYOjTYvXM
 [systest]: https://github.com/keirf/Amiga-Stuff/blob/master/README.md
+
+## Raw Images (IMG/IMA)
+
+- **Images work but are much slower than a real floppy drive (half speed
+or worse)**
+  - The host probably expects sectors to be interleaved (non-sequential)
+within a track, and/or to be skewed (sector 1 at a variable offset) across
+tracks. Interleave and skew can be adjusted via a custom track layout
+in [IMG.CFG](IMG.CFG-Configuration-File).
+
+- **In IMG.CFG, how do I work out what interleave and skew values to use?**
+  - Many systems require neither and you can use the default 0
+values. If your disk accesses are very slow (see previous question)
+then try adjusting *cskew* incrementally until you see a performance
+increase. Then repeat for *interleave*. A very few systems require
+*sskew* too, but this is rare. If you have access to an HFE image that
+works at correct speed, you can check for interleave and skew in the
+Track-Analyser visualiser in the HxC software suite for Mac and
+Windows.
 
 ## Image Formats
 

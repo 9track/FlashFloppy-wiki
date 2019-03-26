@@ -41,7 +41,7 @@ For optional parameters, the default values are marked by asterisk.
 - **heads** = 1-2 (**Mandatory**)
   - Number of heads (aka sides)
 
-- **secs** = 1-64 (**Mandatory**)
+- **secs** = 1-256 (**Mandatory**)
   - Number of sectors per track
 
 - **bps** = 128 | 256 | 512 | 1024 | 2048 | 4096 | 8192 (**Mandatory**)
@@ -62,8 +62,11 @@ For optional parameters, the default values are marked by asterisk.
 - **interleave** = 1-255 (1*)
   - Sector interleave (default is 1:1, which is no interleave)
   
-- **skew** = 0-255 (0*)
-  - Sector skew across tracks (default is 0, which is no skew)
+- **cskew** = 0-255 (0*)
+  - Sector skew per cylinder (default is 0, which is no skew)
+
+- **sskew** = 0-255 (0*)
+  - Sector skew per side (default is 0, which is no skew)
 
 - **rpm** = 1-1000 (300*)
   - Rotational RPM
@@ -79,3 +82,11 @@ For optional parameters, the default values are marked by asterisk.
   - Data rate in kHz (kbit/s).
     - eg. 250 is MFM DD, 500 is MFM HD, 125 is FM SD.
   - N=0: Auto-select based on recording mode and size of track
+
+- **file-layout** = interleaved* | sequential | sides-swapped | side1-reversed
+  - Image file track layout
+  - Multiple values can be specified, separated by commas (eg. *sequential,side1-reversed*)
+  - **sequential**: Sequential cylinder ordering: all side 0, then side 1
+  - **interleaved**: Interleaved cylinder ordering: c0s0, c0s1, c1s0, c1s1, ...
+  - **side1-reversed**: Second-side cylinders are in reverse order (high to low)
+  - **sides-swapped**: Sides 0 and 1 ordering is swapped in the image file

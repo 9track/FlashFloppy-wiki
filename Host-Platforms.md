@@ -116,11 +116,10 @@ compatibility is not perfect with copy-protected images. If you have
 an original image which does not work, this is often due to 'GAPS
 protection' where extra data is stored in the gaps between
 sectors. These images can sometimes be fixed to work with
-FlashFloppy by running a script included in the source
+FlashFloppy by running a script included in the FlashFloppy
 distribution, for example:
 ```
-# git clone https://github.com/keirf/FlashFloppy
-# python FlashFloppy/scripts/edsk_fix_gaps.py crazy_cars.dsk crazy_cars_fixed.dsk
+# python scripts/edsk_fix_gaps.py crazy_cars.dsk crazy_cars_fixed.dsk
 ```
 
 #### Physical Connection of a Standard Gotek
@@ -377,10 +376,9 @@ the image in two ways.
 # SAMdisk robocop.dsk robocop_fixed.dsk --fix
 ```
 
-2. Using the Python script included in the FlashFloppy source repository
+2. Using the Python script included in the FlashFloppy distribution
 ```
-# git clone https://github.com/keirf/FlashFloppy
-# python FlashFloppy/scripts/edsk_fix_speedlock.py robocop.dsk robocop_fixed.dsk
+# python scripts/edsk_fix_speedlock.py robocop.dsk robocop_fixed.dsk
 ```
 
 #### Spectrum +3: Physical Connection of a Standard Gotek

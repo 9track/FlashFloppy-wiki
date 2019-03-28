@@ -35,7 +35,7 @@ optional, are specified. These are listed below.
 
 For optional parameters, the default values are marked by asterisk.
 
-- **cyls** = 1-85 (**Mandatory**)
+- **cyls** = 1-254 (**Mandatory**)
   - Number of cylinders
 
 - **heads** = 1-2 (**Mandatory**)

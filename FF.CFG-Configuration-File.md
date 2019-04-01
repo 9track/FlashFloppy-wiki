@@ -150,7 +150,7 @@ Default values are marked by asterisk.
  
 ### Display:
 
-- **display-type** = auto* | lcd-NNx02 | oled[-128xNN][-rotate][-narrow[er]][-sh1106] | led[-trk]
+- **display-type** = auto* | lcd-NNx02 | oled[-128xNN][-rotate][-narrow[er]][-sh1106]
   - **auto**: Auto-detect (7-seg LED, LCD, OLED)
   - **lcd-NNx02**: NNx2 backlit LCD with I2C backpack (16 <= NN <= 40)
   - **oled-128xNN**: 128xNN I2C OLED (NN = 32 | 64)
@@ -159,10 +159,6 @@ Default values are marked by asterisk.
       - **-narrow**: 18 characters of 6x13 font
       - **-narrower**: 16 characters of 6x13 font
     - **-sh1106**: SH1106 controller (default is SSD1306)
-  - **led**: 7-seg LED **[v2.x]**
-    - **-trk**: Display track number when an image is mounted, instead of slot number
-      - First button press reinstates slot number on display for two seconds
-      - A subsequent button press during this period starts image navigation/selection
 
 - **oled-font** = 6x13* | 8x16
   - Select 6px- or 8px-wide OLED display font

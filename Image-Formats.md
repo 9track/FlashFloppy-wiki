@@ -14,3 +14,7 @@
 - V9T9, DSK (TI-99/4A)
 - VDK (Dragon)
 - HFE, HFEv3 (Universal)
+
+**[v2.x Releases Only]:**
+- ATR (Atari 8-bit)
+- XDF (FAT-based eXtended Disk Format, 3.5" HD 1840kB)

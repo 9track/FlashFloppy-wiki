@@ -47,14 +47,12 @@ For optional parameters, the default values are marked by asterisk.
 - **bps** = 128 | 256 | 512 | 1024 | 2048 | 4096 | 8192 (**Mandatory**)
   - Data bytes per sector
 
-- **id** = 0-255[:0-255][,0-255[:0-255]] (1*)
+- **id** = 0-255[:0-255] (1*)
   - ID of the first sector on each track
   - Successive sectors are numbered sequentially upwards
   - Numbers may be expressed in hexadecimal with 0x prefix (eg. 0xab).
-  - Format x,y allows specifying different IDs for cylinder 0 vs cylinders 1+.
   - Format x:y allows specifying different ID (x, y) for each head/disk-side.
-  - Format x specified same ID (x) for both heads/sides of a double-sided disk.
-    - eg. 1:10,0x21:0x30 means c0h0=1, c0h1=10, cNh0=0x21, cNh1=0x30 (N > 0)
+  - Format x specifies same ID (x) for both heads/sides of a double-sided disk.
 
 - **mode** = fm | mfm*
   - Recording mode
@@ -65,8 +63,8 @@ For optional parameters, the default values are marked by asterisk.
 - **cskew** = 0-255 (0*)
   - Sector skew per cylinder (default is 0, which is no skew)
 
-- **sskew** = 0-255 (0*)
-  - Sector skew per side (default is 0, which is no skew)
+- **hskew** = 0-255 (0*)
+  - Sector skew per head (default is 0, which is no skew)
 
 - **rpm** = 1-1000 (300*)
   - Rotational RPM

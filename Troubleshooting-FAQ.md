@@ -1,4 +1,5 @@
 - [General](#general)
+- [OLED Displays](#oled-displays)
 - [Commodore Amiga](#commodore-amiga)
 - [Raw Images (IMG/IMA)](#raw-images-imgima)
 - [Image Formats](#image-formats)
@@ -16,6 +17,16 @@
   - This is equivalent to the above problem, but with an LCD/OLED display.
   See answer above.
   
+- **My Gotek will only display 'UPD'**
+  - FlashFloppy is stuck in its update bootloader. This is usually because
+  you have a short from jumper JA to ground. Check that jumpers are installed
+  correctly at the rear of the Gotek. Also check the underside of the Gotek
+  PCB for shorts (eg. solder blobs).
+
+- **My Gotek will only display 'FF Update Flash'**
+  - This is equivalent to the above problem, but with an LCD/OLED display.
+  See answer above.
+  
 - **My Gotek does not recognise any USB stick that I insert, and then
 afterwards they all fail to work even in a PC**
   - You are feeding more than 5 volts power to the Gotek, and frying
@@ -23,6 +34,37 @@ all your USB sticks! This is commonly because either the connector is
 inserted upside down, or because of a non-standard connector (eg
 Amstrad CPC, Spectrum +3). Either way you fed 12 volts to the
 Gotek. It usually survives, but USB sticks are instantly killed.
+
+## OLED Displays
+
+- **My OLED display shows garbage**  
+![Garbage OLED](assets/oled_corrupt.jpg)
+  - Up to firmware v2.3a, you need one of the following lines in FF.CFG:
+  ```
+  display-type=oled-128x32-sh1106
+  display-type=oled-128x64-sh1106
+  ```
+  - From v2.3a the display controller is auto-detected, and this is no
+  longer needed. However, if your display is 128x64 then this must
+  still be explicitly configured, or your display may be misaligned or
+  display only every other row: `display-type=oled-128x64`.
+
+- **My OLED display illuminates only every other row**  
+![Alternating OLED](assets/oled_alternating.jpg)
+  - You have a 128x64 OLED display, which by default is driven as
+  128x32. You must explicitly configure the display size in FF.CFG:
+  `display-type=oled-128x64`.
+
+- **My OLED display shows a vertical bar at the left or right side**  
+![Vertical bar OLED](assets/oled_bar_lhs.jpg)
+  - Make sure the display size (128x32 or 128x64) is correctly configured
+  in FF.CFG.
+  - Try the latest firmwares in both the stable and experimental
+  release series.
+  - If either or both of the latest firmwares do not display
+  correctly, raise a ticket on the [issue tracker][issue-tracker], or
+  raise a question on the [Facebook group][facebook].
+
 
 ## Commodore Amiga
 
@@ -90,3 +132,6 @@ writes. Generally they are intended for archiving rather than emulation.
 
 - **Can you support DMS/ADZ/...?**
   - No. See above.
+
+[issue-tracker]: https://github.com/keirf/FlashFloppy/issues
+[facebook]: https://www.facebook.com/groups/flashfloppy/

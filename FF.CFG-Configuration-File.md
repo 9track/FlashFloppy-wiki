@@ -159,6 +159,7 @@ Default values are marked by asterisk.
       - **-narrow**: 18 characters of 6x13 font
       - **-narrower**: 16 characters of 6x13 font
     - **-sh1106**: SH1106 controller (default is SSD1306)
+      - **[v2.x]** This option is obsolete and ignored (controller is autodetected)
 
 - **oled-font** = 6x13* | 8x16
   - Select 6px- or 8px-wide OLED display font

@@ -29,7 +29,7 @@ features and design changes.
 Use v2.x if you need or love the latest features, or you would like to
 provide test feedback!
 
-## Old Releases
+## Selected Old Releases
 
 - **v2.1a**: [(Download)][v2.1a-zip] [(Notes)][v2.1a-notes]
 - **v2.0a**: [(Download)][v2.0a-zip] [(Notes)][v2.0a-notes]

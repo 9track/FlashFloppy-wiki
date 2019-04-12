@@ -135,13 +135,15 @@ Default values are marked by asterisk.
   - **rotary-fast**: 1: Prev (accelerated), 2: Next (accelerated), Both: Up-dir
   - **reverse**: Reverse operation of the buttons (useful if installed upside down)
 
-- **rotary** = none | quarter | half | full* | reverse
-  - Type of rotary encoder connected to pins PC10 and PC11
+- **rotary** = none | quarter | half | full* | trackball | buttons | reverse
+  - Type of input sensor at the rotary-encoder inputs (pins PC10 and PC11)
   - Multiple values can be specified, separated by commas (eg. *half,reverse*)
-  - **none**: No rotary encoder is connected
-  - **quarter**, **half**, **full**: Fraction of a Gray-code cycle performed per detent/click
+  - **none**: No input sensor is connected
+  - **quarter**, **half**, **full**: Rotary encoder, identified by fraction of a Gray-code cycle performed per detent/click
     - Select **half** if default value (**full**) requires 2 clicks per move
     - Select **quarter** if default value (**full**) requires 4 clicks per move
+  - **trackball**: Blackberry-style trackball **[v2.x]**
+  - **buttons**: Push-to-ground Prev/Next buttons **[v2.x]**
   - **reverse**: Reverse direction of the knob (useful if wired backwards!)
 
 - **indexed-prefix** = quoted-string ("DSKA"*) **[v2.x]**

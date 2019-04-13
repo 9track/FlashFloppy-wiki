@@ -4,6 +4,7 @@
 - [LCD Display](#lcd-display)
 - [OLED Display](#oled-display)
 - [Rotary Encoder](#rotary-encoder)
+- [Blackberry Trackball](#blackberry-trackball)
 - [Enhanced Gotek](#enhanced-gotek)
 
 ## Board Layout
@@ -85,7 +86,7 @@ reusing the existing jumper wires.
 ![OLED Display Front](assets/oled1.jpg)
 
 I2C 128x64 monochrome displays are also compatible. The usual sizes
-are 0.96" and 1.3". The 1.3" size needs a line in FF.CFG:
+are 0.96" and 1.3". The 1.3" size needs a line in [FF.CFG][ffcfg]:
 `display-type = oled-128x64-sh1106`.
 
 ## Rotary Encoder
@@ -113,11 +114,34 @@ buttons: anti-clockwise for down, and clockwise for up.
 Troubleshooting:
 - Directional controls are inverted: swap the A and B (aka CLK, DT) wires.
 - Four clicks are required to move a single step: specify
-  `rotary=gray` in FF.CFG
+  `rotary=gray` in [FF.CFG][ffcfg]
 - PCB modules only: Both directions move up (or down):
   - Connect + to 3.3V (marked in picture above); or
   - Remove pull-up resistors from the back of the PCB; or
   - Remove the encoder from the PCB and solder wires directly.
+
+## Blackberry Trackball
+
+**[v2.x Releases Only]**
+
+A neat alternative to a rotary encoder is the Blackberry-style miniature
+trackball. These can be found on Ebay and AliExpress for a few dollars.
+Unfortunately they are tricky to fit to a standard Gotek front panel due
+to the size of their PCB; however, they are an interesting option for
+custom designs.
+
+Wiring is very similar to the PCB-based rotary encoder. With reference
+to the lines in the encoder's wiring diagram:
+- VCC connects to 3.3V (dashed orange)
+- GND connects to ground (black)
+- BTN connects to JA (green)
+- LEFT/RIGHT (*or* UP/DOWN) connect to the rotary pins (blue/red).
+
+You will additionally require `display-type = trackball` in [FF.CFG][ffcfg].
+
+Here is a video demonstrating the trackball in action: 
+
+[![FlashFloppy trackball install](http://img.youtube.com/vi/IPyOquRYxm8/0.jpg)](http://www.youtube.com/watch?v=IPyOquRYxm8 "FlashFloppy trackball install")
 
 ## Enhanced Gotek
 
@@ -190,3 +214,5 @@ a card-detection switch which is open when a card is inserted, and
 closed when ejected. A switch with the opposite sense will require
 extra circuitry (eg. pull-up resistor and an open-drain MOSFET to
 invert the switch signal).
+
+[ffcfg]: FF.CFG-Configuration-File

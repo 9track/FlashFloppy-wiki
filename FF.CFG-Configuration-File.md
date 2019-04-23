@@ -117,6 +117,12 @@ Default values are marked by asterisk.
   - Auto-select the current folder after N seconds
   - N=0: disable auto-select
 
+- **folder-sort** = always* | never | small **[v2.x]**
+  - Choose how folder entries are sorted in native navigation mode
+  - **always**: Always sort folder entries: Large folders may be truncated
+  - **never**: Never sort folder entries, instead presenting them in FAT order
+  - **small**: Only sort folders which are small enough to sort in full
+
 - **nav-mode** = native | indexed | default*
   - Navigation mode for selecting images or slots
   - **native**: Navigate through all valid images and folders

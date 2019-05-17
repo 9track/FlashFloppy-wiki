@@ -91,6 +91,15 @@ Default values are marked by asterisk.
 - **head-settle-ms** = 0-255 (12*)
   - Milliseconds from head-step start to RDATA active
 
+- **motor-delay** = 0-1000 | ignore*
+  - Milliseconds delay from motor-on to ready (or, ignore motor signal)
+  - Note that on a standard unmodified Gotek the motor signal is not physically
+    connected, and modifying this option will have no effect.
+    See [Hardware Mods](Hardware-Mods#motor-signal) to rectify this.
+  - Further note that most systems and software do not care about correct
+    motor emulation, and this option can be safely left at its default.
+  - If correct emulation is required, 200 is a sensible starting value.
+
 ### Startup & Initialisation:
 
 - **ejected-on-startup** = yes | no*

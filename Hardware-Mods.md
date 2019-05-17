@@ -5,6 +5,7 @@
 - [OLED Display](#oled-display)
 - [Rotary Encoder](#rotary-encoder)
 - [Blackberry Trackball](#blackberry-trackball)
+- [Motor Signal](#motor-signal)
 - [Enhanced Gotek](#enhanced-gotek)
 
 ## Board Layout
@@ -142,6 +143,31 @@ You will additionally require `display-type = trackball` in [FF.CFG][ffcfg].
 Here is a video demonstrating the trackball in action: 
 
 [![FlashFloppy trackball install](http://img.youtube.com/vi/IPyOquRYxm8/0.jpg)](http://www.youtube.com/watch?v=IPyOquRYxm8 "FlashFloppy trackball install")
+
+## Motor Signal
+
+**[v2.x Releases Only]**
+
+The new [FF.CFG][ffcfg] `motor-delay` option allows for emulation of correct
+motor behaviour: the Gotek drive does not report it is 'ready' until some
+milliseconds after it is ordered to spin up the drive motor.
+
+However, standard Gotek does not internally connect to the motor signal, and
+the following modification is required to:
+1. Pull Gotek interface pin 16 up to 5v via a 1k resistor
+2. Connect Gotek interface pin 16 to STM32F105 pin 36 (PB15)
+
+STM32 pin 36 is connected to pin 5 of the unoccupied SPI Flash footprint
+on the Gotek PCB. This is the easiest point to solder a wire to, as shown
+below:
+
+![Motor attachment top](assets/motor_top.jpg)
+
+The other end of this wire is soldered to pin 16 of the floppy header. A
+1k resistor must also be soldered from pin 16 to the 5v rail. See below
+(the resistor is hidden in heatshrink tubing):
+
+![Motor attachment bottom](assets/motor_bottom.jpg)
 
 ## Enhanced Gotek
 

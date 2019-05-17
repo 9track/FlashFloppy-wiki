@@ -153,6 +153,12 @@ Translate) explains how to modify the Gotek to fix this
 problem. Section 8.3 of [this document][pcw-hw] gives more technical
 information on the floppy-drive probe logic which causes this issue.
 
+**[v2.x]** A new option for correct motor emulation is provided in
+FF.CFG: `motor-delay = 200`. Note that a standard Gotek needs a
+[circuit modification](Hardware-Mods#motor-signal) to connect the
+motor signal. This is an alternative to the extra external circuitry
+described in the previous paragraph.
+
 ## Atari ST
 
 No special configuration is required. Interface is Shugart (the default) and

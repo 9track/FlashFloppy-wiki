@@ -41,6 +41,7 @@ alternatively press Select, or the rotary encoder, if you have them.
   - Remove all old ***.upd** and ***.rld** files from the USB stick.
   - Copy the contents of the release's **reloader/** folder to the root of
   the USB stick.
+    - **[v2.x]** Please note the folder has moved to **alt/reloader**
   - Insert the USB stick into the Gotek and power on with both buttons
   pressed.
   - You should now be in the bootloader ("UPD"). Release both buttons.

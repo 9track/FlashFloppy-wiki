@@ -31,35 +31,32 @@ provide test feedback!
 
 ## Selected Old Releases
 
+### v2
 - **v2.8a**: [(Download)][v2.8a-zip] [(Notes)][v2.8a-notes]
 - **v2.7a**: [(Download)][v2.7a-zip] [(Notes)][v2.7a-notes]
 - **v2.6a**: [(Download)][v2.6a-zip] [(Notes)][v2.6a-notes]
 - **v2.4a**: [(Download)][v2.4a-zip] [(Notes)][v2.4a-notes]
 - **v2.1a**: [(Download)][v2.1a-zip] [(Notes)][v2.1a-notes]
 - **v2.0a**: [(Download)][v2.0a-zip] [(Notes)][v2.0a-notes]
+
+### v1
 - **v1.1**: [(Download)][v1.1-zip] [(Notes)][v1.1-notes]
 - **v1.0**: [(Download)][v1.0-zip] [(Notes)][v1.0-notes]
+
+### Older
 - **v0.15**: [(Download)][v0.15-zip] [(Notes)][v0.15-notes]
 - **v0.14**: [(Download)][v0.14-zip] [(Notes)][v0.14-notes]
 - **v0.11**: [(Download)][v0.11-zip] [(Notes)][v0.11-notes]
 - **v0.10**: [(Download)][v0.10-zip] [(Notes)][v0.10-notes]
-- **v0.9.31a**: [(Download)][v0.9.31a-zip] [(Notes)][v0.9.31a-notes]
 - **v0.9.30a**: [(Download)][v0.9.30a-zip] [(Notes)][v0.9.30a-notes]
-- **v0.9.29a**: [(Download)][v0.9.29a-zip] [(Notes)][v0.9.29a-notes]
 - **v0.9.28a**: [(Download)][v0.9.28a-zip] [(Notes)][v0.9.28a-notes]
-- **v0.9.27a**: [(Download)][v0.9.27a-zip] [(Notes)][v0.9.27a-notes]
 - **v0.9.26a**: [(Download)][v0.9.26a-zip] [(Notes)][v0.9.26a-notes]
-- **v0.9.25a**: [(Download)][v0.9.25a-zip] [(Notes)][v0.9.25a-notes]
 - **v0.9.24a**: [(Download)][v0.9.24a-zip] [(Notes)][v0.9.24a-notes]
 - **v0.9.22a**: [(Download)][v0.9.22a-zip] [(Notes)][v0.9.22a-notes]
-- **v0.9.21a**: [(Download)][v0.9.21a-zip] [(Notes)][v0.9.21a-notes]
 - **v0.9.20a**: [(Download)][v0.9.20a-zip] [(Notes)][v0.9.20a-notes]
-- **v0.9.19a**: [(Download)][v0.9.19a-zip] [(Notes)][v0.9.19a-notes]
 - **v0.9.18a**: [(Download)][v0.9.18a-zip] [(Notes)][v0.9.18a-notes]
 - **v0.9.16a**: [(Download)][v0.9.16a-zip] [(Notes)][v0.9.16a-notes]
-- **v0.9.15a**: [(Download)][v0.9.15a-zip] [(Notes)][v0.9.15a-notes]
 - **v0.9.14a**: [(Download)][v0.9.14a-zip] [(Notes)][v0.9.14a-notes]
-- **v0.9.13a**: [(Download)][v0.9.13a-zip] [(Notes)][v0.9.13a-notes]
 - **v0.9.12a**: [(Download)][v0.9.12a-zip] [(Notes)][v0.9.12a-notes]
 - **v0.9.6a**: [(Download)][v0.9.6a-zip] [(Notes)][v0.9.6a-notes]
 - **v0.8.8a**: [(Download)][v0.8.8a-zip]

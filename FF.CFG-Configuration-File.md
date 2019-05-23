@@ -132,6 +132,12 @@ Default values are marked by asterisk.
   - **never**: Never sort folder entries, instead presenting them in FAT order
   - **small**: Only sort folders which are small enough to sort in full
 
+- **sort-priority** = folders* | files | none **[v2.x]**
+  - Priority of files vs subfolders when sorting folder entries
+  - **folders**: Folders are listed before files
+  - **files**: Files are listed before folders
+  - **none**: Folders and files are not differentiated
+
 - **nav-mode** = native | indexed | default*
   - Navigation mode for selecting images or slots
   - **native**: Navigate through all valid images and folders

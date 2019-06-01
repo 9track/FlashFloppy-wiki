@@ -13,8 +13,12 @@
 - [FF.CFG Configuration File](FF.CFG-Configuration-File)
 - [IMG.CFG Configuration File](IMG.CFG-Configuration-File)
 - [Host Platforms](Host-Platforms)
+
+## Troubleshooting
 - [Error Messages](Error-Messages)
 - [Troubleshooting FAQ](Troubleshooting-FAQ)
+- [Logging to USB Drive](Logging-To-USB-Drive)
+- [Testing I/O Pins](Testing-IO-Pins)
 
 ## Support
 - [**Donations**](Donations)

@@ -126,13 +126,13 @@ Default values are marked by asterisk.
   - Auto-select the current folder after N seconds
   - N=0: disable auto-select
 
-- **folder-sort** = always* | never | small **[v2.x]**
+- **folder-sort** = always* | never | small
   - Choose how folder entries are sorted in native navigation mode
   - **always**: Always sort folder entries: Large folders may be truncated
   - **never**: Never sort folder entries, instead presenting them in FAT order
   - **small**: Only sort folders which are small enough to sort in full
 
-- **sort-priority** = folders* | files | none **[v2.x]**
+- **sort-priority** = folders* | files | none
   - Priority of files vs subfolders when sorting folder entries
   - **folders**: Folders are listed before files
   - **files**: Files are listed before folders
@@ -163,17 +163,17 @@ Default values are marked by asterisk.
   - **quarter**, **half**, **full**: Rotary encoder, identified by fraction of a Gray-code cycle performed per detent/click
     - Select **half** if default value (**full**) requires 2 clicks per move
     - Select **quarter** if default value (**full**) requires 4 clicks per move
-  - **trackball**: Blackberry-style trackball **[v2.x]**
-  - **buttons**: Push-to-ground Prev/Next buttons **[v2.x]**
+  - **trackball**: Blackberry-style trackball
+  - **buttons**: Push-to-ground Prev/Next buttons
   - **reverse**: Reverse direction of the knob (useful if wired backwards!)
 
-- **indexed-prefix** = quoted-string ("DSKA"*) **[v2.x]**
+- **indexed-prefix** = quoted-string ("DSKA"*)
   - Prefix for image names in indexed navigation mode
   - Empty string ("") means no prefix
  
 ### Display:
 
-- **display-type** = auto* | lcd-NNx02 | oled[-128xNN][-rotate][-narrow[er]][-sh1106]
+- **display-type** = auto* | lcd-NNx02 | oled[-128xNN][-rotate][-narrow[er]]
   - **auto**: Auto-detect (7-seg LED, LCD, OLED)
   - **lcd-NNx02**: NNx2 backlit LCD with I2C backpack (16 <= NN <= 40)
   - **oled-128xNN**: 128xNN I2C OLED (NN = 32 | 64)
@@ -181,8 +181,6 @@ Default values are marked by asterisk.
     - **-narrow[er]**: OLED view is restricted to Gotek display cutout
       - **-narrow**: 18 characters of 6x13 font
       - **-narrower**: 16 characters of 6x13 font
-    - **-sh1106**: SH1106 controller (default is SSD1306)
-      - **[v2.x]** This option is obsolete and ignored (controller is autodetected)
 
 - **oled-font** = 6x13* | 8x16
   - Select 6px- or 8px-wide OLED display font

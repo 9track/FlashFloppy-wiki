@@ -123,8 +123,6 @@ Troubleshooting:
 
 ## Blackberry Trackball
 
-**[v2.x Releases Only]**
-
 A neat alternative to a rotary encoder is the Blackberry-style miniature
 trackball. These can be found on Ebay and AliExpress for a few dollars.
 Unfortunately they are tricky to fit to a standard Gotek front panel due
@@ -145,8 +143,6 @@ Here is a video demonstrating the trackball in action:
 [![FlashFloppy trackball install](http://img.youtube.com/vi/IPyOquRYxm8/0.jpg)](http://www.youtube.com/watch?v=IPyOquRYxm8 "FlashFloppy trackball install")
 
 ## Motor Signal
-
-**[v2.x Releases Only]**
 
 The new [FF.CFG][ffcfg] `motor-delay` option allows for emulation of correct
 motor behaviour: the Gotek drive does not report it is 'ready' until some

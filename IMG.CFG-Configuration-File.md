@@ -1,6 +1,4 @@
 
-**[v2.x Releases Only]**
-
 FlashFloppy can usually automatically determine the layout of IMG/IMA
 files, based on their size and (optionally) a hint about the host they
 target (FF.CFG: *host=*).

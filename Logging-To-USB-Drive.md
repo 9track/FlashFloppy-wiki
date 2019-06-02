@@ -11,6 +11,10 @@ Follow steps for [Firmware Update](Firmware-Update) but use the update
 file contained in the **alt/logfile** subfolder of the FlashFloppy
 distribution.
 
+On successful update, when USB stick is ejected you should see **Log**
+on the Gotek display (this replaces **F-F** on the standard 3-digit
+LED display).
+
 **NOTE:** Please update back to the normal firmware after diagnosing
 your issue.
 

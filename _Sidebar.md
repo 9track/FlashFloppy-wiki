@@ -22,6 +22,7 @@
 
 ## Support
 - [**Donations**](Donations)
+- [News](News)
 - [Redistribution](Redistribution)
 - [Project History](Project-History)
 - [Building From Source](Building-From-Source)

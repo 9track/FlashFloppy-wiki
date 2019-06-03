@@ -28,10 +28,16 @@ There is also a step-by-step video describing this mod:
 
 [![FlashFloppy speaker install](http://img.youtube.com/vi/UevBaQvG_4Y/0.jpg)](http://www.youtube.com/watch?v=UevBaQvG_4Y "FlashFloppy speaker install")
 
-If you want to connect a magnetic speaker instead, you must buffer via
-an NPN transistor. If you don't know what this means just be sure to
-use a piezo sounder, easily found on Ebay, and connect it directly as
-shown above.
+The disadvantage is that piezo sounders are often too quiet. Instead you
+can attach a magnetic speaker or 5v active buzzer (easily found on Ebay)
+using the following circuit:
+
+![Speaker active circuit](assets/speaker_npn.jpg)
+
+This attaches to the Gotek at 5v, Ground and JB, all of which are
+available at header pins, and are easily connected or soldered to
+(see the [Board Layout](#board-layout), and note that the right-hand
+pin of the jumper row marked JB is Ground).
 
 ## Select/Eject/Insert Button
 

@@ -34,7 +34,7 @@ the [**Donations page**](Donations).
 - [IMG.CFG Configuration File](IMG.CFG-Configuration-File)
 - [Host Platforms](Host-Platforms)
 
-## Troubleshooting
+### Troubleshooting
 - [Error Messages](Error-Messages)
 - [Troubleshooting FAQ](Troubleshooting-FAQ)
 - [Logging to USB Drive](Logging-To-USB-Drive)

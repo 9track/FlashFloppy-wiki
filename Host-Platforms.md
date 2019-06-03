@@ -366,6 +366,9 @@ directly as follows:
 Roland synths typically work out of the box with no special configuration
 required in FF.CFG.
 
+**MT-120:** This synth is reported to require jumpers at **S0** and
+            **MO**, and `pin02 = high` in FF.CFG.
+
 ## Sequential Circuits Prophet 3000
 
 Requires `host = akai` in FF.CFG for correct IMG layout detection.

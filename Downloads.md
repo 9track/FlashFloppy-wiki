@@ -1,9 +1,9 @@
 ## Latest Releases
 
-- **v2.12 (Stable)**: [(Download)][v2.12-zip] [(Notes)][v2.12-notes]
+- **v2.13 (Stable)**: [(Download)][v2.13-zip] [(Notes)][v2.13-notes]
 - **v3.0a (Experimental)**: *To Be Announced*
 
-1. [**Download**][v2.12-zip] the ZIP file
+1. [**Download**][v2.13-zip] the ZIP file
 2. [**Program**](Firmware-Programming) a brand new
    [Gotek](Gotek-Compatibility); or
 3. [**Update**](Firmware-Update) an existing install
@@ -32,6 +32,7 @@ provide test feedback!
 ## Selected Old Releases
 
 ### v2
+- **v2.12**: [(Download)][v2.12-zip] [(Notes)][v2.12-notes]
 - **v2.10a**: [(Download)][v2.10a-zip] [(Notes)][v2.10a-notes]
 - **v2.8a**: [(Download)][v2.8a-zip] [(Notes)][v2.8a-notes]
 - **v2.7a**: [(Download)][v2.7a-zip] [(Notes)][v2.7a-notes]
@@ -65,6 +66,9 @@ provide test feedback!
 - **v0.7.4a**: [(Download)][v0.7.4a-zip]
 
 You can also browse through all available releases [here][all].
+
+[v2.13-zip]: https://github.com/keirf/FlashFloppy/releases/download/v2.13/flashfloppy-v2.13.zip
+[v2.13-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v2.13
 
 [v2.12-zip]: https://github.com/keirf/FlashFloppy/releases/download/v2.12/flashfloppy-v2.12.zip
 [v2.12-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v2.12

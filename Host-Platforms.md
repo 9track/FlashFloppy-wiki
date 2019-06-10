@@ -22,6 +22,7 @@
 - [Tandy Color Computer](#tandy-color-computer)
 - [TI-99/4A](#ti-994a)
 - [UKNC, DVK](#uknc-dvk)
+- [Yamaha DX7II-FD](#yamaha-dx7ii-fd)
 
 ## General Notes
 
@@ -414,6 +415,20 @@ Requires `host = ti99` in FF.CFG to identify DSK images as V9T9 format.
 
 These Soviet PDP-11 clones have a modified IBM track format which must
 be explicitly configured via `host = uknc` in FF.CFG.
+
+## Yamaha DX7II-FD
+
+This vintage synthesizer uses an old drive type with an explicit
+Disk Change Reset signal on pin 1 of the ribbon cable. This requires
+a hardware modification to the ribbon cable or Gotek, as described in the
+[Hardware Mods](Hardware-Mods#disk-change-reset).
+
+It also requires the following line in FF.CFG:
+```
+chgrst = pa14
+```
+
+Please note that this feature is supported only in FlashFloppy v3.x releases.
 
 [a1200_mod]: https://www.youtube.com/watch?v=G6fYOjTYvXM
 [amiga_cable]: https://www.ebay.co.uk/itm/272363110859

@@ -6,6 +6,7 @@
 - [Rotary Encoder](#rotary-encoder)
 - [Blackberry Trackball](#blackberry-trackball)
 - [Motor Signal](#motor-signal)
+- [Disk Change Reset](#disk-change-reset)
 - [Enhanced Gotek](#enhanced-gotek)
 
 ## Board Layout
@@ -15,6 +16,12 @@ pin headers on the Gotek PCB. The PCB layout is summarised below. We
 will refer to this diagram for each hardware mod.
 
 ![Board Layout](assets/pinout.png)
+
+Certain modifications attach to the Gotek programming header, which has the
+layout indicated below. Please note that some Gotek revisions do not have
+all header pins available.
+
+![Programming Header](assets/pheader.jpg)
 
 ## Speaker
 
@@ -170,6 +177,37 @@ The other end of this wire is soldered to pin 16 of the floppy header. A
 (the resistor is hidden in heatshrink tubing):
 
 ![Motor attachment bottom](assets/motor_bottom.jpg)
+
+## Disk Change Reset
+
+**[v3.x Releases Only]**
+
+Although most drives reset their Disk Changed signal on receipt of a Step
+command, some older drives have an explicit Reset signal (eg. on pin 1 of
+some old Panasonic and Sony drives).
+
+For disk changes to work correctly on hosts which use these old drives,
+it is necessary to connect the Disk Change Reset signal to the Gotek's
+microcontroller, and to configure support in FF.CFG:
+```chgrst = pa14```
+
+### Physical Connection, Option 1
+
+Cut the ground traces to floppy header pin 1. Solder a jumper wire from
+pin 1 to the SWCLK pin of the Gotek programming header (refer to
+[Board Layout](#board-layout)).
+
+### Physical Connection, Option 2
+
+Create a custom ribbon cabkle with the following modifications at the
+Gotek connector:
+1. Separate wires 1-4 from the remainder (5-34).
+2. Separate wire 4 and cut it short (so it does not make contact)
+3. Separate wire 1 and bring it across to connect in place of wire 4.
+4. You now have a connector with pin 1 unused and pin 4 connected to wire 1.
+
+The Reset signal is now present at Jumper J5 and can be connected to
+SWCLK via a Dupont jumper wire.
 
 ## Enhanced Gotek
 

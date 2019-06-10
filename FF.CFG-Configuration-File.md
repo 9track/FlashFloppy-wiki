@@ -100,6 +100,13 @@ Default values are marked by asterisk.
     motor emulation, and this option can be safely left at its default.
   - If correct emulation is required, 200 is a sensible starting value.
 
+- **chgrst** = step* | pa14 **[v3.x]**
+  - Select action which causes the Disk Changed (DSKCHG) signal to reset
+  - **step**: Step command received
+  - **pa14**: Disk Change Reset signal (eg. pin 1 on some old Sony drives)
+    - Signal is connected to SWCLK (PA14) header pin
+    - See [Hardware Mods](Hardware-Mods#disk-change-reset) for more details
+
 ### Startup & Initialisation:
 
 - **ejected-on-startup** = yes | no*
@@ -173,7 +180,7 @@ Default values are marked by asterisk.
  
 ### Display:
 
-- **display-type** = auto* | lcd-NNx02 | oled[-128xNN][-rotate][-narrow[er]]
+- **display-type** = auto* | lcd-NNx02 | oled[-128xNN][-rotate][-narrow[er]][-ztech]
   - **auto**: Auto-detect (7-seg LED, LCD, OLED)
   - **lcd-NNx02**: NNx2 backlit LCD with I2C backpack (16 <= NN <= 40)
   - **oled-128xNN**: 128xNN I2C OLED (NN = 32 | 64)
@@ -181,6 +188,8 @@ Default values are marked by asterisk.
     - **-narrow[er]**: OLED view is restricted to Gotek display cutout
       - **-narrow**: 18 characters of 6x13 font
       - **-narrower**: 16 characters of 6x13 font
+  - **-ztech**: ZHONGJY_TECH 2.23" 128x32 SSD1305 OLED display **[v3.x]**
+      - Must be explicitly configured as cannot be automatically detected
 
 - **oled-font** = 6x13* | 8x16
   - Select 6px- or 8px-wide OLED display font

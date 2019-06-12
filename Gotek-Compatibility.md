@@ -27,5 +27,14 @@ two-digit LED display: although compatible, try to avoid these.
   drive, and hence has 26-pin header with integrated power, rather
   than the required 34-pin header. However, see [#155][issue-155] for
   one user's successful modifications to run FlashFloppy on a DU26.
+- **FDD-UDD U144K**: A Gotek variant with 34-pin header but a completely
+different PCB layout with undocumented pin headers (see photo below).
+I strongly recommend to avoid this model as it cannot be programmed
+by the usual serial and USB methods, and it lacks convenient headers
+for popular hardware additions.
+However, see [#232][issue-232] for discussion of how to program this
+model via JTAG, and header assignments.
+![FDD-UDD U144K](assets/u144k.jpg)
 
 [issue-155]: https://www.github.com/keirf/FlashFloppy/issues/155
+[issue-232]: https://www.github.com/keirf/FlashFloppy/issues/232

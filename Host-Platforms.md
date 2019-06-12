@@ -365,7 +365,7 @@ directly as follows:
 ## Roland
 
 Roland synths typically work out of the box with no special configuration
-required in FF.CFG.
+required in FF.CFG, and a jumper at position S0 only at the rear of the Gotek.
 
 **MT-120:** This synth is reported to require jumpers at **S0** and
             **MO**, and `pin02 = high` in FF.CFG.

@@ -87,7 +87,7 @@ I2C module header.
 
 ## OLED Display
 
-Another alternative to the Gotek 7-segment display is a 0.91" 128x32
+Another alternative to the Gotek 7-segment display is an OLED
 display, as sold for Arduino projects by many Ebay sellers. You will
 require a display with I2C interface: you should see it has a 4-pin
 header marked GND, VCC, SCL, SDA.
@@ -99,9 +99,21 @@ reusing the existing jumper wires.
 
 ![OLED Display Front](assets/oled1.jpg)
 
-I2C 128x64 monochrome displays are also compatible. The usual sizes
-are 0.96" and 1.3". The 1.3" size needs a line in [FF.CFG][ffcfg]:
-`display-type = oled-128x64-sh1106`.
+Supported screen resolutions are 128x32 and 128x64. These come in
+some common sizes:
+- **128x32**: 0.91", 2.23"
+- **128x64**: 0.96", 1.3", 2.42"
+
+Note that the larger 2" displays are typically configured for SPI
+and will need circuit changes to configure for I2C:
+- Usually a resistor must be removed or relocated
+- Usually one or two empty resistor locations must be bridged with solder
+- CS and DC pins must be connected to ground
+- RES(ET) pin must be connected to 3.3v
+
+Additionally, the 2.23" 128x32 display will typically need explicit
+configuration in [FF.CFG][ffcfg] to avoid a mangled display output:
+`display-type = oled-128x32-ztech`.
 
 ## Rotary Encoder
 

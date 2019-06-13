@@ -39,14 +39,12 @@ Gotek. It usually survives, but USB sticks are instantly killed.
 
 - **My OLED display shows garbage**  
 ![Garbage OLED](assets/oled_corrupt.jpg)
-  - Up to firmware v2.3a, you need one of the following lines in FF.CFG:
-  ```
-  display-type=oled-128x32-sh1106
-  display-type=oled-128x64-sh1106
-  ```
-  - From v2.3a the display controller is auto-detected, and this is no
-  longer needed. However, if your display is 128x64 then this must
-  still be explicitly configured, or your display may be misaligned or
+  - Upgrade to latest stable firmware release. You will also need to
+  [update the bootloader](Firmware-Update#updating-the-bootloader) to
+  get a corect display during future firmware updates (although if you
+  don't, the bootloader will still work even while displaying garbage!).
+  - If your display is 128x64 then this must also be explicitly
+  configured, or your display may be misaligned or
   display only every other row: `display-type=oled-128x64`.
 
 - **My OLED display illuminates only every other row**  

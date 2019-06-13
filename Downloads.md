@@ -1,7 +1,7 @@
 ## Latest Releases
 
 - **v2.13 (Stable)**: [(Download)][v2.13-zip] [(Notes)][v2.13-notes]
-- **v3.0a (Experimental)**: [(Download)][v3.0a-zip] [(Notes)][v3.0a-notes]
+- **v3.1a (Experimental)**: [(Download)][v3.1a-zip] [(Notes)][v3.1a-notes]
 
 1. [**Download**][v2.13-zip] the ZIP file
 2. [**Program**](Firmware-Programming) a brand new
@@ -21,15 +21,18 @@ the [**Donations page**](Donations).
 
 ## Stable vs Experimental
 
-- v1.x release series is well tested and has sufficient features for the
+- v2.x release series is well tested and has sufficient features for the
 majority of users.
-- v2.x is the development series containing major new
+- v3.x is the development series containing major new
 features and design changes.
 
-Use v2.x if you need or love the latest features, or you would like to
+Use v3.x if you need or love the latest features, or you would like to
 provide test feedback!
 
 ## Selected Old Releases
+
+### v3
+- **v3.0a**: [(Download)][v3.0a-zip] [(Notes)][v3.0a-notes]
 
 ### v2
 - **v2.12**: [(Download)][v2.12-zip] [(Notes)][v2.12-notes]
@@ -66,6 +69,9 @@ provide test feedback!
 - **v0.7.4a**: [(Download)][v0.7.4a-zip]
 
 You can also browse through all available releases [here][all].
+
+[v3.1a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v3.1a/flashfloppy-v3.1a.zip
+[v3.1a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v3.1a
 
 [v3.0a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v3.0a/flashfloppy-v3.0a.zip
 [v3.0a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v3.0a

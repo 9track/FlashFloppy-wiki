@@ -131,5 +131,25 @@ writes. Generally they are intended for archiving rather than emulation.
 - **Can you support DMS/ADZ/...?**
   - No. See above.
 
+- **Can you support Pasti/STX for Atari ST copy-protected disks?**
+  - No, it would be very difficult to achieve even close to 100% coverage
+  of all STX images, as this is a format that is particularly convenient
+  for emulators rather than reproducing the original track bitstream.
+  The best bet is to try conversion to HFEv3, although even this is far
+  from 100% supported for all STX images.
+
+- **Can you support EADF (Extended ADF) images for Amiga?**
+  - I could, but I'm unlikely to bother as there is no great need.
+  I only know of one original game distributed by the publisher in
+  EADF format (BC Kid / Factor 5): this can be converted to HFE in
+  the usual way. Some games (such as Cannon Fodder) have a custom save
+  disk format, supported in WinUAE by using an
+  EADF image. FlashFloppy achieves the same by instead using a blank HFE
+  image, which can be created in a number of ways, including via a
+  script shipped with FlashFloppy:
+  ```
+  python scripts/mk_hfe.py save_blank.hfe
+  ```  
+
 [issue-tracker]: https://github.com/keirf/FlashFloppy/issues
 [facebook]: https://www.facebook.com/groups/flashfloppy/

@@ -180,9 +180,10 @@ Default values are marked by asterisk.
  
 ### Display:
 
-- **display-type** = auto* | lcd-NNx02 | oled[-128xNN][-rotate][-narrow[er]][-ztech]
+- **display-type** = auto* | lcd-CCxRR | oled[-128xNN][-rotate][-narrow[er]][-ztech]
   - **auto**: Auto-detect (7-seg LED, LCD, OLED)
-  - **lcd-NNx02**: NNx2 backlit LCD with I2C backpack (16 <= NN <= 40)
+  - **lcd-CCxRR**: CCxRR backlit LCD with I2C backpack (CC=16-40, RR=02-04)
+    - **[v2.x]** Only two-row (RR=02) displays are supported
   - **oled-128xNN**: 128xNN I2C OLED (NN = 32 | 64)
     - **-rotate**: OLED view is rotated 180 degrees
     - **-narrow[er]**: OLED view is restricted to Gotek display cutout

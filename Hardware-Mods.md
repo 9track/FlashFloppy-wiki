@@ -61,9 +61,9 @@ The button's effect depends on the current state of operation:
 ## LCD Display
 
 As an alternative to the Gotek 7-segment display, FlashFloppy supports
-the ubiquitous two-row LCD with I2C backpack board. These are available
-from many Ebay sellers in compatible sizes from 16x2 up to 40x2
-characters.
+the ubiquitous two- and four-row LCDs with I2C backpack board. These
+are available from many Ebay sellers in compatible sizes including
+16x2, 40x2, and 20x4 characters.
 
 You can locate the required connections on your Gotek PCB as
 below. These connect to the corresponding header pins on your LCD I2C
@@ -84,6 +84,9 @@ SCL. Alternatively the resistors can be soldered to the back of the
 I2C module header.
 
 ![LCD Pullup Resistors](assets/pullups.jpg)
+
+If your display is larger than the default 16x2 characters, you must
+configure the size via *display-type=* in [FF.CFG][ffcfg].
 
 ## OLED Display
 

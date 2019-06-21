@@ -161,7 +161,7 @@ to the lines in the encoder's wiring diagram:
 - BTN connects to JA (green)
 - LEFT/RIGHT (*or* UP/DOWN) connect to the rotary pins (blue/red).
 
-You will additionally require `display-type = trackball` in [FF.CFG][ffcfg].
+You will additionally require `rotary = trackball` in [FF.CFG][ffcfg].
 
 Here is a video demonstrating the trackball in action: 
 

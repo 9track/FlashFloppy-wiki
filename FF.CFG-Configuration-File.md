@@ -204,7 +204,11 @@ Default values are marked by asterisk.
   - Text row heights and arrangements on OLED display
   - Comma-separated list, one entry per OLED row, top to bottom
   - Each list item is a character pair: *[content-row][height]*
-    - **content-row**: 0-2 selects specified content row, 7 selects a blank row
+    - **content-row**: 0-3 selects specified content row, 7 selects a blank row
+      - 0: Current image name
+      - 1: Status
+      - 2: Image or Volume info
+      - 3: Current subfolder name
     - **height**: s = single height (16px), d = double height (32px)
   - **default**: Selects a sensible default dependent on display size
     - 128x32: 0s,1s

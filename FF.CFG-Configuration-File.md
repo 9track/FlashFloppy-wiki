@@ -201,19 +201,19 @@ Default values are marked by asterisk.
 - **oled-contrast** = 0-255 (143*)
   - OLED contrast/brightness
 
-- **oled-text** = default* | list-of-character-pairs **[v3.x]**
-  - Text row heights and arrangements on OLED display
-  - Comma-separated list, one entry per OLED row, top to bottom
-  - Each list item is a character pair: *[content-row][height]*
+- **display-order** = default* | list-of-rows **[v3.x]**
+  - Text row ordering (and height) on LCD/OLED displays
+  - Comma-separated list, one entry per LCD/OLED row, top to bottom
+  - Each list item is a digit plus optional height modifier: *[content-row][height]*
     - **content-row**: 0-3 selects specified content row, 7 selects a blank row
       - 0: Current image name
       - 1: Status
       - 2: Image or Volume info
       - 3: Current subfolder name
-    - **height**: s = single height (16px), d = double height (32px)
+    - **height**: d = double height (32px, OLED only; ignored for LCD)
   - **default**: Selects a sensible default dependent on display size
-    - 128x32: 0s,1s
-    - 128x64: 0d,1s,2s
+    - OLED 128x32: 0,1
+    - OLED 128x64: 3,0d,1
 
 - **display-off-secs** = 0-255 (60*)
   - Turn LCD/OLED display off after N seconds of inactivity

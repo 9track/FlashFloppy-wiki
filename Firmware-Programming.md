@@ -67,19 +67,17 @@ programming file contained in the FlashFloppy distribution.
 
 ### Windows
 
-For more
-details read [Nick Lines' how-to guide](http://www.binarydevotion.com/?p=228),
-or watch the following Youtube video. **Note:** The ***.dfu** file is now
-included in the FlashFloppy distribution; there is no need to create it from
-the ***.hex** file and those steps can be skipped.
+For more details watch the following Youtube video. **Note:** The
+***.dfu** file is now included in the FlashFloppy distribution; there
+is no need to create it from the ***.hex** file and those steps can be
+skipped.
 
 [![Flash Gotek without Serial Adapter](http://img.youtube.com/vi/yUOyZB9cro4/0.jpg)](http://www.youtube.com/watch?v=yUOyZB9cro4 "Flash Gotek without Serial Adapter")
 
 ### Linux / Mac
 
-Firstly, set the programming jumpers as described in
-[Nick Lines' how-to guide](http://www.binarydevotion.com/?p=228). Ignore the
-rest of the guide, which is Windows-specific.
+Firstly, set the programming jumpers as described in the Windows tutorial
+video, above. Ignore the rest of the video, which is Windows-specific.
 
 Connect the Gotek to your host using a USB-A to USB-A cable. 
 

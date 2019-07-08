@@ -275,23 +275,21 @@ software. Notes:
 * IMG format is not supported for Mirage or SQ-80 (ie. 880kB) formats
 * IMG format is especially preferred for 1600kB HD disks
 
-Some Ensoniq series (notably the ASR and TS series) require an IBM-PC
-interface with density-select output. These require a jumper on S0
-**only**, and the following additional line in FF.CFG:
+**ASR, TS:** Some Ensoniq series (notably ASR and TS)
+require an IBM-PC interface with density-select output. These require
+a jumper on S0 **only**, and the following additional line in FF.CFG:
 ```
 interface = ibmpc-hdout
 ```
 
-Ensoniq EPS series typically requires a jumper on S0 **only**, and
-the following additional lines in FF.CFG:
+**EPS:** Ensoniq EPS series typically requires a jumper on S0 **only**, and
+the following lines in FF.CFG:
 ```
 interface = shugart
-pin02 = auto
+chgrst = delay-3
 ```
-However there is one isolated user report of pin 2 being inverted, so
-if there are disk-change problems then you might try changing the
-second line to `pin02 = nchg`. Revert back to `auto` if this doesn't
-help.
+The *chgrst* line requires v3.3a or later: disk changes
+may not be detected reliably with earlier firmwares.
 
 ## General Music (GEM) Synthesisers
 

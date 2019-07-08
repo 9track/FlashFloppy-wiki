@@ -100,12 +100,14 @@ Default values are marked by asterisk.
     motor emulation, and this option can be safely left at its default.
   - If correct emulation is required, 200 is a sensible starting value.
 
-- **chgrst** = step* | pa14 **[v3.x]**
+- **chgrst** = step* | pa14 | delay-N **[v3.x]**
   - Select action which causes the Disk Changed (DSKCHG) signal to reset
   - **step**: Step command received
   - **pa14**: Disk Change Reset signal (eg. pin 1 on some old Sony drives)
     - Signal is connected to SWCLK (PA14) header pin
     - See [Hardware Mods](Hardware-Mods#disk-change-reset) for more details
+  - **delay-N**: Automatic reset after N*0.5s (0 <= N <= 15)
+    - eg. *chgrst=delay-3* resets DSKCHG 1.5 seconds after disk insertion
 
 ### Startup & Initialisation:
 

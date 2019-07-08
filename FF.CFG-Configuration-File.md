@@ -117,7 +117,7 @@ Default values are marked by asterisk.
 - **image-on-startup** = last* | static | init
   - Which image (or folder) is selected at startup
   - **last**: Last-selected item at power off (recorded in IMAGE_A.CFG)
-  - **static**: Static pathname specified in IMAGE_A.CFG
+  - **static**: Static pathname specified in IMAGE_A.CFG **[v3.x: INIT_A.CFG]**
   - **init**: First item in root folder
 
 - **display-probe-ms** = 0-65535 (2000*)

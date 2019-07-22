@@ -10,13 +10,11 @@ terms](Redistribution).
 ### Donations
 
 FlashFloppy is a labour of love: working on it takes a **lot** of time
-and effort. The development of new features, plus maintenance, bug
-fixing, testing, release preparations and so on is a huge undertaking;
-and that ignores non-development tasks such as writing documentation
-and community management.
+and effort. Although it is [Free Software](Redistribution) and
+a pet project of mine, beer & coffee tokens will fuel me in the
+push onwards and upwards!
 
-If you would like to **support FlashFloppy's development**, please see
-the [**Donations page**](Donations).
+For further information please see the [**Donations page**](Donations).
 
 ### Download
 - [**Download FlashFloppy**](Downloads)

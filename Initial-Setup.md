@@ -61,6 +61,14 @@ FlashFloppy will automatically assign all valid images in
 the root folder of your USB stick to slots which you can switch
 between using the Gotek buttons.
 
+In all cases, the following folders and images are ignored and
+will not be listed for navigation:
+- Any name beginning with a dot (**.**)
+- Any file which is not a valid image (eg. unrecognised filename extension)
+- Any folder or image with the FAT "Hidden" attribute set
+- Root folder called **FF/**
+- Any folder called **__MACOSX/** (these get strewn around by macOS)
+
 ## Indexed mode
 
 This mode is configured via [FF.CFG][ffcfg]:

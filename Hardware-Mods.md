@@ -3,6 +3,7 @@
 - [Select/Eject/Insert Button](#selectejectinsert-button)
 - [LCD Display](#lcd-display)
 - [OLED Display](#oled-display)
+- [On Screen Display (OSD)](#on-screen-display-osd)
 - [Rotary Encoder](#rotary-encoder)
 - [Blackberry Trackball](#blackberry-trackball)
 - [Motor Signal](#motor-signal)
@@ -117,6 +118,16 @@ and will need circuit changes to configure for I2C:
 Additionally, the 2.23" 128x32 display will typically need explicit
 configuration in [FF.CFG][ffcfg] to avoid a mangled display output:
 `display-type = oled-128x32-ztech`.
+
+## On Screen Display (OSD)
+
+FlashFloppy supports On Screen Display via the
+[FF OSD hardware project](https://github.com/keirf/FF_OSD/wiki). FF OSD
+is connected in the same way as an OLED display. Indeed it can be connected
+*alongside* an existing OLED display giving you two simultaneous displays
+**[v3.x only: see the FF OSD wiki]**.
+
+![Amiga OSD](assets/osd_amiga.jpg)
 
 ## Rotary Encoder
 

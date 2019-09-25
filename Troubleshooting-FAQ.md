@@ -144,12 +144,11 @@ writes. Generally they are intended for archiving rather than emulation.
   EADF format (BC Kid / Factor 5): this can be converted to HFE in
   the usual way. Some games (such as Cannon Fodder) have a custom save
   disk format, supported in WinUAE by using an
-  EADF image. FlashFloppy achieves the same by instead using a blank HFE
-  image, which can be created in a number of ways, including via a
-  script shipped with FlashFloppy:
-  ```
-  python scripts/mk_hfe.py save_blank.hfe
-  ```  
+  EADF image. FlashFloppy achieves the same by instead using an HFE
+  image: A pre-formatted Cannon Fodder save disk is provided in the
+  [FlashFloppy Image Library][ff-lib] ([**Cannon_Fodder_Save.hfe**][ff-cf]).
 
+[ff-cf]: https://github.com/keirf/FF_Images/raw/master/Amiga/Cannon_Fodder_Save.hfe
+[ff-lib]: https://github.com/keirf/FF_Images/blob/master/README.md
 [issue-tracker]: https://github.com/keirf/FlashFloppy/issues
 [facebook]: https://www.facebook.com/groups/flashfloppy/

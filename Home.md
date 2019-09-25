@@ -19,6 +19,7 @@ For further information please see the [**Donations page**](Donations).
 ### Download
 - [**Download FlashFloppy**](Downloads)
 - [AutoSwap](https://github.com/keirf/FF_AutoSwap/wiki/Downloads)
+- [On Screen Display (FF OSD)](https://github.com/keirf/FF_OSD/wiki)
 
 ### Installation
 - [Gotek Compatibility](Gotek-Compatibility)

@@ -1,6 +1,7 @@
 ## Download
 - [**Download FlashFloppy**](Downloads)
 - [AutoSwap](https://github.com/keirf/FF_AutoSwap/wiki/Downloads)
+- [On Screen Display (OSD)](https://github.com/keirf/FF_OSD/wiki)
 
 ## Installation
 - [Gotek Compatibility](Gotek-Compatibility)

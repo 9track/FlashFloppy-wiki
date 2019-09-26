@@ -245,11 +245,23 @@ Gotek users should therefore skip this section.
 
 ### Summary
 
+- **Gotek Bug Fixes**
 - **PC12-15:** Board Identifier
 - **PA3:** Second Drive Select
 - **PA15:** Motor-On Signal
 - **PA4-5:** USB Power Switch
 - **PB12-15,PC9** SD Card Connector (optional)
+
+### Gotek Bug Fixes
+
+- **PB2 (BOOT1):** The original Gotek layout leaves pin PB2 unconnected.
+Strictly it is required to be tied LOW for firmware programming, and
+thus any Enhanced Gotek board is highly recommended to: **Connect PB2 to
+VSS (GND)**.
+- **Output buffer:** The original Gotek uses a 74HC04 to buffer the
+outputs of the STM32. Strictly speaking it is out of spec to power the
+HC04 with 5V while driving its inputs at 3.3V. Hence it is recommended to:
+**Replace the output buffer with 74HCT04**.
 
 ### Board Identifier
 

@@ -13,6 +13,7 @@
 - [General Music (GEM) Synthesisers](#general-music-gem-synthesisers)
 - [IBM PC](#ibm-pc)
 - [Korg](#korg)
+- [Kurzweil](#kurzweil)
 - [Memotech](#memotech)
 - [MSX](#msx)
 - [NEC PC-98](#nec-pc-98)
@@ -317,6 +318,11 @@ a jumper at S0 only. Known models this affects include:
 ## Korg
 
 Korg synths require `host = akai` in FF.CFG for correct IMG layout detection.
+
+## Kurzweil
+
+Kurzweil K2500 requires jumpers at S0 and JC. This is likely to apply
+across the entire K range.
 
 ## Memotech
 

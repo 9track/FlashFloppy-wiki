@@ -18,9 +18,10 @@ will refer to this diagram for each hardware mod.
 
 ![Board Layout](assets/pinout.png)
 
-Certain modifications attach to the Gotek programming header, which has the
-layout indicated below. Please note that some Gotek revisions do not have
-all header pins available.
+Certain modifications attach to the Gotek programming header, which
+has the layout indicated below. Some Gotek revisions do not have all
+header pins, however the pins which *are* present will always match this
+layout.
 
 ![Programming Header](assets/pheader.jpg)
 

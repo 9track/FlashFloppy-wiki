@@ -9,6 +9,7 @@
 - [Firmware Programming](Firmware-Programming)
 - [Firmware Update](Firmware-Update)
 - [Hardware Mods](Hardware-Mods)
+- [Quick Disk](Quick-Disk)
 
 ## Usage
 - [Initial Setup](Initial-Setup)

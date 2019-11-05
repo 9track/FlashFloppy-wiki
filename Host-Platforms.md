@@ -98,17 +98,34 @@ host = akai
 
 The correct jumper selection is usually S0, with the following
 interface selections in FF.CFG, depending on model:
+
+#### S2000, S3000XL:
 ```
-interface = ibmpc-hdout # S3000
-interface = akai-s950   # S950, S2800
-interface = shugart     # SO1
+interface = ibmpc-hdout
 ```
 
-Akai S1100 sends a signal to the floppy drive on pin 2, hence this pin
+#### S950:
+```
+interface = akai-s950
+```
+
+#### S2800, S3000:
+```
+interface = akai-s950
+pin34 = dens
+```
+
+#### S01:
+```
+interface = shugart
+```
+
+#### S1100:
+S1100 sends a signal to the floppy drive on pin 2, hence this pin
 must be configured `nc`:
 ```
-pin02 = nc              # S1100
-pin34 = rdy             # S1100
+interface = shugart
+pin02 = nc
 ```
 
 ## Amstrad CPC

@@ -1,7 +1,7 @@
 ## Latest Releases
 
 - **v2.13 (Stable)**: [(Download)][v2.13-zip] [(Notes)][v2.13-notes]
-- **v3.6a (Experimental)**: [(Download)][v3.6a-zip] [(Notes)][v3.6a-notes]
+- **v3.7a (Experimental)**: [(Download)][v3.7a-zip] [(Notes)][v3.7a-notes]
 
 1. [**Download**][v2.13-zip] the ZIP file
 2. [**Program**](Firmware-Programming) a brand new
@@ -75,8 +75,8 @@ provide test feedback!
 
 You can also browse through all available releases [here][all].
 
-[v3.6a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v3.6a/flashfloppy-v3.6a.zip
-[v3.6a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v3.6a
+[v3.7a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v3.7a/flashfloppy-v3.7a.zip
+[v3.7a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v3.7a
 
 [v3.5a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v3.5a/flashfloppy-v3.5a.zip
 [v3.5a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v3.5a

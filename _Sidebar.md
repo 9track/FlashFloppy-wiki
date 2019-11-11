@@ -1,6 +1,6 @@
 ## Download
 - [**Download FlashFloppy**](Downloads)
-- [AutoSwap](https://github.com/keirf/FF_AutoSwap/wiki/Downloads)
+- [AutoSwap Amiga Games](https://github.com/keirf/FF_AutoSwap/wiki/Downloads)
 - [On Screen Display (OSD)](https://github.com/keirf/FF_OSD/wiki)
 - [Image Library](https://github.com/keirf/FF_Images/blob/master/README.md)
 

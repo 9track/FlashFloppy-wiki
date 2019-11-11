@@ -15,6 +15,13 @@ On successful update, when USB stick is ejected you should see **q-d**
 on the Gotek display (this replaces **F-F** on the standard 3-digit
 LED display). On an LCD or OLED display **[QD]** is shown.
 
+### Jumper Configuration
+
+The Quick Disk firmware requires a jumper at location **MO**. The usual
+drive-select positions S0 and S1 are unused and should not be jumpered.
+
+Roland hosts (eg. MKS-100, S-10) additionally require a jumper at **JC**.
+
 ### Connecting to the Quick Disk Host
 
 Wiring is as follows. Note the conventional QD pin numbering and wire

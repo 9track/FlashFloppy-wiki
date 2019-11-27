@@ -20,7 +20,8 @@ LED display). On an LCD or OLED display **[QD]** is shown.
 The Quick Disk firmware requires a jumper at location **MO**. The usual
 drive-select positions S0 and S1 are unused and should not be jumpered.
 
-Roland hosts (eg. MKS-100, S-10) additionally require a jumper at **JC**.
+Roland hosts (eg. MKS-100, MT-100, S-10) additionally require a jumper
+at **JC**.
 
 ### Connecting to the Quick Disk Host
 

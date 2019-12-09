@@ -5,6 +5,11 @@ FlashFloppy features an alternative firmware emulating the 2.8-inch
 "Quick Disk" drive, used in a wide range of 80s synthesizers
 by companies such as Akai, Korg and Roland.
 
+### Tested Systems
+
+- **Akai:** X7000
+- **Roland:** MKS-100, MT-100, S-20
+
 ### Programming the Quick Disk Firmware
 
 Follow steps for [Firmware Update](Firmware-Update) but use the update

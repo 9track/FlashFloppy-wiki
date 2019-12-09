@@ -135,6 +135,13 @@ interface = shugart
 pin02 = nc
 ```
 
+#### X7000
+The [Quick Disk](Quick-Disk) version of the
+FlashFloppy firmware has been tested working on X7000. Follow
+the Quick Disk connection and installation instructions,
+and note that you require a jumper at location **MO** only.
+No explicit configuration is required in FF.CFG.
+
 ## Amstrad CPC
 
 FlashFloppy works with a wide range of CPC DSK images, however

@@ -7,8 +7,10 @@ by companies such as Akai, Korg and Roland.
 
 ### Tested Systems
 
-- **Akai:** X7000
-- **Roland:** MKS-100, MT-100, S-20
+- **Akai:** X7000<sup>1</sup>
+- **Roland:** MKS-100<sup>2</sup>, MT-100<sup>2</sup>, S-20<sup>2</sup>
+1. Pin order is reversed from order below (ie pin 1 is GND)
+2. Requires jumper at **JC** in addition to **MO**
 
 ### Programming the Quick Disk Firmware
 
@@ -31,8 +33,8 @@ at **JC**.
 ### Connecting to the Quick Disk Host
 
 Wiring is as follows. Note the conventional QD pin numbering and wire
-colours. However this may vary on some hosts (for example, Korg
-typically numbers the pins in the opposite order).
+colours. However this may vary on some hosts (for example, Akai and Korg
+may number the pins in the opposite order, and use monochrome cabling).
 
 |QD Pin  |Wire Colour| QD Interface   |Gotek Pin|
 |--------|-----------|----------------|---------|

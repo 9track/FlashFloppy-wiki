@@ -138,8 +138,9 @@ pin02 = nc
 #### X7000
 The [Quick Disk](Quick-Disk) version of the
 FlashFloppy firmware has been tested working on X7000. Follow
-the Quick Disk connection and installation instructions,
-and note that you require a jumper at location **MO** only.
+the Quick Disk connection and installation instructions:
+Note that you require a jumper at location **MO** only, and pin
+ordering of the QD header is reversed.
 No explicit configuration is required in FF.CFG.
 
 ## Amstrad CPC

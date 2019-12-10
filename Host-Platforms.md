@@ -61,11 +61,9 @@ whether a disk is inserted in the drive. If you are seeing spurious
 index-suppression = no
 ```
 
-Some HD-capable models, after the A5000, seem to use PC-compatible
-drives. These require the following interface setting in FF.CFG:
-```
-interface = ibmpc
-```
+Some HD-capable models after the A5000 (eg A3020) use
+PC-compatible drives. These require the drive-select jumper at
+position **S1**, and `interface = ibmpc` in FF.CFG.
 
 To use ADFS D/E/F sector images, which usually have suffix ADF, you
 must explicitly configure the host type in FF.CFG as Amiga sector

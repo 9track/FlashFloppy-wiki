@@ -1,9 +1,9 @@
 ## Latest Releases
 
-- **v2.13 (Stable)**: [(Download)][v2.13-zip] [(Notes)][v2.13-notes]
-- **v3.8a (Experimental)**: [(Download)][v3.8a-zip] [(Notes)][v3.8a-notes]
+- **v2.14 (Stable)**: [(Download)][v2.14-zip] [(Notes)][v2.14-notes]
+- **v3.9a (Experimental)**: [(Download)][v3.9a-zip] [(Notes)][v3.9a-notes]
 
-1. [**Download**][v2.13-zip] the ZIP file
+1. [**Download**][v2.14-zip] the ZIP file
 2. [**Program**](Firmware-Programming) a brand new
    [Gotek](Gotek-Compatibility); or
 3. [**Update**](Firmware-Update) an existing install
@@ -32,6 +32,7 @@ provide test feedback!
 ## Selected Old Releases
 
 ### v3
+- **v3.8a**: [(Download)][v3.8a-zip] [(Notes)][v3.8a-notes]
 - **v3.7a**: [(Download)][v3.7a-zip] [(Notes)][v3.7a-notes]
 - **v3.5a**: [(Download)][v3.5a-zip] [(Notes)][v3.5a-notes]
 - **v3.4a**: [(Download)][v3.4a-zip] [(Notes)][v3.4a-notes]
@@ -41,6 +42,7 @@ provide test feedback!
 - **v3.0a**: [(Download)][v3.0a-zip] [(Notes)][v3.0a-notes]
 
 ### v2
+- **v2.13**: [(Download)][v2.13-zip] [(Notes)][v2.13-notes]
 - **v2.12**: [(Download)][v2.12-zip] [(Notes)][v2.12-notes]
 - **v2.10a**: [(Download)][v2.10a-zip] [(Notes)][v2.10a-notes]
 - **v2.8a**: [(Download)][v2.8a-zip] [(Notes)][v2.8a-notes]
@@ -76,6 +78,9 @@ provide test feedback!
 
 You can also browse through all available releases [here][all].
 
+[v3.9a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v3.9a/flashfloppy-v3.9a.zip
+[v3.9a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v3.9a
+
 [v3.8a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v3.8a/flashfloppy-v3.8a.zip
 [v3.8a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v3.8a
 
@@ -99,6 +104,9 @@ You can also browse through all available releases [here][all].
 
 [v3.0a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v3.0a/flashfloppy-v3.0a.zip
 [v3.0a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v3.0a
+
+[v2.14-zip]: https://github.com/keirf/FlashFloppy/releases/download/v2.14/flashfloppy-v2.14.zip
+[v2.14-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v2.14
 
 [v2.13-zip]: https://github.com/keirf/FlashFloppy/releases/download/v2.13/flashfloppy-v2.13.zip
 [v2.13-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v2.13

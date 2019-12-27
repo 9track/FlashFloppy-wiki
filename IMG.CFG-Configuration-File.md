@@ -12,6 +12,9 @@ The solution is an INI-style configuration file called IMG.CFG, placed
 in the root folder or FF/ subfolder of your USB drive. An example is
 provided in the examples/ subfolder of the FlashFloppy distribution.
 
+**NOTE:** If FF/ exists, IMG.CFG must reside there, as the root
+folder isn't searched.
+
 ## Tags
 
 The file is divided into sections, each starting with a *tag name* in

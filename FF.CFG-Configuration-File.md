@@ -4,6 +4,9 @@ an INI-style configuration file called FF.CFG, placed in the root
 folder or FF/ subfolder of your USB drive. An example is provided in
 the examples/ subfolder of the FlashFloppy distribution.
 
+**NOTE:** If FF/ exists, FF.CFG must reside there, as the
+root folder isn't searched.
+
 ## Defaults
 
 Out of the box, FlashFloppy loads the default values described in the

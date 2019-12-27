@@ -1,6 +1,10 @@
-Initial setup has two basic steps:
-- Set up the physical interface to the host system
-- Configure the operating mode for image navigation
+- [Physical Interface](#physical-interface)
+- [USB Storage](#usb-storage)
+- [Configuration Files](#configuration-files)
+- [Image Navigation Modes](#image-navigation-modes)
+  - [Native mode](#native-mode)
+  - [Indexed mode](#indexed-mode)
+  - [HxC Compatibility mode](#hxc-compatibility-mode)
 
 ## Physical Interface
 
@@ -28,6 +32,22 @@ FlashFloppy requires a USB drive formatted with FAT32 (note that ExFAT
 and NTFS are *not* supported). Most USB sticks are factory-formatted
 appropriately. If erasing the entire drive on a Mac, be sure to select
 the legacy "Master Boot Record" partitioning scheme.
+
+## Configuration Files
+
+FlashFloppy has a number of optional configuration files:
+- [**FF.CFG**](FF.CFG-Configuration-File): Global configuration of
+drive emulation, display handling, etc
+- [**IMG.CFG**](IMG.CFG-Configuration-File): Manual configuration of
+IMG/IMA ("Raw") track layouts
+- **IMAGE_A.CFG** / **INIT_A.CFG**: Last/initial image to load
+
+These can be placed either in the FF/ subfolder, or in the root of your
+USB drive. Note that if FF/ exists, the root folder is not searched!
+
+In [HxC Compatibility mode](#hxc-compatibility-mode), the HXCSDFE.CFG
+and AUTOBOOT.HFE files must always be in the root folder, regardless
+of whether FF/ exists.
 
 ## Image Navigation Modes
 

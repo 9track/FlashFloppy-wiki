@@ -1,7 +1,7 @@
 ## Latest Releases
 
 - **v2.14 (Stable)**: [(Download)][v2.14-zip] [(Notes)][v2.14-notes]
-- **v3.9a (Experimental)**: [(Download)][v3.9a-zip] [(Notes)][v3.9a-notes]
+- **v3.10a (Experimental)**: [(Download)][v3.10a-zip] [(Notes)][v3.10a-notes]
 
 1. [**Download**][v2.14-zip] the ZIP file
 2. [**Program**](Firmware-Programming) a brand new
@@ -32,6 +32,7 @@ provide test feedback!
 ## Selected Old Releases
 
 ### v3
+- **v3.9a**: [(Download)][v3.9a-zip] [(Notes)][v3.9a-notes]
 - **v3.8a**: [(Download)][v3.8a-zip] [(Notes)][v3.8a-notes]
 - **v3.7a**: [(Download)][v3.7a-zip] [(Notes)][v3.7a-notes]
 - **v3.5a**: [(Download)][v3.5a-zip] [(Notes)][v3.5a-notes]
@@ -77,6 +78,9 @@ provide test feedback!
 - **v0.7.4a**: [(Download)][v0.7.4a-zip]
 
 You can also browse through all available releases [here][all].
+
+[v3.10a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v3.10a/flashfloppy-v3.10a.zip
+[v3.10a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v3.10a
 
 [v3.9a-zip]: https://github.com/keirf/FlashFloppy/releases/download/v3.9a/flashfloppy-v3.9a.zip
 [v3.9a-notes]: https://github.com/keirf/FlashFloppy/releases/tag/v3.9a

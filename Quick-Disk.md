@@ -8,7 +8,7 @@ by companies such as Akai, Korg and Roland.
 ### Tested Systems
 
 - **Akai:** X7000<sup>1</sup>
-- **Roland:** MKS-100<sup>2</sup>, MT-100<sup>2</sup>, S-20<sup>2</sup>
+- **Roland:** MKS-100<sup>2</sup>, MT-100<sup>2</sup>, PR-100<sup>2</sup>, S-10<sup>2</sup>, S-20<sup>2</sup>
 1. Pin order is reversed from order below (ie pin 1 is GND)
 2. Requires jumper at **JC** in addition to **MO**
 

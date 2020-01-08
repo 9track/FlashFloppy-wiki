@@ -404,7 +404,8 @@ required in FF.CFG, and a jumper at position S0 only at the rear of the Gotek.
 **MT-120:** This synth is reported to require jumpers at **S0** and
             **MO**, and `pin02 = high` in FF.CFG.
 
-**MKS-100, MT-100, S-10:** The [Quick Disk](Quick-Disk) version of the
+**MKS-100, MT-100, PR-100, S-10, S-20:** The [Quick Disk](Quick-Disk)
+version of the
 FlashFloppy firmware has been tested working on these samplers. Follow
 the Quick Disk connection and installation instructions,
 and note that you require jumpers at locations **MO** and **JC**.

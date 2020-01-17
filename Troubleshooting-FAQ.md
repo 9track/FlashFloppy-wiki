@@ -93,6 +93,17 @@ In this case either your ribbon cable is worn out, or you have an Escom
 board in need of further modding (check out the additional jumper wire
 in [this Youtube video][a1200_mod]).
 
+- **I cannot save my game and/or highscore in certain games**
+  - This is an occasional problem with certain cracked games available as
+ADF images. The problem is that, although the game is cracked to AmigaDOS
+format, the game/highscore save routines are often left alone even if they
+use a custom format. This worked fine back in the day with a real floppy
+drive, however it fails if you try to save to an ADF image on your Gotek!
+The solution is to save to an HFE image file ([Download][ff-blank]). You
+can format/save the HFE image in-game if it uses a separate save disk. If
+it saves to the game disk itself then you will need to copy the game disk
+from ADF to HFE using [X-Copy][xcopy].
+
 [a1200_mod]: https://www.youtube.com/watch?v=G6fYOjTYvXM
 [systest]: https://github.com/keirf/Amiga-Stuff/blob/master/README.md
 
@@ -149,6 +160,8 @@ writes. Generally they are intended for archiving rather than emulation.
   [FlashFloppy Image Library][ff-lib] ([**Cannon_Fodder_Save.hfe**][ff-cf]).
 
 [ff-cf]: https://github.com/keirf/FF_Images/raw/master/Amiga/Cannon_Fodder_Save.hfe
+[ff-blank]: https://github.com/keirf/FF_Images/raw/master/Amiga/Blank_AmigaDOS.hfe
 [ff-lib]: https://github.com/keirf/FF_Images/blob/master/README.md
 [issue-tracker]: https://github.com/keirf/FlashFloppy/issues
 [facebook]: https://www.facebook.com/groups/flashfloppy/
+[xcopy]: http://jope.fi/xcopy/

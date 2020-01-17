@@ -1,29 +1,33 @@
-- [General Notes](#general-notes)
+[**General Notes**](#general-notes)
+
+**Computers**:
 - [Acorn Archimedes](#acorn-archimedes)
 - [Acorn BBC Micro](#acorn-bbc-micro)
-- [Akai Synthesisers](#akai-synthesisers)
 - [Amstrad CPC](#amstrad-cpc)
 - [Amstrad PCW](#amstrad-pcw)
 - [Atari ST](#atari-st)
 - [Commodore Amiga](#commodore-amiga)
 - [DEC](#dec)
 - [Dragon](#dragon)
-- [E-mu ESI-32](#e-mu-esi-32)
-- [Ensoniq](#ensoniq)
-- [General Music (GEM) Synthesisers](#general-music-gem-synthesisers)
 - [IBM PC](#ibm-pc)
-- [Korg](#korg)
-- [Kurzweil](#kurzweil)
 - [Memotech](#memotech)
 - [MSX](#msx)
 - [NEC PC-98](#nec-pc-98)
-- [Roland](#roland)
-- [Sequential Circuits Prophet 3000](#sequential-circuits-prophet-3000)
 - [Sinclair QL](#sinclair-ql)
 - [Spectrum](#spectrum)
 - [Tandy Color Computer](#tandy-color-computer)
 - [TI-99/4A](#ti-994a)
 - [UKNC, DVK](#uknc-dvk)
+
+**Electronic synthesizers**:
+- [Akai](#akai)
+- [E-mu ESI-32](#e-mu-esi-32)
+- [Ensoniq](#ensoniq)
+- [General Music (GEM)](#general-music-gem)
+- [Korg](#korg)
+- [Kurzweil](#kurzweil)
+- [Roland](#roland)
+- [Sequential Circuits Prophet 3000](#sequential-circuits-prophet-3000)
 - [Yamaha DX7II-FD](#yamaha-dx7ii-fd)
 
 ## General Notes
@@ -93,7 +97,7 @@ This issue is solved by specifying the following FF.CFG option:
 index-suppression = no
 ```
 
-## Akai Synthesisers
+## Akai
 
 Akai systems require explicit configuration in FF.CFG to recognise IMG
 files correctly:
@@ -322,7 +326,7 @@ chgrst = delay-3
 The *chgrst* line requires v3.3a or later: disk changes
 may not be detected reliably with earlier firmwares.
 
-## General Music (GEM) Synthesisers
+## General Music (GEM)
 
 GEM systems using the 1.6MB high-density disk format require explicit
 configuration in FF.CFG to recognise IMG files correctly:

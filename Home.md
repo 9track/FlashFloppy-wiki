@@ -1,9 +1,16 @@
-A retro floppy emulator for the ubiquitous Gotek hardware.
-- Directly supports a [wide range of image formats](Image-Formats)
+**FlashFloppy** is a floppy-drive emulator for the ubiquitous
+[**Gotek**](Gotek-Compatibility) hardware. Connect to retro machines just
+like a real floppy drive but use disk images on a modern USB stick!
+- Say goodbye to old and unreliable floppy disks
+- Download and play from the disk-image archives for your retro machines
+
+**FlashFloppy** is the **#1 floppy emulator**:
+- Supports a [massive range](Host-Platforms) of retro computers, synths, and machinery
+- Directly reads and writes [many image formats](Image-Formats)
 - [Flexible track layout](Track-Layouts) for Raw Sector Images
 - [Extremely configurable](FF.CFG-Configuration-File)
 
-FlashFloppy is Free and Open-Source Software. It may be freely
+**FlashFloppy** is **Free and Open-Source Software**. It may be freely
 modified and redistributed, but please read the [more detailed
 terms](Redistribution).
 

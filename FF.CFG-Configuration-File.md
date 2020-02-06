@@ -49,6 +49,7 @@ Default values are marked by asterisk.
   - **ensoniq**: Ensoniq synths (ASR/TS series, and others)
   - **fluke**: Fluke (9100)
   - **gem**: General Music (S2, S3, S2R)
+  - **ibm-3174**: IBM 3174 Establishment Controller
   - **kaypro**: Kaypro
   - **memotech**: Memotech
   - **msx**: MSX

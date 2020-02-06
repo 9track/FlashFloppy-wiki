@@ -9,6 +9,7 @@
 - [Commodore Amiga](#commodore-amiga)
 - [DEC](#dec)
 - [Dragon](#dragon)
+- [IBM 3174](#ibm-3174)
 - [IBM PC](#ibm-pc)
 - [Memotech](#memotech)
 - [MSX](#msx)
@@ -333,6 +334,26 @@ configuration in FF.CFG to recognise IMG files correctly:
 ```
 host = gem
 ```
+
+## IBM 3174
+
+IBM 3174 establishment controllers require the following options in FF.CFG:
+```
+host = ibm-3174
+interface = ibmpc
+```
+
+Select-line jumper S1 should be installed. The actual drive ID will be
+determined by the interface cable.
+
+A ready signal is required on pin 4 of the interface. This can be acheived
+by connecting a diode between pin 1 and 10 of the jumper block
+as shown below:
+
+![Diode Connection](assets/ibm_3174.png)
+
+If only a single drive is present then you can install jumper J5 instead
+of the diode which will cause the ready signal to be permanently asserted.
 
 ## IBM PC
 
